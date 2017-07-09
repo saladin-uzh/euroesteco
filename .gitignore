@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+desktop.ini
+tmp/
+thumbs.db
+build/

@@ -9,10 +9,30 @@ html {
 }
 
 body {
-  @import "templates/header";
   background: {
     image: url("../images/bg.png");
     size: 100%;
     position: top;
+  }
+
+  #up-btn {
+    position: fixed;
+  }
+
+  #feedback-btn {
+    position: fixed;
+  }
+
+  @import "templates/header";
+
+  main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    > section {
+      height: 100%;
+      border: 1px solid blue;
+    }
   }
 }

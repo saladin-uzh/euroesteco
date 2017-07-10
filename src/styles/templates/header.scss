@@ -1,4 +1,7 @@
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,14 +14,56 @@ header {
   }
 
   .logo-link {
+    text: {
+      decoration: none;
+      align: center;
+    }
+    line-height: $line / 2;
 
     .logo-caption,
     .logo-paragraph {
-      line-height: $line * 2;
       color: $light;
+    }
+
+    .logo-caption {
+      font: {
+        weight: bold;
+        size: $line * 2;
+      }
+    }
+
+    .logo-paragraph {
+      font: {
+        weight: bold;
+        size: $line * 1.8;
+      }
+    }
+  }
+
+  .main-menu {
+    display: flex;
+    width: 65%;
+    border: {
+      top: $line / 3 solid $light;
+      bottom: $line / 3 solid $light;
+    }
+
+    .menu-item {
+      flex-grow: 1;
       text: {
         decoration: none;
         align: center;
+      }
+      color: $light;
+      padding: $line;
+      font: {
+        size: $line * 2;
+      }
+
+      &:hover {
+        background: {
+          color: transparentize($brown, 0.7);
+        }
       }
     }
   }

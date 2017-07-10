@@ -4,9 +4,6 @@ footer {
   align-items: center;
   width: 100%;
   min-height: $line * 20;
-  background: {
-    color: transparentize($grey, 0.2);
-  }
   color: $light;
 
   article {
@@ -47,16 +44,13 @@ footer {
       }
     }
 
-    .social-item {
-
-      a {
-        color: $light;
-        text: {
-          decoration: none;
-        }
-        margin: 0 0 0 $line / 2;
-        padding: $line / 2 $line * 2;
+    .socials-item {
+      color: $light;
+      text: {
+        decoration: none;
       }
+      margin: 0 0 0 $line / 2;
+      padding: $line / 2 $line * 2;
     }
   }
 
@@ -118,7 +112,7 @@ footer {
     &:hover {
 
       .developers-link {
-        transform: translateY(-$line * 3) scale(1.1);
+        transform: translateY(-$line * 2.5) scale(1.1);
         transform-origin: bottom;
 
         &::before {

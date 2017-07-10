@@ -37,6 +37,7 @@ var gulp = require("gulp"),
             css: 'src/styles/*.scss',
             php: 'src/scripts/php/*.php',
             img: 'src/images/*.png',
+            gallery: 'src/gallery/*',
             svg: 'src/SVG/*.svg',
             fonts: 'src/fonts/*.ttf',
             js: 'src/scripts/js/*.js',
@@ -61,6 +62,7 @@ var gulp = require("gulp"),
             css: 'build/styles/',
             php: 'build/scripts/php/',
             img: 'build/images/',
+            gallery: 'build/gallery',
             svg: 'build/SVG/',
             fonts: 'build/fonts/',
             js: 'build/scripts/js/',
@@ -101,6 +103,7 @@ var gulp = require("gulp"),
                 'src/admin/styles/templates/*.scss'
             ],
             images: 'src/images/*.png',
+            gallery: 'src/gallery/*',
             svg: 'src/SVG/*.svg',
             docs: 'src/docs/*'
         },
@@ -115,6 +118,7 @@ var gulp = require("gulp"),
             css: '/styles/',
             php: '/scripts/php/',
             img: '/images/',
+            gallery: '/gallery/',
             svg: '/SVG/',
             fonts: '/fonts/',
             js: '/scripts/js/',
@@ -254,8 +258,8 @@ gulp.task('css:build', function () {
 //Збірка картинок
 gulp.task('img:build', function () {
     gulp.src(path.src.img)
-        .pipe(image())
         .pipe(connectToFtp.newer(path.ftp.img))
+        .pipe(image())
         .pipe(connectToFtp.dest(path.ftp.img))
         .pipe(gulp.dest(path.build.img));
 });
@@ -265,6 +269,12 @@ gulp.task('svg:build', function () {
         .pipe(connectToFtp.newer(path.ftp.svg))
         .pipe(connectToFtp.dest(path.ftp.svg))
         .pipe(gulp.dest(path.build.svg));
+});
+
+gulp.task('gallery:build', function () {
+    gulp.src(path.src.gallery)
+        .pipe(connectToFtp.dest(path.ftp.gallery))
+        .pipe(gulp.dest(path.build.gallery));
 });
 
 //Збірка шрифтів

@@ -9,10 +9,10 @@ html {
 }
 
 body {
+  @import "templates/header";
   background: {
     image: url("../images/bg.png");
     size: 100%;
     position: top;
-    repeat: no-repeat;
   }
 }

@@ -43,7 +43,7 @@ var main = function () {
             'margin-top':
                 (aboutUsOverflowedBlock.get(0).getBoundingClientRect().top -
                 aboutUs.get(0).getBoundingClientRect().top
-                - 50) * -1 + 'px',
+                - 70) * -1 + 'px',
             'min-height': ($(window).height() * 0.52) + 'px',
             'margin-bottom': aboutUs.height() + 'px'
         });

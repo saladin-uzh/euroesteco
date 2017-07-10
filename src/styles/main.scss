@@ -17,6 +17,9 @@ body {
   overflow: {
     x: hidden;
   }
+  font: {
+    family: sans-serif;
+  }
 
   #up-btn {
     position: fixed;
@@ -41,8 +44,26 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 20%;
+        padding: 0 30%;
         align-items: center;
+        color: $grey;
+
+        .introducing-heading {
+          font: {
+            size: $line * 4;
+          }
+          margin: 0;
+        }
+
+        hr {
+          width: 100%;
+          height: $line * 0.3;
+          margin: $line * 2 0;
+          background: {
+            color: $grey;
+          }
+          border: none;
+        }
       }
     }
   }

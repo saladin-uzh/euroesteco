@@ -5,6 +5,10 @@ footer {
   width: 100%;
   min-height: $line * 20;
   color: $light;
+  background: {
+    image: url('../images/footer.png');
+    size: 100%;
+  }
 
   article {
     height: $line * 6;

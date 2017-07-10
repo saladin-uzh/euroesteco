@@ -7,11 +7,6 @@ header {
   align-items: center;
   width: 100%;
   min-height: $line * 15;
-  border: {
-    style: solid;
-    color: red;
-    width: $line / 2;
-  }
 
   .logo-link {
     text: {
@@ -59,12 +54,30 @@ header {
       font: {
         size: $line * 2;
       }
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
 
       &:hover {
         background: {
-          color: transparentize($brown, 0.7);
+          color: #A69371;
         }
       }
+    }
+  }
+
+  #language-box {
+
+    .language-btn {
+      padding: $line * 2 $line *4;
+      background: {
+        color: $brown;
+      }
+    }
+
+    nav {
+      display: none;
     }
   }
 }

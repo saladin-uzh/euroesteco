@@ -9,8 +9,8 @@ var main = function () {
 
     menuItem.each(function() {
         var location = window.location.href,
-            link = this.href;
-        if(location == link) {
+            link = $(this).attr('href');
+        if (location == link) {
             $(this).addClass('current');
         }
     });
@@ -23,11 +23,12 @@ var main = function () {
         var page = $('html, body');
         page.animate({
             scrollTop: 0
-        }, 1000, 'swing');
+        }, $(window).scrollTop(), 'swing');
     });
 
-    var responsive = function (scrollPosition) {
+    var responsive = function () {
         var introduction = $('main > section.introducing'),
+            introductionHeading = introduction.children('.introducing-heading'),
             header = $('header'),
             aboutUs = $('main > section.about-us'),
             aboutUsOverflowedBlock = aboutUs.children('.about-us-item:nth-of-type(2)'),
@@ -42,12 +43,16 @@ var main = function () {
         aboutUs.css({
             'margin-top':
                 (aboutUsOverflowedBlock.get(0).getBoundingClientRect().top -
-                aboutUs.get(0).getBoundingClientRect().top
-                - 70) * -1 + 'px',
-            'min-height': ($(window).height() * 0.52) + 'px',
+                aboutUs.get(0).getBoundingClientRect().top - 70) * -1 + 'px',
+            'min-height': ($(window).height() * 0.55) + 'px',
             'margin-bottom': aboutUs.height() + 'px'
         });
-        introduction.css('height', ($(window).height()) + 'px');
+        introduction.css({
+            'height': $(window).height() + 'px'
+        });
+        introductionHeading.css({
+            'margin-top': (header.height() + ($(window).height() / 10)) + 'px'
+        });
         advantagesBottomItemsCircles.css('height', advantagesBottomItemsCircles.width() + 'px');
         advantagesTopItems.css('max-height', (advantagesTopItemsCircles.height() * 1.6) + 'px');
         advantages.css('margin-bottom', (advantages.height() / 2) + 'px');
@@ -55,15 +60,11 @@ var main = function () {
             'height': (advantages.height() / 2) + 'px',
             'max-height': (advantages.height() / 2) + 'px'
         });
-
-        $(window).scrollTop(scrollPosition);
     };
 
-    responsive(0);
-    $(window).resize(function () {
-        var scrollPosition = $(window).scrollTop();
-        responsive(scrollPosition);
-    });
+    responsive();
+    $(window).scrollTop(0);
+    $(window).resize(responsive);
 };
 
 $(document).ready(main);

@@ -41,7 +41,6 @@ header {
   .main-menu {
     margin: auto;
     display: flex;
-    align-items: center;
     width: 65%;
     border: {
       top: $line / 3 solid $light;
@@ -49,15 +48,19 @@ header {
     }
 
     .menu-item {
-      padding: $line * 1.6 $line;
+      padding: $line * 1.5 0;
       flex-grow: 1;
+      min-width: 12%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text: {
         decoration: none;
         align: center;
       }
       color: $light;
       font: {
-        size: $line * 1.8;
+        size: $line * 1.5;
         family: Tahoma;
       }
       transition: {

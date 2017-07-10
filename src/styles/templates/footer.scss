@@ -73,11 +73,24 @@ footer {
     }
 
     .socials-item {
-      color: $light;
+      color: darken($light, 20%);
       text: {
         decoration: none;
       }
+      font: {
+        family: Ico;
+        size: $line * 4;
+      }
       padding: $line / 2 $line * 2;
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+
+      &:hover {
+        color: $light;
+        text-shadow: $line / 5 $line / 5 $line / 5 $grey;
+      }
     }
   }
 

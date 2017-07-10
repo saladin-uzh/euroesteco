@@ -209,9 +209,16 @@ body {
               .advantages-img {
                 color: $darkBrown;
                 font: {
+                  family: Ico;
                   size: $line * 9;
                 }
                 padding: $line;
+                margin: $line 0 0;
+                transition: {
+                  duration: $time;
+                  timing-function: linear;
+                }
+                cursor: default;
               }
 
               .advantages-heading {
@@ -222,22 +229,31 @@ body {
                   family: sans-serif;
                 }
               }
+
+              &:hover {
+
+                .advantages-img {
+                  color: $light;
+                }
+              }
             }
           }
         }
 
         .arrow {
           position: absolute;
-          bottom: 45%;
+          bottom: 47%;
           color: $darkBrown;
           font: {
-            size: $line * 10;
+            family: Ico;
+            size: $line * 7;
+            weight: bold;
           }
 
           @for $i from 1 through 4 {
             &:nth-of-type(#{$i}) {
               @if $i == 2 or $i == 4 {
-                left: (20% * $i) - 4%;
+                left: (20% * $i) - 3%;
               } @else {
                 left: (20% * $i) - 2.5%;
               }

@@ -1,7 +1,7 @@
 #feedback-btn {
   position: fixed;
-  bottom: 40%;
-  left: $line * 2;
+  bottom: $line * 4;
+  left: $line * 4;
   @include button($brown);
   z-index: 1;
 }

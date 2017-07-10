@@ -238,7 +238,7 @@ gulp.task('css:build', function () {
         .pipe(cssComb())
         .pipe(autoPrefix({
             browsers: ['last 40 versions', '> 90%'],
-            remove: false
+            remove: true
         }))
         .pipe(connectToFtp.newer(path.ftp.css))
         .pipe(connectToFtp.dest(path.ftp.css))

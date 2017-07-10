@@ -1,7 +1,7 @@
 #up-btn {
   position: fixed;
-  bottom: 10%;
-  right: $line * 2;
+  bottom: $line * 4;
+  right: $line * 4;
   @include button($brown);
   z-index: 1;
 }

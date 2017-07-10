@@ -93,16 +93,16 @@ header {
         color: $brown;
       }
       color: $light;
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+      cursor: pointer;
 
       &:hover {
         color: $brown;
         background: {
           color: $light;
-        }
-        cursor: pointer;
-        transition: {
-          duration: $time;
-          timing-function: linear;
         }
       }
     }
@@ -115,7 +115,6 @@ header {
       overflow: {
         y: hidden;
       }
-
 
       .language-item {
         padding: $line * 1.5;
@@ -133,14 +132,25 @@ header {
           style: solid;
           color: $brown;
         }
-        transform: translateY(-500%);
+        opacity: 0;
+        transition: {
+          duration: $time;
+          timing-function: linear;
+        }
+        //transform: translateY(-500%);
+
+        //@for $i from 1 through 4 {
+        //  &:nth-child(#{$i}) {
+        //    transition: {
+        //      duration: ($i / 2) * $time;
+        //      timing-function: ease-out;
+        //    }
+        //  }
+        //}
 
         @for $i from 1 through 4 {
-          &:nth-child(#{$i}) {
-            transition: {
-              duration: ($i / 2) * $time;
-              timing-function: ease-out;
-            }
+          &:nth-of-type(#{$i}) {
+            transform: translateY(-100% * $i);
           }
         }
 
@@ -159,14 +169,14 @@ header {
           transform: translateY(0);
           opacity: 1;
 
-          @for $i from 1 through 4 {
-            &:nth-child(#{5 - $i}) {
-              transition: {
-                duration: ($i / 1.5) * $time;
-                timing-function: ease-out;
-              }
-            }
-          }
+          //@for $i from 1 through 4 {
+          //  &:nth-child(#{5 - $i}) {
+          //    transition: {
+          //      duration: ($i / 1.5) * $time;
+          //      timing-function: ease-out;
+          //    }
+          //  }
+          //}
         }
       }
     }

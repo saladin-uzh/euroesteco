@@ -1,21 +1,44 @@
 footer {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  padding: 5% 0 0;
   width: 100%;
   min-height: $line * 20;
   color: $light;
   background: {
-    image: url('../images/footer.png');
-    size: 100%;
+    color: darken($grey, 15%);
+    image: url('../../images/footer.png');
+    size: 100% 100%;
+    blend-mode: overlay;
   }
+  box-shadow: 0 $line / 10 $line 0 $light;
 
   article {
-    height: $line * 6;
+    position: relative;
+    margin: 0;
+    flex-basis: 20%;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 50%;
+      height: $line / 2;
+      background: {
+        color: $light;
+      }
+      position: absolute;
+      bottom: 110%;
+      left: 25%;
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+    }
   }
 
   .contacts {
-    flex-basis: 15%;
 
     .contacts-heading,
     .contacts-number {
@@ -26,7 +49,7 @@ footer {
 
     .contacts-heading {
       font: {
-        size: $line * 1.8;
+        size: $line * 1.5;
         weight: bold;
         family: Tahoma;
       }
@@ -34,15 +57,16 @@ footer {
   }
 
   .socials {
-    padding: 0 0 $line * 2 0;
-    flex-basis: 15%;
+    text: {
+      align: center;
+    }
 
     .socials-heading {
       text: {
         align: center;
       }
       font: {
-        size: $line * 1.8;
+        size: $line * 1.5;
         weight: bold;
         family: Tahoma;
       }
@@ -53,15 +77,14 @@ footer {
       text: {
         decoration: none;
       }
-      margin: 0 0 0 $line / 2;
       padding: $line / 2 $line * 2;
     }
   }
 
   .developers {
-    flex-basis: 15%;
 
     .developers-link {
+      padding: $line / 2 0 0;
       position: relative;
       display: block;
       width: 100%;
@@ -85,22 +108,21 @@ footer {
 
       &::before {
         display: block;
-        margin: 0 0 $line / 2 0;
-        content: "© 2017 Developed by :";
+        content: "© 2017 Developed by: ";
         color: $light;
         font: {
-          size: $line * 1.8;
+          size: $line * 1.5;
         }
       }
 
       &::after {
         position: absolute;
-        left: -2%;
-        bottom: -60%;
+        right: 10%;
+        top: 100%;
         display: block;
         content: "";
-        width: 110%;
-        height: 6%;
+        width: 80%;
+        height: $line / 2;
         background: {
           color: $light;
         }
@@ -108,12 +130,16 @@ footer {
       }
 
       img {
-        margin: 0 auto;
-        width: 100%;
+        margin: $line / 2 auto;
+        width: 80%;
       }
     }
 
     &:hover {
+
+      &::before {
+        transform: scaleX(1.75);
+      }
 
       .developers-link {
         transform: translateY(-$line * 2.5) scale(1.1);

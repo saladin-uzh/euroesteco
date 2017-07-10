@@ -20,7 +20,8 @@ $light: #FFF;
     color: $light;
   }
   font: {
-    weight: bold;
+    family: Ico;
+    size: $line * 3;
   }
   outline: none;
   transition: {
@@ -34,4 +35,9 @@ $light: #FFF;
       color: $color;
     }
   }
+}
+
+@font-face {
+  src: url('../../fonts/icomoon.ttf');
+  font-family: Ico;
 }

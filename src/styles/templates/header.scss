@@ -7,8 +7,11 @@ header {
   align-items: center;
   width: 100%;
   min-height: $line * 15;
+  padding: $line * 3 0;
+
 
   .logo-link {
+    margin: 0 0 0 $line * 5;
     text: {
       decoration: none;
       align: center;
@@ -36,8 +39,9 @@ header {
   }
 
   .main-menu {
+    margin: 0 auto;
     display: flex;
-    width: 65%;
+    width: 60%;
     border: {
       top: $line / 3 solid $light;
       bottom: $line / 3 solid $light;
@@ -50,9 +54,10 @@ header {
         align: center;
       }
       color: $light;
-      padding: $line;
+      padding: $line * 1.5 $line;
       font: {
-        size: $line * 2;
+        size: $line * 1.8;
+        family: Tahoma;
       }
       transition: {
         duration: $time;
@@ -68,16 +73,42 @@ header {
   }
 
   #language-box {
+    position: relative;
+    margin:  0 $line * 5 0 0;
 
     .language-btn {
       padding: $line * 2 $line *4;
       background: {
         color: $brown;
       }
+      color: $light;
     }
 
     nav {
-      display: none;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+
+      .language-item {
+        padding: $line * 1.5;
+        color: $brown;
+        text: {
+          decoration: none;
+          align: center;
+        }
+        background: {
+          color: $light;
+        }
+        border: {
+          bottom: $line / 5 solid $brown;
+          right: $line / 5 solid $brown;
+          left: $line / 5 solid $brown;
+        }
+      }
+
+      &:hover {}
     }
   }
 }

@@ -1,0 +1,16 @@
+#up-btn {
+  position: fixed;
+  bottom: 25%;
+  right: $line * 4;
+  width: $line * 4;
+  height: $line * 4;
+  background: {
+    color: transparentize($brown, 0.3);
+  }
+  border: {
+    radius: 50%;
+    style: solid;
+    width: $line / 5;
+    color: $light;
+  }
+}

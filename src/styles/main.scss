@@ -14,6 +14,9 @@ body {
     size: 100%;
     position: top;
   }
+  overflow: {
+    x: hidden;
+  }
 
   #up-btn {
     position: fixed;
@@ -33,6 +36,14 @@ body {
     > section {
       height: 100%;
       border: 1px solid blue;
+
+      &.introducing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20%;
+        align-items: center;
+      }
     }
   }
 }

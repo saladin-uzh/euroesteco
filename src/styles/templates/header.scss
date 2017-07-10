@@ -39,22 +39,23 @@ header {
   }
 
   .main-menu {
-    margin: 0 auto;
+    margin: auto;
     display: flex;
-    width: 60%;
+    align-items: center;
+    width: 65%;
     border: {
       top: $line / 3 solid $light;
       bottom: $line / 3 solid $light;
     }
 
     .menu-item {
+      padding: $line * 1.6 $line;
       flex-grow: 1;
       text: {
         decoration: none;
         align: center;
       }
       color: $light;
-      padding: $line * 1.5 $line;
       font: {
         size: $line * 1.8;
         family: Tahoma;
@@ -64,7 +65,14 @@ header {
         timing-function: linear;
       }
 
-      &:hover {
+      &.current {
+        color: $brown;
+        background: {
+          color: $light;
+        }
+      }
+
+      &:hover:not(.current) {
         background: {
           color: #A69371;
         }
@@ -82,6 +90,18 @@ header {
         color: $brown;
       }
       color: $light;
+
+      &:hover {
+        color: $brown;
+        background: {
+          color: $light;
+        }
+        cursor: pointer;
+        transition: {
+          duration: $time;
+          timing-function: linear;
+        }
+      }
     }
 
     nav {
@@ -89,10 +109,14 @@ header {
       position: absolute;
       display: flex;
       flex-direction: column;
+      overflow: {
+        y: hidden;
+      }
 
 
       .language-item {
         padding: $line * 1.5;
+        margin: $line / 2 0 0 0;
         color: $brown;
         text: {
           decoration: none;
@@ -102,13 +126,46 @@ header {
           color: $light;
         }
         border: {
-          bottom: $line / 5 solid $brown;
-          right: $line / 5 solid $brown;
-          left: $line / 5 solid $brown;
+          width: $line / 4;
+          style: solid;
+          color: $brown;
+        }
+        transform: translateY(-500%);
+
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) {
+            transition: {
+              duration: ($i / 2) * $time;
+              timing-function: ease-out;
+            }
+          }
+        }
+
+        &:hover {
+          color: $light;
+          background: {
+            color: $brown;
+          }
+          transition: {
+            duration: $time;
+            timing-function: linear;
+          }
+        }
+
+        &.active {
+          transform: translateY(0);
+          opacity: 1;
+
+          @for $i from 1 through 4 {
+            &:nth-child(#{5 - $i}) {
+              transition: {
+                duration: ($i / 1.5) * $time;
+                timing-function: ease-out;
+              }
+            }
+          }
         }
       }
-
-      &:hover {}
     }
   }
 }

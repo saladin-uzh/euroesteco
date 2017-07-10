@@ -2,6 +2,30 @@
  * Created by Saladin on 09.07.2017.
  */
 var main = function () {
+    var menuItem = $('.menu-item'),
+        languageButton = $('.language-btn'),
+        languageItem = $('.language-item'),
+        upButton = $('#up-btn');
+
+    menuItem.each(function() {
+        var location = window.location.href,
+            link = this.href;
+        if(location == link) {
+            $(this).addClass('current');
+        }
+    });
+
+    languageButton.click(function() {
+        languageItem.toggleClass('active');
+    });
+
+    upButton.click(function () {
+        var page = $('html, body');
+        page.animate({
+            scrollTop: 0
+        }, 1000, 'swing');
+    });
+
     var responsive = function (scrollPosition) {
         var introduction = $('main > section.introducing'),
             header = $('header'),

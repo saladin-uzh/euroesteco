@@ -5,3 +5,33 @@ $brown: #4d3303;
 $darkBrown: #332305;
 $grey: #605E5E;
 $light: #FFF;
+
+@mixin button($color: $brown) {
+  width: $line * 6;
+  height: $line * 6;
+  color: $light;
+  background: {
+    color: transparentize($color, 0.3);
+  }
+  border: {
+    width: $line / 5;
+    radius: 50%;
+    style: solid;
+    color: $light;
+  }
+  font: {
+    weight: bold;
+  }
+  outline: none;
+  transition: {
+    duration: $time;
+    timing-function: linear;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: {
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: $line * 20;
+  background: {
+    color: transparentize($grey, 0.2);
+  }
+  color: $light;
+
+  article {
+    height: $line * 6;
+  }
+
+  .contacts {
+    flex-basis: 15%;
+
+    .contacts-heading,
+    .contacts-number {
+      text: {
+        align: center;
+      }
+    }
+
+    .contacts-heading {
+      font: {
+        size: $line * 1.8;
+        weight: bold;
+        family: Tahoma;
+      }
+    }
+  }
+
+  .socials {
+    padding: 0 0 $line * 2 0;
+    flex-basis: 15%;
+
+    .socials-heading {
+      text: {
+        align: center;
+      }
+      font: {
+        size: $line * 1.8;
+        weight: bold;
+        family: Tahoma;
+      }
+    }
+
+    .social-item {
+
+      a {
+        color: $light;
+        text: {
+          decoration: none;
+        }
+        margin: 0 0 0 $line / 2;
+        padding: $line / 2 $line * 2;
+      }
+    }
+  }
+
+  .developers {
+    flex-basis: 15%;
+
+    .developers-link {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text:{
+        decoration: none;
+        align: center;
+      }
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+
+      &::before,
+      &::after {
+        transition: {
+          duration: $time;
+          timing-function: linear;
+        }
+      }
+
+      &::before {
+        display: block;
+        margin: 0 0 $line / 2 0;
+        content: "© 2017 Developed by :";
+        color: $light;
+        font: {
+          size: $line * 1.8;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        left: -2%;
+        bottom: -60%;
+        display: block;
+        content: "";
+        width: 110%;
+        height: 6%;
+        background: {
+          color: $light;
+        }
+        transform: scaleX(0);
+      }
+
+      img {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    &:hover {
+
+      .developers-link {
+        transform: translateY(-$line * 3) scale(1.1);
+        transform-origin: bottom;
+
+        &::before {
+          transform: scale(0);
+          transform-origin: bottom;
+        }
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: center;
+        }
+      }
+    }
+  }
+}

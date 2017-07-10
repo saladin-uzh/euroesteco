@@ -21,15 +21,9 @@ body {
     family: sans-serif;
   }
 
-  #up-btn {
-    position: fixed;
-  }
-
-  #feedback-btn {
-    position: fixed;
-  }
-
   @import "templates/header";
+  @import "templates/up-button";
+  @import "templates/feedback-button";
 
   main {
     width: 100%;
@@ -334,4 +328,6 @@ body {
       }
     }
   }
+
+  @import "templates/footer";
 }

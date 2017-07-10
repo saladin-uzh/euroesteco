@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: $line * 15;
+  border: {
+    style: solid;
+    color: red;
+    width: $line / 2;
+  }
+
+  .logo-link {
+
+    .logo-caption,
+    .logo-paragraph {
+      line-height: $line * 2;
+      color: $light;
+      text: {
+        decoration: none;
+        align: center;
+      }
+    }
+  }
+}

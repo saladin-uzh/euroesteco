@@ -5,7 +5,10 @@ var main = function () {
     var menuItem = $('.menu-item'),
         languageButton = $('.language-btn'),
         languageItem = $('.language-item'),
-        upButton = $('#up-btn');
+        upButton = $('#up-btn'),
+        feedbackButton = $('#feedback-btn'),
+        feedbackForm = $('.feedback'),
+        feedbackHideButton = $('.close-btn');
 
     menuItem.each(function() {
         var location = window.location.href,
@@ -24,6 +27,14 @@ var main = function () {
         page.animate({
             scrollTop: 0
         }, $(window).scrollTop(), 'swing');
+    });
+
+    feedbackButton.click(function() {
+        feedbackForm.toggleClass('slide');
+    });
+
+    feedbackHideButton.click(function() {
+        feedbackForm.removeClass('slide');
     });
 
     var responsive = function () {

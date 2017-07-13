@@ -30,120 +30,122 @@ body {
     padding: 0;
     margin: 0;
 
-    > section {
-      height: 100%;
+    //> section {
+    //  height: 100%;
 
-      &.introducing {
-        display: flex;
-        flex-direction: column;
-        padding: 0 30%;
-        align-items: center;
-        color: $grey;
+      //&.introducing {
+      //  display: flex;
+      //  flex-direction: column;
+      //  padding: 0 30%;
+      //  align-items: center;
+      //  color: $grey;
+      //
+      //  .introducing-heading {
+      //    font: {
+      //      size: $line * 4;
+      //    }
+      //    margin: 0;
+      //  }
+      //
+      //  hr {
+      //    width: 100%;
+      //    height: $line / 5;
+      //    margin: $line * 2 0 $line;
+      //    background: {
+      //      color: $grey;
+      //    }
+      //    border: none;
+      //  }
+      //}
 
-        .introducing-heading {
-          font: {
-            size: $line * 4;
-          }
-          margin: 0;
-        }
+      //&.about-us {
+      //  background: {
+      //    color: $darkBrown;
+      //  }
+      //  display: flex;
+      //  justify-content: center;
+      //  padding: $line * 2;
+      //
+      //  .about-us-item {
+      //    flex-basis: 17%;
+      //    background: {
+      //      color: $light;
+      //    }
+      //    color: $grey;
+      //    display: flex;
+      //    flex-direction: column;
+      //    justify-content: space-around;
+      //    align-items: center;
+      //    padding: $line * 2;
+      //
+      //    &:nth-of-type(2) {
+      //      margin: 0 $line * 3;
+      //      transform: translateY(-30%);
+      //    }
+      //
+      //    .about-us-heading {
+      //      font: {
+      //        size: $line * 2;
+      //        weight: normal;
+      //      }
+      //      margin: $line * 4 0 0;
+      //    }
+      //
+      //    .about-us-paragraph {
+      //      text: {
+      //        align: center;
+      //      }
+      //      font: {
+      //        size: $line * 1.5;
+      //        style: italic;
+      //        family: serif;
+      //      }
+      //      margin: $line * 4 0 $line * 6;
+      //      padding: 0 $line * 2;
+      //    }
+      //
+      //    hr {
+      //      width: 15%;
+      //      height: $line / 5;
+      //      margin: 0 0 $line * 3;
+      //      background: {
+      //        color: $grey;
+      //      }
+      //      border: none;
+      //    }
+      //
+      //    .about-us-btn {
+      //      margin: 0;
+      //      padding: $line * 1.5 0;
+      //      color: $brown;
+      //      text: {
+      //        decoration: none;
+      //        align: center;
+      //      }
+      //      align-self: stretch;
+      //      transition: {
+      //        duration: $time;
+      //        timing-function: linear;
+      //      }
+      //
+      //      &:hover {
+      //        color: $light;
+      //        background: {
+      //          color: $brown;
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
 
-        hr {
-          width: 100%;
-          height: $line / 5;
-          margin: $line * 2 0 $line;
-          background: {
-            color: $grey;
-          }
-          border: none;
-        }
-      }
-
-      &.about-us {
-        background: {
-          color: $darkBrown;
-        }
-        display: flex;
-        justify-content: center;
-        padding: $line * 2;
-
-        .about-us-item {
-          flex-basis: 17%;
-          background: {
-            color: $light;
-          }
-          color: $grey;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          padding: $line * 2;
-
-          &:nth-of-type(2) {
-            margin: 0 $line * 3;
-            transform: translateY(-30%);
-          }
-
-          .about-us-heading {
-            font: {
-              size: $line * 2;
-              weight: normal;
-            }
-            margin: $line * 4 0 0;
-          }
-
-          .about-us-paragraph {
-            text: {
-              align: center;
-            }
-            font: {
-              size: $line * 1.5;
-              style: italic;
-              family: serif;
-            }
-            margin: $line * 4 0 $line * 6;
-            padding: 0 $line * 2;
-          }
-
-          hr {
-            width: 15%;
-            height: $line / 5;
-            margin: 0 0 $line * 3;
-            background: {
-              color: $grey;
-            }
-            border: none;
-          }
-
-          .about-us-btn {
-            margin: 0;
-            padding: $line * 1.5 0;
-            color: $brown;
-            text: {
-              decoration: none;
-              align: center;
-            }
-            align-self: stretch;
-            transition: {
-              duration: $time;
-              timing-function: linear;
-            }
-
-            &:hover {
-              color: $light;
-              background: {
-                color: $brown;
-              }
-            }
-          }
-        }
-      }
-
-      &.advantages {
+      .advantages {
+        margin: 15% 0 15% 0;
+        min-height: $line * 20;
         position: relative;
         display: flex;
         justify-content: space-between;
         background: {
-          color: transparentize($light, 0.1);
+          color: transparentize($light, 0.3);
         }
 
         .advantages-item {
@@ -201,7 +203,8 @@ body {
               border: {
                 radius: 50%;
               }
-              width: 65%;
+              width: $line * 20;
+              height: $line * 20;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -262,85 +265,85 @@ body {
         }
       }
       
-      &.gallery {
-        background: {
-          color: transparentize($brown, 0.2);
-        }
-        padding: 0 10%;
-        text: {
-          align: center;
-        }
-
-        .gallery-heading {
-          display: inline-block;
-          background: {
-            color: $light;
-          }
-          font: {
-            size: $line * 3.5;
-          }
-          color: $brown;
-          margin: 0 0 $line * 2;
-          padding: $line / 2 $line * 5;
-        }
-
-        .gallery-box {
-          position: relative;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: flex-start;
-
-          .gallery-item {
-            position: relative;
-            flex-basis: 20%;
-            max-width: 20%;
-            margin: 0 $line * 2 $line * 2 0;
-            padding: 0;
-            border: $line / 2 solid $grey;
-            overflow: {
-              x: hidden;
-              y: hidden;
-            }
-            cursor: pointer;
-
-            img {
-              display: block;
-              margin: 0;
-              padding: 0;
-              min-height: 100%;
-              width: 100%;
-            }
-
-            figcaption {
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              text: {
-                align: center;
-              }
-              background: {
-                color: transparentize($grey, 0.2);
-              }
-              padding: $line / 2 0;
-              color: $light;
-              transform: translateY(100%);
-              transition: {
-                duration: $time;
-                timing-function: linear;
-              }
-            }
-
-            &:hover {
-
-              figcaption {
-                transform: translateY(0);
-              }
-            }
-          }
-        }
-      }
-    }
+      //&.gallery {
+      //  background: {
+      //    color: transparentize($brown, 0.2);
+      //  }
+      //  padding: 0 10%;
+      //  text: {
+      //    align: center;
+      //  }
+      //
+      //  .gallery-heading {
+      //    display: inline-block;
+      //    background: {
+      //      color: $light;
+      //    }
+      //    font: {
+      //      size: $line * 3.5;
+      //    }
+      //    color: $brown;
+      //    margin: 0 0 $line * 2;
+      //    padding: $line / 2 $line * 5;
+      //  }
+      //
+      //  .gallery-box {
+      //    position: relative;
+      //    display: flex;
+      //    flex-wrap: wrap;
+      //    justify-content: center;
+      //    align-items: flex-start;
+      //
+      //    .gallery-item {
+      //      position: relative;
+      //      flex-basis: 20%;
+      //      max-width: 20%;
+      //      margin: 0 $line * 2 $line * 2 0;
+      //      padding: 0;
+      //      border: $line / 2 solid $grey;
+      //      overflow: {
+      //        x: hidden;
+      //        y: hidden;
+      //      }
+      //      cursor: pointer;
+      //
+      //      img {
+      //        display: block;
+      //        margin: 0;
+      //        padding: 0;
+      //        min-height: 100%;
+      //        width: 100%;
+      //      }
+      //
+      //      figcaption {
+      //        position: absolute;
+      //        bottom: 0;
+      //        width: 100%;
+      //        text: {
+      //          align: center;
+      //        }
+      //        background: {
+      //          color: transparentize($grey, 0.2);
+      //        }
+      //        padding: $line / 2 0;
+      //        color: $light;
+      //        transform: translateY(100%);
+      //        transition: {
+      //          duration: $time;
+      //          timing-function: linear;
+      //        }
+      //      }
+      //
+      //      &:hover {
+      //
+      //        figcaption {
+      //          transform: translateY(0);
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
+    //}
   }
 
   @import "templates/footer";

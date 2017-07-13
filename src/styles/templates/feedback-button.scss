@@ -8,6 +8,8 @@
 
 .feedback {
   position: fixed;
+  top: 0;
+  left: 0;
   overflow: {
     y: hidden;
     x: hidden;
@@ -17,7 +19,7 @@
   background: {
     color: transparentize(black, 0.2);
   }
-  transform: translateY(-200%);
+  transform: translateY(200%);
   transition: {
     duration: $time * 2;
     timing-function: ease-out;

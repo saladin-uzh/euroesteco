@@ -10,9 +10,10 @@ html {
 
 body {
   background: {
-    image: url("../images/bg.png");
+    image: url("../images/bg-5.png");
     size: 100%;
     position: top;
+    repeat: no-repeat;
   }
   overflow: {
     x: hidden;
@@ -139,13 +140,13 @@ body {
       //}
 
       .advantages {
-        margin: 15% 0 15% 0;
+        margin: 10% 0 10% 0;
         min-height: $line * 20;
         position: relative;
         display: flex;
         justify-content: space-between;
         background: {
-          color: transparentize($light, 0.3);
+          color: transparentize($light, 0.5);
         }
 
         .advantages-item {

@@ -1,199 +1,166 @@
 footer {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   min-height: $line * 20;
   color: $light;
   background: {
-    color: darken($grey, 15%);
-    image: url('../../images/footer.png');
-    size: 100% 100%;
-    blend-mode: overlay;
+    color: transparentize(darken($grey, 15%), 0.5);
   }
   box-shadow: 0 $line / 10 $line 0 $light;
 
-  .footer-top {
-    align-self: center;
-    width: 65%;
-    margin: 0 0 $line 0;
+  article {
+    position: relative;
+    margin: 0;
+    flex-basis: 20%;
 
-    .footer-top-heading,
-    .footer-top-paragraph {
-      text-align: center;
+    &::before {
+      display: block;
+      content: '';
+      width: 50%;
+      height: $line / 2;
+      background: {
+        color: $light;
+      }
+      position: absolute;
+      bottom: 110%;
+      left: 25%;
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+    }
+  }
+
+  .contacts {
+
+    .contacts-heading,
+    .contacts-number {
+      text: {
+        align: center;
+      }
+    }
+
+    .contacts-heading {
       font: {
+        size: $line * 1.5;
+        weight: bold;
+        family: Tahoma;
+      }
+    }
+  }
+
+  .socials {
+    text: {
+      align: center;
+    }
+
+    .socials-heading {
+      text: {
+        align: center;
+      }
+      font: {
+        size: $line * 1.5;
+        weight: bold;
         family: Tahoma;
       }
     }
 
-    .footer-top-paragraph {
+    .socials-item {
+      color: darken($light, 20%);
+      text: {
+        decoration: none;
+      }
       font: {
-        size: $line * 1.5;
+        family: Ico;
+        size: $line * 4;
+      }
+      padding: $line / 2 $line * 2;
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+
+      &:hover {
+        color: $light;
+        text-shadow: $line / 5 $line / 5 $line / 5 $grey;
       }
     }
   }
 
-  .footer-bottom {
-    margin: 0 0 $line / 2 0;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  .developers {
 
-
-    article {
+    .developers-link {
+      padding: $line / 2 0 0;
       position: relative;
-      margin: 0;
-      flex-basis: 20%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text:{
+        decoration: none;
+        align: center;
+      }
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+
+      &::before,
+      &::after {
+        transition: {
+          duration: $time;
+          timing-function: linear;
+        }
+      }
 
       &::before {
         display: block;
-        content: '';
-        width: 50%;
+        content: "© 2017 Developed by: ";
+        color: $light;
+        font: {
+          size: $line * 1.5;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        right: 10%;
+        top: 100%;
+        display: block;
+        content: "";
+        width: 80%;
         height: $line / 2;
         background: {
           color: $light;
         }
-        position: absolute;
-        bottom: 110%;
-        left: 25%;
-        transition: {
-          duration: $time;
-          timing-function: linear;
-        }
+        transform: scaleX(0);
+      }
+
+      img {
+        margin: $line / 2 auto;
+        width: 80%;
       }
     }
 
-    .contacts {
+    &:hover {
 
-      .contacts-heading,
-      .contacts-number {
-        text: {
-          align: center;
-        }
+      &::before {
+        transform: scaleX(1.75);
       }
-
-      .contacts-heading {
-        font: {
-          size: $line * 1.5;
-          weight: bold;
-          family: Tahoma;
-        }
-      }
-    }
-
-    .socials {
-      text: {
-        align: center;
-      }
-
-      .socials-heading {
-        text: {
-          align: center;
-        }
-        font: {
-          size: $line * 1.5;
-          weight: bold;
-          family: Tahoma;
-        }
-      }
-
-      .socials-item {
-        color: darken($light, 20%);
-        text: {
-          decoration: none;
-        }
-        font: {
-          family: Ico;
-          size: $line * 4;
-        }
-        padding: $line / 2 $line * 2;
-        transition: {
-          duration: $time;
-          timing-function: linear;
-        }
-
-        &:hover {
-          color: $light;
-          text-shadow: $line / 5 $line / 5 $line / 5 $grey;
-        }
-      }
-    }
-
-    .developers {
 
       .developers-link {
-        padding: $line / 2 0 0;
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 100%;
-        text:{
-          decoration: none;
-          align: center;
-        }
-        transition: {
-          duration: $time;
-          timing-function: linear;
-        }
-
-        &::before,
-        &::after {
-          transition: {
-            duration: $time;
-            timing-function: linear;
-          }
-        }
+        transform: translateY(-$line * 2.5) scale(1.1);
+        transform-origin: bottom;
 
         &::before {
-          display: block;
-          content: "© 2017 Developed by: ";
-          color: $light;
-          font: {
-            size: $line * 1.5;
-          }
-        }
-
-        &::after {
-          position: absolute;
-          right: 10%;
-          top: 100%;
-          display: block;
-          content: "";
-          width: 80%;
-          height: $line / 2;
-          background: {
-            color: $light;
-          }
-          transform: scaleX(0);
-        }
-
-        img {
-          margin: $line / 2 auto;
-          width: 80%;
-        }
-      }
-
-      &:hover {
-
-        &::before {
-          transform: scaleX(1.75);
-        }
-
-        .developers-link {
-          transform: translateY(-$line * 2.5) scale(1.1);
+          transform: scale(0);
           transform-origin: bottom;
+        }
 
-          &::before {
-            transform: scale(0);
-            transform-origin: bottom;
-          }
-
-          &::after {
-            transform: scaleX(1);
-            transform-origin: center;
-          }
+        &::after {
+          transform: scaleX(1);
+          transform-origin: center;
         }
       }
     }

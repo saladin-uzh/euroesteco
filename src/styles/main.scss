@@ -9,8 +9,10 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: {
-    image: url("../images/bg-5.png");
+    image: url("../images/bg-3.png");
     size: 100%;
     position: top;
     repeat: no-repeat;
@@ -27,6 +29,7 @@ body {
   @import "templates/feedback-button";
 
   main {
+    flex-grow: 1;
     width: 100%;
     padding: 0;
     margin: 0;

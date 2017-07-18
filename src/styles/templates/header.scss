@@ -111,6 +111,8 @@ header {
       overflow: {
         y: hidden;
       }
+      z-index: 1
+    ;
 
       .language-item {
         padding: $line * 1.5;

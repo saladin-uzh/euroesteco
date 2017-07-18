@@ -8,7 +8,8 @@ var main = function () {
         upButton = $('#up-btn'),
         feedbackButton = $('#feedback-btn'),
         feedbackForm = $('.feedback'),
-        feedbackHideButton = $('.close-btn');
+        feedbackHideButton = $('.close-btn'),
+        feedbackInput = $('#feedback-form input, #message');
 
     menuItem.each(function() {
         var location = window.location.href,
@@ -35,6 +36,17 @@ var main = function () {
 
     feedbackHideButton.click(function() {
         feedbackForm.removeClass('slide');
+    });
+
+    feedbackInput.focus(function() {
+        var current = $(this);
+        current.removeAttr('placeholder');
+    });
+
+    feedbackInput.blur(function () {
+       var current = $(this),
+           text = current.data('placeholder');
+       current.attr('placeholder', text);
     });
 
     var responsive = function () {

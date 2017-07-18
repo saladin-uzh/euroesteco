@@ -71,6 +71,7 @@
 
 
     &:hover {
+      cursor: pointer;
       outline: {
         width: $line / 2;
         style: solid;
@@ -122,15 +123,20 @@
       }
       border: {
         style: none;
-        bottom: $line / 3 solid $brown;
+        bottom: $line / 2 solid $brown;
       }
       color: $brown;
       background: {
         color: $light;
       }
+      transition: {
+        duration: $time / 2;
+        timing-function: linear;
+      }
 
       &:focus {
         outline: none;
+        box-shadow: inset 0 $line / 3 * -1 $line $line * -1 / 5 $brown;
       }
     }
 
@@ -160,6 +166,7 @@
     }
 
     #message {
+      padding-top: $line;
       margin: 0 0 $line / 2 0;
     }
 

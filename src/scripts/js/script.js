@@ -14,7 +14,7 @@ var main = function () {
     menuItem.each(function() {
         var location = window.location.href,
             link = $(this).attr('href');
-        if (location == link) {
+        if (location === link) {
             $(this).addClass('current');
         }
     });

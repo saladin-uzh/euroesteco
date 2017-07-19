@@ -177,7 +177,7 @@ header {
           transform: scaleY(0);
         }
 
-        &:hover {
+        &:hover:not(.current-language) {
           color: $light;
           background: {
             color: $green;

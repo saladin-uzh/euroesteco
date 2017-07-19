@@ -9,11 +9,12 @@ html {
 }
 
 body {
+  @import "templates/preloader";
   @include noScroll();
   display: flex;
   flex-direction: column;
   background: {
-    image: url("../images/bgm-2.png");
+    image: url("../images/bgm-1.png");
     size: cover;
     position: center;
     repeat: no-repeat;
@@ -26,7 +27,6 @@ body {
     family: sans-serif;
   }
 
-  @import "templates/preloader";
   @import "templates/header";
   @import "templates/up-button";
   @import "templates/feedback-button";
@@ -65,8 +65,23 @@ body {
   @import "templates/footer";
 
   &.visible {
-    animation: {
-      name: logo;
+
+    .logo-link {
+      animation: {
+        name: logo;
+      }
+    }
+
+    footer {
+      animation: {
+        name: footer;
+      }
+    }
+
+    #feedback-btn {
+      animation: {
+        name: feedbackButtonDisplay, feedbackButtonPulse;
+      }
     }
   }
 }

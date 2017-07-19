@@ -7,13 +7,21 @@ header {
   padding: $line * 2 0;
 
   .logo-link {
-    opacity: 0;
+    visibility: hidden;
+    transform-origin: 20% center;
     margin: 0 0 0 $line * 5;
     text: {
       decoration: none;
       align: center;
     }
     line-height: $line / 2;
+
+    animation: {
+      duration: $time * 2;
+      timing-function: cubic-bezier(.7,0,.3,1);
+      delay: $time * 10;
+      fill-mode: forwards;
+    }
 
     .logo-caption,
     .logo-paragraph {
@@ -129,21 +137,9 @@ header {
           color: $light;
         }
         opacity: 0;
-        transition: {
-          property: transform, opacity;
-          duration: $time, $time;
-          timing-function: linear, linear;
-        }
-        //transform: translateY(-500%);
-
-        //@for $i from 1 through 4 {
-        //  &:nth-child(#{$i}) {
-        //    transition: {
-        //      duration: ($i / 2) * $time;
-        //      timing-function: ease-out;
-        //    }
-        //  }
-        //}
+        transition:
+                transform $time ease-in,
+                opacity $time linear;
 
         &.current-language {
           color: $light;

@@ -9,7 +9,8 @@ var main = function () {
         feedbackButton = $('#feedback-btn'),
         feedbackForm = $('.feedback'),
         feedbackHideButton = $('.close-btn'),
-        feedbackInput = $('#feedback-form input, #message');
+        feedbackInput = $('#feedback-form input, #message'),
+        preloader = $('#preloader');
 
     menuItem.each(function() {
         var location = window.location.href,
@@ -60,45 +61,14 @@ var main = function () {
        current.attr('placeholder', text);
     });
 
-    var responsive = function () {
-        var introduction = $('main > section.introducing'),
-            introductionHeading = introduction.children('.introducing-heading'),
-            header = $('header'),
-            aboutUs = $('main > section.about-us'),
-            aboutUsOverflowedBlock = aboutUs.children('.about-us-item:nth-of-type(2)'),
-            advantages = $('main > section.advantages'),
-            advantagesBottomItems = advantages.children('.advantages-item.bottom'),
-            advantagesTopItems = advantages.children('.advantages-item.top'),
-            advantagesTopItemsCircles = advantagesTopItems.children('.advantages-img'),
-            advantagesBottomItemsCircles = advantagesBottomItems.children('figure.circle'),
-            gallery = $('main > section.gallery .gallery-box'),
-            galleryItems = gallery.children('figure.gallery-item');
-
-        aboutUs.css({
-            'margin-top':
-                (aboutUsOverflowedBlock.get(0).getBoundingClientRect().top -
-                aboutUs.get(0).getBoundingClientRect().top - 70) * -1 + 'px',
-            'min-height': ($(window).height() * 0.55) + 'px',
-            'margin-bottom': aboutUs.height() + 'px'
-        });
-        introduction.css({
-            'height': $(window).height() + 'px'
-        });
-        introductionHeading.css({
-            'margin-top': (header.height() + ($(window).height() / 10)) + 'px'
-        });
-        advantagesBottomItemsCircles.css('height', advantagesBottomItemsCircles.width() + 'px');
-        advantagesTopItems.css('max-height', (advantagesTopItemsCircles.height() * 1.6) + 'px');
-        advantages.css('margin-bottom', (advantages.height() / 2) + 'px');
-        galleryItems.css({
-            'height': (advantages.height() / 2) + 'px',
-            'max-height': (advantages.height() / 2) + 'px'
-        });
-    };
-
-    responsive();
     $(window).scrollTop(0);
-    $(window).resize(responsive);
 };
 
 $(document).ready(main);
+
+window.onload = function () {
+    var preloader = document.getElementById('preloader'),
+        page = $('body');
+    preloader.classList.add('loaded');
+    page.addClass('visible');
+};

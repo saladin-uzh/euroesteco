@@ -9,7 +9,13 @@ footer {
   background: {
     color: transparentize(darken($grey, 15%), 0.5);
   }
-  box-shadow: 0 $line / 10 $line 0 $light;
+  transform: translateY(100%);
+  animation: {
+    duration: $time * 2;
+    delay: $time * 14;
+    timing-function: linear;
+    fill-mode: forwards;
+  }
 
   article {
     position: relative;

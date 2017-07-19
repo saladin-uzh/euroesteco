@@ -74,7 +74,135 @@ $light: #FFF;
 }
 
 @keyframes logo {
+  from {
+    visibility: visible;
+    transform:
+            translateY(-200%);
+    opacity: 0;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  75% {
+    visibility: visible;
+    transform:
+            translateY(25%);
+    opacity: 1;
+  }
+
+  90% {
+    visibility: visible;
+    transform:
+            translateY(-10%);
+    opacity: 1;
+  }
+
+  to {
+    visibility: visible;
+    transform:
+            translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes preloader {
+  50% {
+    background: {
+      color: transparent;
+    }
+    z-index: -1000;
+  }
+
+  75% {
+    background: {
+      color: transparent;
+      blend-mode: overlay;
+      size: 100%;
+    }
+    z-index: -1000;
+  }
+
+  90% {
+    background: {
+      color: transparent;
+      blend-mode: overlay;
+      size: 100%;
+    }
+    z-index: -1000;
+    transform: scale(5);
+  }
+
+  99% {
+    background: {
+      color: transparent;
+      blend-mode: overlay;
+      size: 100%;
+    }
+    z-index: -1000;
+    transform: scale(5);
+    opacity: 0;
+  }
+
+  to {
+    background: {
+      color: transparent;
+      blend-mode: overlay;
+      size: 100%;
+    }
+    z-index: -1000;
+    transform: scale(5);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes footer {
+  90% {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  to {
+    transform: translateY(0);
+    box-shadow: 0 $line / 10 $line 0 $light;
+  }
+}
+
+@keyframes feedbackButtonDisplay {
   to {
     opacity: 1;
+  }
+}
+
+@keyframes feedbackButtonPulse {
+  from {
+    box-shadow: 0 0 0 $line / 2 transparentize($light, 0.8);
+  }
+
+  20% {
+    box-shadow: 0 0 0 $line / 2 transparentize($light, 0.8);
+  }
+
+  40% {
+    box-shadow: 0 0 0 $line transparentize($light, 0.8);
+  }
+
+  60% {
+    box-shadow:
+            0 0 0 $line / 2 transparentize($light, 0.8),
+            0 0 0 $line transparentize($light, 0.8);
+  }
+
+  80% {
+    box-shadow:
+            0 0 0 $line transparentize($light, 0.8),
+            0 0 0 $line * 1.5 transparentize($light, 0.8);
+  }
+
+  to {
+    box-shadow: 0 0 0 $line transparentize($light, 0.8);
   }
 }

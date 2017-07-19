@@ -9,12 +9,13 @@ html {
 }
 
 body {
+  @include noScroll();
   display: flex;
   flex-direction: column;
   background: {
-    image: url("../images/bg-3.png");
-    size: 100%;
-    position: top;
+    image: url("../images/bgm-3.png");
+    size: cover;
+    position: center;
     repeat: no-repeat;
   }
   overflow: {
@@ -34,320 +35,132 @@ body {
     padding: 0;
     margin: 0;
 
-    //> section {
-    //  height: 100%;
+    .advantages {
+      margin: 10% 0 10% 0;
+      min-height: $line * 20;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      background: {
+        color: transparentize($light, 0.5);
+      }
 
-      //&.introducing {
-      //  display: flex;
-      //  flex-direction: column;
-      //  padding: 0 30%;
-      //  align-items: center;
-      //  color: $grey;
-      //
-      //  .introducing-heading {
-      //    font: {
-      //      size: $line * 4;
-      //    }
-      //    margin: 0;
-      //  }
-      //
-      //  hr {
-      //    width: 100%;
-      //    height: $line / 5;
-      //    margin: $line * 2 0 $line;
-      //    background: {
-      //      color: $grey;
-      //    }
-      //    border: none;
-      //  }
-      //}
-
-      //&.about-us {
-      //  background: {
-      //    color: $darkBrown;
-      //  }
-      //  display: flex;
-      //  justify-content: center;
-      //  padding: $line * 2;
-      //
-      //  .about-us-item {
-      //    flex-basis: 17%;
-      //    background: {
-      //      color: $light;
-      //    }
-      //    color: $grey;
-      //    display: flex;
-      //    flex-direction: column;
-      //    justify-content: space-around;
-      //    align-items: center;
-      //    padding: $line * 2;
-      //
-      //    &:nth-of-type(2) {
-      //      margin: 0 $line * 3;
-      //      transform: translateY(-30%);
-      //    }
-      //
-      //    .about-us-heading {
-      //      font: {
-      //        size: $line * 2;
-      //        weight: normal;
-      //      }
-      //      margin: $line * 4 0 0;
-      //    }
-      //
-      //    .about-us-paragraph {
-      //      text: {
-      //        align: center;
-      //      }
-      //      font: {
-      //        size: $line * 1.5;
-      //        style: italic;
-      //        family: serif;
-      //      }
-      //      margin: $line * 4 0 $line * 6;
-      //      padding: 0 $line * 2;
-      //    }
-      //
-      //    hr {
-      //      width: 15%;
-      //      height: $line / 5;
-      //      margin: 0 0 $line * 3;
-      //      background: {
-      //        color: $grey;
-      //      }
-      //      border: none;
-      //    }
-      //
-      //    .about-us-btn {
-      //      margin: 0;
-      //      padding: $line * 1.5 0;
-      //      color: $brown;
-      //      text: {
-      //        decoration: none;
-      //        align: center;
-      //      }
-      //      align-self: stretch;
-      //      transition: {
-      //        duration: $time;
-      //        timing-function: linear;
-      //      }
-      //
-      //      &:hover {
-      //        color: $light;
-      //        background: {
-      //          color: $brown;
-      //        }
-      //      }
-      //    }
-      //  }
-      //}
-
-      .advantages {
-        margin: 10% 0 10% 0;
-        min-height: $line * 20;
-        position: relative;
+      .advantages-item {
+        flex-basis: 20%;
+        max-width: 20%;
         display: flex;
-        justify-content: space-between;
-        background: {
-          color: transparentize($light, 0.5);
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        &.top {
+          transform: translateY(-25%);
+
+          .advantages-img {
+            width: 65%;
+            border: {
+              radius: 50%;
+              style: solid;
+              width: $line / 5;
+              color: $brown;
+            }
+            box-shadow: 0 $line / 10 $line / 2 0 $grey;
+          }
+
+          .advantages-heading {
+            color: $brown;
+            font: {
+              size: $line * 2;
+            }
+            margin: $line * 3 0 $line * 2;
+          }
+
+          .advantages-paragraph {
+            margin: 0;
+            padding: 0 $line * 4;
+            font: {
+              size: $line * 1.3;
+              style: italic;
+            }
+            text: {
+              align: center;
+            }
+            color: $grey;
+          }
         }
 
-        .advantages-item {
-          flex-basis: 20%;
-          max-width: 20%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 0;
+        &.bottom {
+          justify-content: flex-end;
+          transform: translateY(13%);
 
-          &.top {
-            transform: translateY(-25%);
+          .circle {
+            background: {
+              color: $brown;
+            }
+            border: {
+              radius: 50%;
+            }
+            width: $line * 20;
+            height: $line * 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .advantages-img {
-              width: 65%;
-              border: {
-                radius: 50%;
-                style: solid;
-                width: $line / 5;
-                color: $brown;
+              color: $darkBrown;
+              font: {
+                family: Ico;
+                size: $line * 9;
               }
-              box-shadow: 0 $line / 10 $line / 2 0 $grey;
+              padding: $line;
+              margin: $line 0 0;
+              transition: {
+                duration: $time;
+                timing-function: linear;
+              }
+              cursor: default;
             }
 
             .advantages-heading {
-              color: $brown;
+              margin: 0;
+              color: $light;
               font: {
                 size: $line * 2;
+                family: sans-serif;
               }
-              margin: $line * 3 0 $line * 2;
             }
 
-            .advantages-paragraph {
-              margin: 0;
-              padding: 0 $line * 4;
-              font: {
-                size: $line * 1.3;
-                style: italic;
-              }
-              text: {
-                align: center;
-              }
-              color: $grey;
-            }
-          }
-
-          &.bottom {
-            justify-content: flex-end;
-            transform: translateY(13%);
-
-            .circle {
-              background: {
-                color: $brown;
-              }
-              border: {
-                radius: 50%;
-              }
-              width: $line * 20;
-              height: $line * 20;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+            &:hover {
 
               .advantages-img {
-                color: $darkBrown;
-                font: {
-                  family: Ico;
-                  size: $line * 9;
-                }
-                padding: $line;
-                margin: $line 0 0;
-                transition: {
-                  duration: $time;
-                  timing-function: linear;
-                }
-                cursor: default;
-              }
-
-              .advantages-heading {
-                margin: 0;
                 color: $light;
-                font: {
-                  size: $line * 2;
-                  family: sans-serif;
-                }
-              }
-
-              &:hover {
-
-                .advantages-img {
-                  color: $light;
-                }
-              }
-            }
-          }
-        }
-
-        .arrow {
-          position: absolute;
-          bottom: 47%;
-          color: $darkBrown;
-          font: {
-            family: Ico;
-            size: $line * 7;
-            weight: bold;
-          }
-
-          @for $i from 1 through 4 {
-            &:nth-of-type(#{$i}) {
-              @if $i == 2 or $i == 4 {
-                left: (20% * $i) - 3%;
-              } @else {
-                left: (20% * $i) - 2.5%;
               }
             }
           }
         }
       }
-      
-      //&.gallery {
-      //  background: {
-      //    color: transparentize($brown, 0.2);
-      //  }
-      //  padding: 0 10%;
-      //  text: {
-      //    align: center;
-      //  }
-      //
-      //  .gallery-heading {
-      //    display: inline-block;
-      //    background: {
-      //      color: $light;
-      //    }
-      //    font: {
-      //      size: $line * 3.5;
-      //    }
-      //    color: $brown;
-      //    margin: 0 0 $line * 2;
-      //    padding: $line / 2 $line * 5;
-      //  }
-      //
-      //  .gallery-box {
-      //    position: relative;
-      //    display: flex;
-      //    flex-wrap: wrap;
-      //    justify-content: center;
-      //    align-items: flex-start;
-      //
-      //    .gallery-item {
-      //      position: relative;
-      //      flex-basis: 20%;
-      //      max-width: 20%;
-      //      margin: 0 $line * 2 $line * 2 0;
-      //      padding: 0;
-      //      border: $line / 2 solid $grey;
-      //      overflow: {
-      //        x: hidden;
-      //        y: hidden;
-      //      }
-      //      cursor: pointer;
-      //
-      //      img {
-      //        display: block;
-      //        margin: 0;
-      //        padding: 0;
-      //        min-height: 100%;
-      //        width: 100%;
-      //      }
-      //
-      //      figcaption {
-      //        position: absolute;
-      //        bottom: 0;
-      //        width: 100%;
-      //        text: {
-      //          align: center;
-      //        }
-      //        background: {
-      //          color: transparentize($grey, 0.2);
-      //        }
-      //        padding: $line / 2 0;
-      //        color: $light;
-      //        transform: translateY(100%);
-      //        transition: {
-      //          duration: $time;
-      //          timing-function: linear;
-      //        }
-      //      }
-      //
-      //      &:hover {
-      //
-      //        figcaption {
-      //          transform: translateY(0);
-      //        }
-      //      }
-      //    }
-      //  }
-      //}
-    //}
+
+      .arrow {
+        position: absolute;
+        bottom: 47%;
+        color: $darkBrown;
+        font: {
+          family: Ico;
+          size: $line * 7;
+          weight: bold;
+        }
+
+        @for $i from 1 through 4 {
+          &:nth-of-type(#{$i}) {
+            @if $i == 2 or $i == 4 {
+              left: (20% * $i) - 3%;
+            } @else {
+              left: (20% * $i) - 2.5%;
+            }
+          }
+        }
+      }
+    }
   }
 
   @import "templates/footer";

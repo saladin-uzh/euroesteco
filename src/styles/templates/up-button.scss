@@ -2,6 +2,6 @@
   position: fixed;
   bottom: $line * 4;
   right: $line * 4;
-  @include button($brown);
+  @include button($green);
   z-index: 1;
 }

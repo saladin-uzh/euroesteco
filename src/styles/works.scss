@@ -1,0 +1,33 @@
+@import "templates/variables";
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include noScroll();
+  display: flex;
+  flex-direction: column;
+  background: {
+    image: url("../images/bg-4.png");
+    size: cover;
+    position: center;
+    attachment: fixed;
+  }
+
+  @import "templates/header";
+  @import "templates/feedback-button";
+  @import "templates/up-button";
+
+  main {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  @import "templates/footer";
+}

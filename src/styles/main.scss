@@ -13,10 +13,11 @@ body {
   display: flex;
   flex-direction: column;
   background: {
-    image: url("../images/bgm-3.png");
+    image: url("../images/bgm-2.png");
     size: cover;
     position: center;
     repeat: no-repeat;
+    attachment: fixed;
   }
   overflow: {
     x: hidden;
@@ -62,13 +63,13 @@ body {
               radius: 50%;
               style: solid;
               width: $line / 5;
-              color: $brown;
+              color: $green;
             }
             box-shadow: 0 $line / 10 $line / 2 0 $grey;
           }
 
           .advantages-heading {
-            color: $brown;
+            color: $green;
             font: {
               size: $line * 2;
             }
@@ -95,7 +96,7 @@ body {
 
           .circle {
             background: {
-              color: $brown;
+              color: $green;
             }
             border: {
               radius: 50%;
@@ -107,7 +108,7 @@ body {
             align-items: center;
 
             .advantages-img {
-              color: $darkBrown;
+              color: $darkGreen;
               font: {
                 family: Ico;
                 size: $line * 9;
@@ -143,7 +144,7 @@ body {
       .arrow {
         position: absolute;
         bottom: 47%;
-        color: $darkBrown;
+        color: $darkGreen;
         font: {
           family: Ico;
           size: $line * 7;

@@ -1,12 +1,12 @@
 $line: 10px;
 $time : 0.3s;
 
-$brown: #087d02;
-$darkBrown: #086402;
+$green: #087d02;
+$darkGreen: #086402;
 $grey: #000000;
 $light: #FFF;
 
-@mixin button($color: $brown) {
+@mixin button($color: $green) {
   width: $line * 6;
   height: $line * 6;
   color: $light;

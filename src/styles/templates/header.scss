@@ -65,7 +65,7 @@ header {
       }
 
       &.current {
-        color: $brown;
+        color: $green;
         background: {
           color: $light;
         }
@@ -86,7 +86,7 @@ header {
     .language-btn {
       padding: $line * 2 $line *4;
       background: {
-        color: $brown;
+        color: $green;
       }
       color: $light;
       transition: {
@@ -96,7 +96,7 @@ header {
       cursor: pointer;
 
       &:hover {
-        color: $brown;
+        color: $green;
         background: {
           color: $light;
         }
@@ -117,7 +117,7 @@ header {
       .language-item {
         padding: $line * 1.5;
         margin: $line / 2 0 0 0;
-        color: $brown;
+        color: $green;
         text: {
           decoration: none;
           align: center;
@@ -128,7 +128,7 @@ header {
         border: {
           width: $line / 4;
           style: solid;
-          color: $brown;
+          color: $green;
         }
         opacity: 0;
         transition: {
@@ -155,7 +155,7 @@ header {
         &:hover {
           color: $light;
           background: {
-            color: $brown;
+            color: $green;
           }
           transition: {
             duration: $time;

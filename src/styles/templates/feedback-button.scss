@@ -31,64 +31,6 @@
     transform: translateY(0);
   }
 
-  .close-btn {
-    position: absolute;
-    top: 10%;
-    right: 25%;
-    width: $line * 6;
-    height: $line * 6;
-    background: {
-      color: $green;
-    }
-    transition: {
-      duration: $time;
-      timing-function: linear;
-    }
-
-    .stick {
-      display: block;
-      position: absolute;
-      top: 45%;
-      left: 15%;
-      width: $line * 4;
-      height: $line / 2;
-      background: {
-        color: $light;
-      }
-      transition: {
-        duration: $time;
-        timing-function: linear;
-      }
-
-      &:first-child {
-        transform: rotate(45deg);
-      }
-
-      &:last-child {
-        transform: rotate(-45deg);
-      }
-    }
-
-
-    &:hover {
-      cursor: pointer;
-      outline: {
-        width: $line / 2;
-        style: solid;
-        color: $green;
-      }
-      background: {
-        color: $light;
-      }
-
-      .stick {
-        background: {
-          color: $green;
-        }
-      }
-    }
-  }
-
   #feedback-form {
     position: absolute;
     left: 30%;
@@ -100,6 +42,59 @@
     font: {
       size: $line * 2;
       family: Tahoma;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -12%;
+      right: -10%;
+      width: $line * 5;
+      height: $line * 5;
+      background: {
+        color: $green;
+      }
+      transition: {
+        duration: $time;
+        timing-function: linear;
+      }
+
+      .stick {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        width: $line * 4;
+        height: $line / 2;
+        background: {
+          color: $light;
+        }
+        transition: {
+          duration: $time;
+          timing-function: linear;
+        }
+
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+
+
+      &:hover {
+        cursor: pointer;
+        background: {
+          color: $light;
+        }
+
+        .stick {
+          background: {
+            color: $green;
+          }
+        }
+      }
     }
 
     label,
@@ -123,7 +118,6 @@
       }
       border: {
         style: none;
-        bottom: $line / 2 solid $green;
       }
       color: $green;
       background: {
@@ -136,7 +130,7 @@
 
       &:focus {
         outline: none;
-        box-shadow: inset 0 $line / 3 * -1 $line $line * -1 / 5 $green;
+        box-shadow: inset 0 $line / 3 * -1 $line $line * -1 / 10 $green;
       }
     }
 

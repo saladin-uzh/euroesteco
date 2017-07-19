@@ -2,7 +2,8 @@
  * Created by Saladin on 09.07.2017.
  */
 var main = function () {
-    var menuItem = $('.menu-item'),
+    var location = window.location.href,
+        menuItem = $('.menu-item'),
         languageButton = $('.language-btn'),
         languageItem = $('.language-item'),
         upButton = $('#up-btn'),
@@ -12,10 +13,18 @@ var main = function () {
         feedbackInput = $('#feedback-form input, #message');
 
     menuItem.each(function() {
-        var location = window.location.href,
-            link = $(this).attr('href');
+        var link = $(this).attr('href');
+
         if (location === link) {
             $(this).addClass('current');
+        }
+    });
+
+    languageItem.each(function () {
+        var currentLanguage = $(this).attr('href');
+
+        if (location === currentLanguage) {
+            $(this).addClass('current-language');
         }
     });
 

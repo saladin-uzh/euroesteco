@@ -145,6 +145,13 @@ header {
         //  }
         //}
 
+        &.current-language {
+          color: $light;
+          background: {
+            color: $green;
+          }
+        }
+
         @for $i from 1 through 4 {
           &:nth-of-type(#{$i}) {
             transform: translateY(-100% * $i);

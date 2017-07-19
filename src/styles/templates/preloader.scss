@@ -1,0 +1,23 @@
+#preloader {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: {
+    color: $light;
+    image: url("../../SVG/preloader.svg");
+    position: center;
+    size: $line * 25 $line * 25;
+    repeat: no-repeat;
+  }
+  //display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+
+  img {
+    display: block;
+    width: $line * 25;
+    height: $line * 25;
+  }
+}

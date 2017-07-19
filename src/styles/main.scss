@@ -26,6 +26,7 @@ body {
     family: sans-serif;
   }
 
+  @import "templates/preloader";
   @import "templates/header";
   @import "templates/up-button";
   @import "templates/feedback-button";

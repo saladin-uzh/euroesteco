@@ -62,4 +62,10 @@ body {
   }
 
   @import "templates/footer";
+
+  &.visible {
+    animation: {
+      name: logo;
+    }
+  }
 }

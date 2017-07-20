@@ -3,8 +3,9 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: center;
   width: 100%;
-  min-height: $line * 12;
+  min-height: $line * 10;
   color: $light;
   background: {
     color: transparentize(darken($grey, 15%), 0.5);
@@ -19,25 +20,8 @@ footer {
 
   article {
     position: relative;
-    margin: $line * 2 0 0 0;
+    margin: 0;
     flex-basis: 20%;
-
-    &::before {
-      display: block;
-      content: '';
-      width: 50%;
-      height: $line / 2;
-      background: {
-        color: $light;
-      }
-      position: absolute;
-      bottom: 110%;
-      left: 25%;
-      transition: {
-        duration: $time;
-        timing-function: linear;
-      }
-    }
   }
 
   .contacts {
@@ -59,9 +43,14 @@ footer {
   }
 
   .socials {
+    flex-grow: 1;
+    max-width: 40%;
     text: {
       align: center;
     }
+    box-shadow:
+            $line / -2 0 0 0 $light,
+            $line / 2 0 0 0 $light;
 
     .socials-heading {
       text: {
@@ -83,7 +72,7 @@ footer {
         family: Ico;
         size: $line * 3;
       }
-      padding: $line / 2 $line * 2;
+      padding: $line / 2 $line;
       transition: {
         duration: $time;
         timing-function: linear;
@@ -96,79 +85,7 @@ footer {
     }
   }
 
-  .developers {
+  .map {
 
-    .developers-link {
-      padding: $line / 2 0 0;
-      position: relative;
-      display: block;
-      width: 100%;
-      text:{
-        decoration: none;
-        align: center;
-      }
-      transition: {
-        duration: $time;
-        timing-function: linear;
-      }
-
-      &::before,
-      &::after {
-        transition: {
-          duration: $time;
-          timing-function: linear;
-        }
-      }
-
-      &::before {
-        display: block;
-        content: "© 2017 Developed by: ";
-        color: $light;
-        font: {
-          size: $line * 1.5;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        right: 10%;
-        top: 100%;
-        display: block;
-        content: "";
-        width: 80%;
-        height: $line / 2;
-        background: {
-          color: $light;
-        }
-        transform: scaleX(0);
-      }
-
-      img {
-        margin: $line / 2 auto;
-        width: 80%;
-      }
-    }
-
-    &:hover {
-
-      &::before {
-        transform: scaleX(1.75);
-      }
-
-      .developers-link {
-        transform: translateY(-$line * 2.5) scale(1.1);
-        transform-origin: bottom;
-
-        &::before {
-          transform: scale(0);
-          transform-origin: bottom;
-        }
-
-        &::after {
-          transform: scaleX(1);
-          transform-origin: center;
-        }
-      }
-    }
   }
 }

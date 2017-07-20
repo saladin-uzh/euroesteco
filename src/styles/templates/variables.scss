@@ -81,19 +81,19 @@ $light: #FFF;
     opacity: 0;
   }
 
-  50% {
+  40% {
     visibility: visible;
     opacity: 1;
   }
 
-  75% {
+  60% {
     visibility: visible;
     transform:
             translateY(25%);
     opacity: 1;
   }
 
-  90% {
+  80% {
     visibility: visible;
     transform:
             translateY(-10%);
@@ -109,40 +109,37 @@ $light: #FFF;
 }
 
 @keyframes preloader {
-  50% {
+  from {
+
+  }
+
+  33% {
     background: {
       color: transparent;
+      blend-mode: overlay;
+      size: 0;
     }
     z-index: -1000;
   }
 
-  75% {
+  66% {
     background: {
       color: transparent;
       blend-mode: overlay;
-      size: 100%;
+      size: 0;
     }
     z-index: -1000;
-  }
-
-  90% {
-    background: {
-      color: transparent;
-      blend-mode: overlay;
-      size: 100%;
-    }
-    z-index: -1000;
-    transform: scale(5);
+    transform: scale(2);
   }
 
   99% {
     background: {
       color: transparent;
       blend-mode: overlay;
-      size: 100%;
+      size: 0;
     }
     z-index: -1000;
-    transform: scale(5);
+    transform: scale(2);
     opacity: 0;
   }
 
@@ -150,10 +147,10 @@ $light: #FFF;
     background: {
       color: transparent;
       blend-mode: overlay;
-      size: 100%;
+      size: 0;
     }
     z-index: -1000;
-    transform: scale(5);
+    transform: scale(2);
     opacity: 0;
     display: none;
   }
@@ -197,5 +194,59 @@ $light: #FFF;
             0 0 0 $line * 2 transparent,
             0 0 0 $line * 1.5 transparent,
             0 0 0 $line transparent;
+  }
+}
+
+@keyframes navItems {
+  from {
+    background: {
+      color: transparentize($green, 0.2);
+    }
+  }
+
+  25% {
+    transform: rotate3d(1, 0, 0, -30deg);
+    background: {
+      color: transparentize($green, 0.4);
+    }
+  }
+
+  50% {
+    transform: rotate3d(1, 0, 0, 30deg);
+    background: {
+      color: transparentize($green, 0.6);
+    }
+  }
+
+  75% {
+    transform: rotate3d(1, 0, 0, -15deg);
+    background: {
+      color: transparentize($green, 0.8);
+    }
+  }
+
+  to {
+    transform: rotate3d(1, 0, 0, 0deg);
+    background: {
+      color: transparent;
+    }
+  }
+}
+
+@keyframes lang {
+  50% {
+    opacity: .8;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes headerItems {
+  to {
+    transform: scaleY(1);
   }
 }

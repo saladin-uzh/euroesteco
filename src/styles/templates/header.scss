@@ -19,7 +19,7 @@ header {
     animation: {
       duration: $time * 2;
       timing-function: cubic-bezier(.7,0,.3,1);
-      delay: $time * 10;
+      delay: $time * 8;
       fill-mode: forwards;
     }
 
@@ -33,6 +33,12 @@ header {
     margin: auto;
     display: flex;
     width: 65%;
+
+    perspective-origin: center;
+    perspective: $line * 100;
+
+    overflow: hidden;
+    backface-visibility: hidden;
 
     .menu-item {
       padding: $line * 1.5 0;
@@ -57,6 +63,29 @@ header {
       transition: {
         duration: $time;
         timing-function: linear;
+      }
+      transform: {
+        origin: top center;
+        style: preserve-3d;
+      }
+
+      @for $i from 1 through 6 {
+        $angle: 90deg + ($i * 30deg);
+        $delay: ($time * 9) + ($i * $time / 2);
+        &:nth-of-type(#{$i}) {
+          transform: rotate3d(1, 0, 0, $angle);
+          animation: {
+            delay: $delay;
+          }
+        }
+      }
+
+      animation: {
+        duration: $time * 10;
+        timing-function: linear;
+        iteration-count: 1;
+        direction: normal;
+        fill-mode: forwards;
       }
 
       &.current {
@@ -90,6 +119,18 @@ header {
       }
       cursor: pointer;
 
+      transform: translateX(200%);
+      opacity: 0;
+
+      animation: {
+        duration: $time * 3;
+        delay: $time * 10;
+        timing-function: ease-out;
+        direction: normal;
+        iteration-count: 1;
+        fill-mode: forwards;
+      }
+
       &:hover {
         background: {
           color: lighten($green, 5);
@@ -108,8 +149,7 @@ header {
       overflow: {
         x: hidden;
       }
-      z-index: 1
-    ;
+      z-index: 1;
 
       .language-item {
         padding: $line * 1.5;
@@ -173,15 +213,6 @@ header {
         &.active {
           transform: translateY(0);
           opacity: 1;
-
-          //@for $i from 1 through 4 {
-          //  &:nth-child(#{5 - $i}) {
-          //    transition: {
-          //      duration: ($i / 1.5) * $time;
-          //      timing-function: ease-out;
-          //    }
-          //  }
-          //}
         }
       }
     }

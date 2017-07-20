@@ -45,11 +45,29 @@ body {
       margin: 0 0 0 5%;
 
       strong {
+        position: relative;
         display: block;
         padding: $line 5% $line $line / 2;
         margin: 0 0 $line;
         border: {
           bottom: $line / 2 solid $light;
+        }
+
+        transform: {
+          origin: bottom center;
+        }
+
+        animation: {
+          delay: $time * 11;
+        }
+
+        &::after {
+          display: block;
+          content: '';
+          width: 100%;
+          height: $line / 2;
+          position: absolute;
+          top: 100%;
         }
       }
 
@@ -57,6 +75,26 @@ body {
         font: {
           weight: normal;
           size: $line * 2;
+        }
+
+        transform: {
+          origin: top center;
+        }
+
+        animation: {
+          delay: $time * 12;
+        }
+      }
+
+      strong,
+      small {
+        transform: scaleY(0);
+        animation: {
+          duration: $time;
+          timing-function: ease-out;
+          direction: normal;
+          iteration-count: 1;
+          fill-mode: forwards;
         }
       }
     }
@@ -81,6 +119,29 @@ body {
     #feedback-btn {
       animation: {
         name: feedbackButtonDisplay, feedbackButtonPulse;
+      }
+    }
+
+    .menu-item {
+      animation: {
+        name: navItems;
+      }
+    }
+
+    .language-btn {
+      animation: {
+        name: lang;
+      }
+    }
+
+    main {
+      h1 {
+        strong,
+        small {
+          animation: {
+            name: headerItems;
+          }
+        }
       }
     }
   }

@@ -19,6 +19,7 @@ body {
     attachment: fixed;
   }
 
+  @import "templates/preloader";
   @import "templates/header";
   @import "templates/feedback-button";
   @import "templates/up-button";

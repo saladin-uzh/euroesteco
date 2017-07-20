@@ -36,12 +36,16 @@ header {
     margin: auto;
     display: flex;
     width: 65%;
+    padding: 0 $line * 2;
 
     perspective-origin: center;
     perspective: $line * 100;
 
-    overflow: hidden;
-    backface-visibility: hidden;
+    overflow: {
+      x: visible;
+      y: hidden;
+    }
+    backface-visibility: visible;
 
     .menu-item {
       padding: $line * 1.5 0;
@@ -106,8 +110,9 @@ header {
   }
 
   #language-box {
+    display: inline-block;
     position: relative;
-    margin:  0 $line * 5 0 0;
+    margin: 0 $line * 2 0 0;
 
     .language-btn {
       padding: $line * 2 $line * 4;
@@ -120,6 +125,9 @@ header {
         timing-function: linear;
       }
       cursor: pointer;
+      text: {
+        align: center;
+      }
 
       transform: translateX(200%);
       opacity: 0;
@@ -147,13 +155,12 @@ header {
       flex-direction: column;
       overflow: {
         y: hidden;
-      }
-      overflow: {
         x: hidden;
       }
       z-index: 1;
 
       .language-item {
+        position: relative;
         padding: $line * 1.5;
         margin: $line / 2 0 0 0;
         color: $green;

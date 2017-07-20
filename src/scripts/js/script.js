@@ -14,10 +14,15 @@ var main = function () {
 
     menuItem.each(function() {
         var location = window.location.href,
-            link = $(this).attr('href');
+            link = $(this).attr('href'),
+            absoluteLink = '';
 
         if (location === link) {
             $(this).addClass('current');
+        }
+
+        if (location === '') {
+
         }
     });
 

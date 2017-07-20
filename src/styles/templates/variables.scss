@@ -2,7 +2,7 @@ $line: 10px;
 $time : 0.3s;
 
 $green: #087d02;
-$darkGreen: #086402;
+$darkGreen: #033f01;
 $grey: #000000;
 $light: #FFF;
 
@@ -40,6 +40,11 @@ $light: #FFF;
 @font-face {
   src: url('../../fonts/icomoon.ttf');
   font-family: Ico;
+}
+
+@font-face {
+  src: url('../../fonts/materials.ttf');
+  font-family: Materials;
 }
 
 @mixin noScroll() {

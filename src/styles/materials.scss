@@ -28,6 +28,45 @@ body {
     flex-grow: 1;
     width: 100%;
     height: 100%;
+
+    #materials-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background: transparentize($light, 0.2);
+
+      .materials-item {
+        font: {
+          weight: bold;
+        }
+        height: $line * 20;
+        width: $line * 20;
+        background: green;
+        border: {
+          radius: 50%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .caption {
+          color: $light;
+          font: {
+            family: Arial, sans-serif;
+          }
+        }
+
+        .ico {
+          font: {
+            family: Materials, sans-serif;
+            size: $line * 9;
+          }
+          color: $darkGreen;
+          margin: $line;
+        }
+      }
+    }
   }
 
   @import "templates/footer";

@@ -5,6 +5,9 @@ header {
   width: 100%;
   min-height: $line * 10;
   padding: $line * 2 0;
+  font: {
+    family: Arial, sans-serif;
+  }
 
   .logo-link {
     visibility: hidden;
@@ -84,7 +87,7 @@ header {
         timing-function: linear;
         iteration-count: 1;
         direction: normal;
-        fill-mode: forwards;
+        fill-mode: both;
       }
 
       &.current {

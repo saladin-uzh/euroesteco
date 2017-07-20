@@ -110,7 +110,6 @@
     label,
     input {
       padding: $line 0;
-      margin: 0 0 $line / 2 0;
     }
 
     label {
@@ -122,6 +121,7 @@
 
     input,
     #message {
+      margin: 0 0 $line / 2 0;
       font: {
         size: $line * 1.5;
         family: Tahoma;
@@ -140,7 +140,7 @@
 
       &:focus {
         outline: none;
-        box-shadow: inset 0 $line / 3 * -1 $line $line * -1 / 10 $green;
+        box-shadow: inset 0 $line / 10 * -1 $line $line * -1 / 5 $green;
       }
     }
 
@@ -171,7 +171,6 @@
 
     #message {
       padding-top: $line;
-      margin: 0 0 $line / 2 0;
     }
 
     .form-btn {

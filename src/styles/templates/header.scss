@@ -5,6 +5,9 @@ header {
   width: 100%;
   min-height: $line * 10;
   padding: $line * 2 0;
+  font: {
+    family: Arial, sans-serif;
+  }
 
   .logo-link {
     visibility: hidden;
@@ -58,7 +61,6 @@ header {
       color: $light;
       font: {
         size: $line * 1.5;
-        family: Tahoma;
       }
       transition: {
         duration: $time;
@@ -91,7 +93,7 @@ header {
       &.current {
         color: $green;
         background: {
-          color: $light !important;
+          color: $light;
         }
       }
 

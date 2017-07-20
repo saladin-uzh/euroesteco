@@ -23,23 +23,28 @@ header {
       fill-mode: forwards;
     }
 
-    .logo-caption,
-    .logo-paragraph {
-      color: $light;
-    }
+    //.logo-caption,
+    //.logo-paragraph {
+    //  color: $light;
+    //}
+    //
+    //.logo-caption {
+    //  font: {
+    //    weight: bold;
+    //    size: $line * 2;
+    //  }
+    //}
+    //
+    //.logo-paragraph {
+    //  font: {
+    //    weight: bold;
+    //    size: $line * 1.8;
+    //  }
+    //}
 
-    .logo-caption {
-      font: {
-        weight: bold;
-        size: $line * 2;
-      }
-    }
-
-    .logo-paragraph {
-      font: {
-        weight: bold;
-        size: $line * 1.8;
-      }
+    .company-logo {
+      display: block;
+      height: $line * 15;
     }
   }
 

@@ -9,7 +9,8 @@
     duration: $time * 2, $time * 10;
     delay: $time * 15, $time * 15;
     timing-function: ease-out, linear;
-    fill-mode: forwards, both;
+    fill-mode: forwards, forwards;
+    direction: alternate;
     iteration-count: 1, infinite;
   }
 }

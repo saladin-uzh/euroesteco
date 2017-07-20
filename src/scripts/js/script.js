@@ -62,6 +62,9 @@ var main = function () {
     });
 
     $(window).scrollTop(0);
+    $(window).on('scroll', function () {
+        $(window).scrollTop(0);
+    });
 };
 
 $(document).ready(main);

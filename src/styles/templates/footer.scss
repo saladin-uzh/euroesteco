@@ -4,7 +4,7 @@ footer {
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  min-height: $line * 15;
+  min-height: $line * 12;
   color: $light;
   background: {
     color: transparentize(darken($grey, 15%), 0.5);
@@ -12,14 +12,14 @@ footer {
   transform: translateY(100%);
   animation: {
     duration: $time * 2;
-    delay: $time * 14;
+    delay: $time * 13;
     timing-function: linear;
     fill-mode: forwards;
   }
 
   article {
     position: relative;
-    margin: $line * 4 0 0 0;
+    margin: $line * 2 0 0 0;
     flex-basis: 20%;
 
     &::before {
@@ -81,7 +81,7 @@ footer {
       }
       font: {
         family: Ico;
-        size: $line * 4;
+        size: $line * 3;
       }
       padding: $line / 2 $line * 2;
       transition: {

@@ -6,13 +6,14 @@
   z-index: 1;
   opacity: 0;
   animation: {
-    duration: $time * 2, $time * 10;
-    delay: $time * 15, $time * 15;
+    duration: $time * 2, $time * 5;
+    delay: $time * 14, $time * 15;
     timing-function: ease-out, linear;
     fill-mode: forwards, forwards;
-    direction: alternate;
+    direction: normal, normal;
     iteration-count: 1, infinite;
   }
+  background: red;
 }
 
 .feedback {

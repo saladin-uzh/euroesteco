@@ -23,28 +23,9 @@ header {
       fill-mode: forwards;
     }
 
-    //.logo-caption,
-    //.logo-paragraph {
-    //  color: $light;
-    //}
-    //
-    //.logo-caption {
-    //  font: {
-    //    weight: bold;
-    //    size: $line * 2;
-    //  }
-    //}
-    //
-    //.logo-paragraph {
-    //  font: {
-    //    weight: bold;
-    //    size: $line * 1.8;
-    //  }
-    //}
-
-    .company-logo {
+    .euro-esteco-logo {
       display: block;
-      height: $line * 15;
+      height: $line * 10;
     }
   }
 
@@ -98,7 +79,7 @@ header {
     margin:  0 $line * 5 0 0;
 
     .language-btn {
-      padding: $line * 2 $line *4;
+      padding: $line * 2 $line * 4;
       background: {
         color: $green;
       }

@@ -20,14 +20,14 @@
           id="path-small">
     </path>
     <path d="M 0,0 c 6,0 13.5,4.75 13.5,13.5">
-        <animateMotion dur="2s" 
+        <animateMotion dur="1.5s" 
                        repeatCount="indefinite"
                        rotate="auto">
             <mpath xlink:href="#path-small"></mpath>
         </animateMotion>
     </path>
     <path d="M 0,0 c 3,-2.75 6,-3.5 9,-3.875 c 6,-0.5 14,4.75 13.875,13.5" transform="rotate(45)">
-        <animateMotion dur="1.5s"
+        <animateMotion dur="1s"
                        repeatCount="indefinite"
                        rotate="auto-reverse"
                        fill="remove">

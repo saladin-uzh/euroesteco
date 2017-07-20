@@ -180,29 +180,22 @@ $light: #FFF;
 @keyframes feedbackButtonPulse {
   from {
     box-shadow:
-            0 0 0 $line / 5 transparentize($light, 0.9),
-            0 0 0 0 transparentize($green, 0.9),
-            0 0 0 0 transparentize($light, 0.9);
+            0 0 0 $line / 5 transparentize($light, 0.3),
+            0 0 0 0 transparentize($green, 0.3),
+            0 0 0 0 transparentize($light, 0.3);
   }
 
-  //33% {
-  //  box-shadow:
-  //          0 0 0 $line / 2 transparentize($light, 0.9),
-  //          0 0 0 $line / 5 transparentize($light, 0.9),
-  //          0 0 0 0 transparentize($light, 0.9);
-  //}
-  //
-  //66% {
-  //  box-shadow:
-  //          0 0 0 $line transparentize($light, 0.9),
-  //          0 0 0 $line / 2 transparentize($light, 0.9),
-  //          0 0 0 $line / 5 transparentize($light, 0.9);
-  //}
+  50% {
+    box-shadow:
+            0 0 0 $line * 1 transparentize($light, 0.7),
+            0 0 0 $line / 2 transparentize($green, 0.7),
+            0 0 0 $line transparentize($light, 0.7);
+  }
 
   to {
     box-shadow:
-            0 0 0 $line * 2 transparentize($light, 0.9),
-            0 0 0 $line transparentize($green, 0.9),
-            0 0 0 $line / 2 transparentize($light, 0.9);
+            0 0 0 $line * 2 transparent,
+            0 0 0 $line * 1.5 transparent,
+            0 0 0 $line transparent;
   }
 }

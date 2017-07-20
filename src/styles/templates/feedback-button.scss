@@ -19,8 +19,10 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
   overflow: {
-    y: hidden;
+    y: scroll;
     x: hidden;
   }
   width: 100%;
@@ -41,22 +43,21 @@
   }
 
   #feedback-form {
-    position: absolute;
-    left: 30%;
-    top: 20%;
+    position: relative;
+    align-self: center;
     display: flex;
-    width: 40%;
+    width: 30%;
     flex-direction: column;
     flex-wrap: wrap;
     font: {
-      size: $line * 2;
-      family: Tahoma;
+      size: $line * 1.5;
+      family: Arial, sans-serif;
     }
 
     .close-btn {
       position: absolute;
-      top: -12%;
-      right: -10%;
+      top: -15%;
+      right: -12%;
       width: $line * 5;
       height: $line * 5;
       background: {
@@ -123,7 +124,7 @@
       margin: 0 0 $line / 2 0;
       font: {
         size: $line * 1.5;
-        family: Tahoma;
+        family: Arial, sans-serif;
       }
       border: {
         style: none;

@@ -160,7 +160,7 @@ header {
         }
 
         &:hover:not(.current-language) {
-          color: $light;
+          color: $light !important;
           background: {
             color: $green;
           }

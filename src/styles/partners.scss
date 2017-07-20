@@ -31,4 +31,8 @@ body {
   }
 
   @import "templates/footer";
+
+  &.visible {
+    @include bodyVisible;
+  }
 }

@@ -1,7 +1,20 @@
 #up-btn {
   position: fixed;
-  bottom: $line * 4;
-  right: $line * 4;
+  bottom: $line * 2;
+  right: $line * 2;
   @include button($green);
   z-index: 1;
+  transition: {
+    duration: $time;
+    timing-function: linear;
+  }
+  transform:
+          scale(0)
+          translateX(200%);
+
+  &.visible {
+    transform:
+            scale(1)
+            translateX(0);
+  }
 }

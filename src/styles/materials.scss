@@ -15,7 +15,7 @@ body {
   background: {
     image: url("../images/bg.png");
     size: cover;
-    position: center;
+    position: 0 0;
     attachment: fixed;
   }
 
@@ -31,4 +31,8 @@ body {
   }
 
   @import "templates/footer";
+
+  &.visible {
+    @include bodyVisible;
+  }
 }

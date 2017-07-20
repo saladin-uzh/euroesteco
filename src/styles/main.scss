@@ -103,36 +103,7 @@ body {
   @import "templates/footer";
 
   &.visible {
-
-    .logo-link {
-      animation: {
-        name: logo;
-      }
-    }
-
-    footer {
-      animation: {
-        name: footer;
-      }
-    }
-
-    #feedback-btn {
-      animation: {
-        name: feedbackButtonDisplay, feedbackButtonPulse;
-      }
-    }
-
-    .menu-item {
-      animation: {
-        name: navItems;
-      }
-    }
-
-    .language-btn {
-      animation: {
-        name: lang;
-      }
-    }
+    @include bodyVisible;
 
     main {
       h1 {

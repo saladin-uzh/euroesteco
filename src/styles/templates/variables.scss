@@ -73,6 +73,38 @@ $light: #FFF;
   }
 }
 
+@mixin bodyVisible {
+  .logo-link {
+    animation: {
+      name: logo;
+    }
+  }
+
+  footer {
+    animation: {
+      name: footer;
+    }
+  }
+
+  #feedback-btn {
+    animation: {
+      name: feedbackButtonDisplay, feedbackButtonPulse;
+    }
+  }
+
+  .menu-item {
+    animation: {
+      name: navItems;
+    }
+  }
+
+  .language-btn {
+    animation: {
+      name: lang;
+    }
+  }
+}
+
 @keyframes logo {
   from {
     visibility: visible;

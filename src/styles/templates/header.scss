@@ -58,7 +58,6 @@ header {
       color: $light;
       font: {
         size: $line * 1.5;
-        family: Tahoma;
       }
       transition: {
         duration: $time;
@@ -70,7 +69,7 @@ header {
       }
 
       @for $i from 1 through 6 {
-        $angle: 90deg + ($i * 30deg);
+        $angle: 60deg + ($i * 30deg);
         $delay: ($time * 9) + ($i * $time / 2);
         &:nth-of-type(#{$i}) {
           transform: rotate3d(1, 0, 0, $angle);
@@ -200,7 +199,7 @@ header {
         }
 
         &:hover:not(.current-language) {
-          color: $light !important;
+          color: $light;
           background: {
             color: $green;
           }

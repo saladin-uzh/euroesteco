@@ -10,7 +10,10 @@ var main = function () {
         feedbackForm = $('.feedback'),
         feedbackHideButton = $('.close-btn'),
         feedbackInput = $('#feedback-form input, #message'),
-        preloader = $('#preloader');
+        preloader = $('#preloader'),
+        materialsItem = $('.materials-item'),
+        windowIt = $('.window-item'),
+        contentIt = $('.content-information');
 
     menuItem.each(function() {
         var location = window.location.href,
@@ -66,10 +69,44 @@ var main = function () {
        current.attr('placeholder', text);
     });
 
-    $(window).scrollTop(0);
-    $(window).on('scroll', function () {
-        $(window).scrollTop(0);
-    });
+    function sideBar () {
+        var materialsHeight = materialsItem.css('width');
+
+        materialsItem.css({'height': materialsHeight, 'max-height': materialsHeight, 'min-height': materialsHeight});
+    };
+
+    sideBar();
+    
+    windowIt.hide();
+    contentIt.hide();
+
+    materialsItem.hover(
+        function () {
+            var currentItem = $(this),
+                current = currentItem.children('span');
+
+            current.css({
+                'color': '#FFF',
+                'transition-duration': '0.3s'});
+
+            if (materialsItem.eq(0).is(event.target)) {
+                windowIt.slideDown('slow');
+            }
+        },
+        function () {
+            var currentItem = $(this),
+                current = currentItem.children('span');
+
+            current.css({
+                'color': '#033f01',
+                'transition-duration': '0.3s'});
+        }
+    );
+
+    // $(window).scrollTop(0);
+    // $(window).on('scroll', function () {
+    //     $(window).scrollTop(0);
+    // });
 };
 
 $(document).ready(main);

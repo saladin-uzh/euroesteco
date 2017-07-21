@@ -12,6 +12,7 @@ body {
   @include noScroll();
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background: {
     image: url("../images/bg.png");
     size: cover;
@@ -28,19 +29,22 @@ body {
     flex-grow: 1;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
 
-    #materials-nav {
+
+    #materials-left-nav,
+    #materials-right-nav {
+      padding: 0 $line / 2;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: space-around;
-      background: transparentize($light, 0.2);
 
       .materials-item {
         font: {
           weight: bold;
         }
-        height: $line * 20;
-        width: $line * 20;
+        width: $line * 15;
         background: green;
         border: {
           radius: 50%;
@@ -50,21 +54,33 @@ body {
         justify-content: center;
         align-items: center;
 
-        .caption {
+        .ico {
+          font: {
+            family: Materials, sans-serif;
+            size: $line * 7;
+          }
+          color: $darkGreen;
+          margin: $line;
+        }
+
+        .materials-caption {
           color: $light;
           font: {
             family: Arial, sans-serif;
           }
         }
+      }
+    }
 
-        .ico {
-          font: {
-            family: Materials, sans-serif;
-            size: $line * 9;
-          }
-          color: $darkGreen;
-          margin: $line;
-        }
+    .content {
+      flex-grow: 1;
+
+      .window-item {
+        width: 80%;
+        padding: $line * 2;
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
       }
     }
   }

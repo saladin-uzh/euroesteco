@@ -12,8 +12,9 @@ var main = function () {
         feedbackInput = $('#feedback-form input, #message'),
         preloader = $('#preloader'),
         materialsItem = $('.materials-item'),
+        windowBlock = $('.windows-block'),
         windowIt = $('.window-item'),
-        contentIt = $('.content-information');
+        contentIt = $('.content-info');
 
     menuItem.each(function() {
         var location = window.location.href,
@@ -73,40 +74,40 @@ var main = function () {
         var materialsHeight = materialsItem.css('width');
 
         materialsItem.css({'height': materialsHeight, 'max-height': materialsHeight, 'min-height': materialsHeight});
-    };
+    }
 
     sideBar();
-    
-    windowIt.hide();
-    contentIt.hide();
 
-    materialsItem.hover(
-        function () {
-            var currentItem = $(this),
-                current = currentItem.children('span');
+    windowBlock.hide();
 
+    materialsItem.mouseenter(function () {
+        var currentItem = $(this),
+            current = currentItem.children('span');
+
+        if (materialsItem.eq(0).is(event.target)) {
             current.css({
                 'color': '#FFF',
                 'transition-duration': '0.3s'});
-
-            if (materialsItem.eq(0).is(event.target)) {
-                windowIt.slideDown('slow');
-            }
-        },
-        function () {
-            var currentItem = $(this),
-                current = currentItem.children('span');
-
-            current.css({
-                'color': '#033f01',
-                'transition-duration': '0.3s'});
+            windowBlock.slideDown(700);
         }
-    );
+    });
 
-    // $(window).scrollTop(0);
-    // $(window).on('scroll', function () {
-    //     $(window).scrollTop(0);
-    // });
+    contentIt.hide();
+
+    windowIt.click(function () {
+        var current = $(this);
+
+        current.toggleClass('current');
+        contentIt.toggle();
+        windowIt.not(current).toggle();
+    });
+
+
+
+    $(window).scrollTop(0);
+    $(window).on('scroll', function () {
+        $(window).scrollTop(0);
+    });
 };
 
 $(document).ready(main);

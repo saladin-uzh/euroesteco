@@ -28,10 +28,8 @@ body {
   main {
     flex-grow: 1;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
-
 
     #materials-left-nav,
     #materials-right-nav {
@@ -53,6 +51,14 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation: {
+          name: sideMenu;
+          duration: $time * 3;
+          timing-function: ease-out;
+          direction: normal;
+          iteration-count: 1;
+          fill-mode: forwards;
+        }
 
         .ico {
           font: {
@@ -72,15 +78,135 @@ body {
       }
     }
 
-    .content {
-      flex-grow: 1;
+    #materials-left-nav {
 
-      .window-item {
-        width: 80%;
-        padding: $line * 2;
-        margin: 0 auto;
-        text-align: center;
-        background-color: white;
+      .materials-item {
+
+        @for $i from 1 through 3 {
+          $step: 100% + ($i * 100%);
+          &:nth-of-type(#{$i}) {
+            transform: translateX($step * -1);
+            animation: {
+              delay: $time * 12 + ($i * $time);
+            }
+          }
+        }
+      }
+    }
+
+    #materials-right-nav {
+
+      .materials-item {
+
+        @for $i from 1 through 3 {
+          $step: 100% + ($i * 100%);
+          &:nth-of-type(#{$i}) {
+            transform: translateX($step);
+            animation: {
+              delay: $time * 12 + ($i * $time);
+            }
+          }
+        }
+      }
+    }
+
+    .main-center {
+      flex-grow: 1;
+      overflow: {
+        y: scroll;
+      }
+      @include noScroll();
+      font: {
+        family: Arial, sans-serif;
+      }
+
+      .windows-block{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+
+        .window-item {
+          margin: 0 $line * 2;
+          text-align: center;
+          color: $light;
+          background: {
+            color: $green;
+          }
+          width: 20%;
+          height: $line * 7;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .content-caption {
+            align-self: center;
+            margin: 0;
+          }
+
+          .content-info {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
+
+            .content-slider,
+            table {
+              width: 40%;
+              height: $line * 30;
+            }
+
+            .content-slider {
+              background: {
+                color: $green;
+              }
+            }
+
+            table {
+              color: $light;
+              border: {
+                collapse: collapse;
+              }
+
+              tr:nth-of-type(odd) {
+                background: {
+                  color: $green;
+                }
+              }
+
+              tr:nth-last-of-type(even) {
+                background: {
+                  color: lighten($darkGreen, 1);
+                }
+              }
+            }
+          }
+
+          &:hover:not(.current) {
+            cursor: pointer;
+            color: $green;
+            background: {
+              color: $light;
+            }
+          }
+
+          &.current {
+            color: $green;
+            background: {
+              color: $light;
+            }
+            margin: auto;
+            width: 80%;
+            height: 100%;
+            transition: {
+              duration: $time;
+              timing-function: linear;
+            }
+          }
+        }
       }
     }
   }

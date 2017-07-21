@@ -272,3 +272,9 @@ $light: #FFF;
     transform: scaleY(1);
   }
 }
+
+@keyframes sideMenu {
+  to {
+    transform: translateX(0);
+  }
+}

@@ -33,7 +33,7 @@ body {
 
     #materials-left-nav,
     #materials-right-nav {
-      padding: 0 $line / 2;
+      padding: 0 $line $line;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -42,8 +42,10 @@ body {
         font: {
           weight: bold;
         }
-        width: $line * 15;
-        background: green;
+        flex-basis: 30%;
+        background: {
+          color: $green;
+        }
         border: {
           radius: 50%;
         }
@@ -52,24 +54,24 @@ body {
         justify-content: center;
         align-items: center;
         animation: {
-          name: sideMenu;
-          duration: $time * 3;
+          duration: $time * 2;
           timing-function: ease-out;
           direction: normal;
           iteration-count: 1;
           fill-mode: forwards;
         }
+        box-shadow: 0 $line / 10 $line / 2 0 $light;
 
         .ico {
           font: {
             family: Materials, sans-serif;
-            size: $line * 7;
           }
           color: $darkGreen;
-          margin: $line;
         }
 
         .materials-caption {
+          margin: 0;
+          padding: $line 0 0;
           color: $light;
           font: {
             family: Arial, sans-serif;
@@ -123,27 +125,39 @@ body {
       .windows-block{
         height: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-around;
+        align-content: flex-start;
 
         .window-item {
-          margin: 0 $line * 2;
+          margin: 0 $line $line;
           text-align: center;
           color: $light;
           background: {
-            color: $green;
+            color: transparentize($green, 0.2);
           }
-          width: 20%;
-          height: $line * 7;
+          flex-basis: 40%;
+          flex-grow: 1;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
+          box-shadow: 0 $line / 10 $line / 2 0 $light;
+
+          &::before {
+            position: absolute;
+            display: block;
+            content: '•';
+            height: 100%;
+          }
 
           .content-caption {
             align-self: center;
             margin: 0;
+            padding: $line * 1.5 $line;
+            font: {
+              size: $line * 1.75;
+              weight: normal;
+              family: Arial, sans-serif;
+            }
           }
 
           .content-info {
@@ -215,5 +229,11 @@ body {
 
   &.visible {
     @include bodyVisible;
+
+    .materials-item {
+      animation: {
+        name: sideMenu;
+      }
+    }
   }
 }

@@ -10,23 +10,17 @@ var main = function () {
         feedbackForm = $('.feedback'),
         feedbackHideButton = $('.close-btn'),
         feedbackInput = $('#feedback-form input, #message'),
-        preloader = $('#preloader'),
-        materialsItem = $('.materials-item'),
-        windowBlock = $('.windows-block'),
-        windowIt = $('.window-item'),
-        contentIt = $('.content-info');
+        preloader = $('#preloader');
 
-    menuItem.each(function() {
+    menuItem.each(function (iterator) {
         var location = window.location.href,
             link = $(this).attr('href'),
-            absoluteLink = '';
+            absoluteLink = 'https://euroesteco.joncolab.pro/';
 
         if (location === link) {
             $(this).addClass('current');
-        }
-
-        if (location === '') {
-
+        } else if (iterator === 0 && location === absoluteLink) {
+            $(this).addClass('current');
         }
     });
 
@@ -69,40 +63,6 @@ var main = function () {
            text = current.data('placeholder');
        current.attr('placeholder', text);
     });
-
-    function sideBar () {
-        var materialsHeight = materialsItem.css('width');
-
-        materialsItem.css({'height': materialsHeight, 'max-height': materialsHeight, 'min-height': materialsHeight});
-    }
-
-    sideBar();
-
-    windowBlock.hide();
-
-    materialsItem.mouseenter(function () {
-        var currentItem = $(this),
-            current = currentItem.children('span');
-
-        if (materialsItem.eq(0).is(event.target)) {
-            current.css({
-                'color': '#FFF',
-                'transition-duration': '0.3s'});
-            windowBlock.slideDown(700);
-        }
-    });
-
-    contentIt.hide();
-
-    windowIt.click(function () {
-        var current = $(this);
-
-        current.toggleClass('current');
-        contentIt.toggle();
-        windowIt.not(current).toggle();
-    });
-
-
 
     $(window).scrollTop(0);
     $(window).on('scroll', function () {

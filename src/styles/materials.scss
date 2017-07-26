@@ -161,8 +161,8 @@ body {
           .content-caption {
             align-self: center;
             width: 80%;
-            margin: 0;
             padding: $line * 1.5 $line;
+            margin: 0 0 $line 0;
             font: {
               size: $line * 1.75;
               weight: normal;
@@ -204,28 +204,55 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            align-items: flex-start;
             margin: 0;
+            transform:
+                    scaleY(0)
+                    translateX(-300%);
+            transition: {
+              duration: $time + 0.2s;
+              timing-function: linear;
+            }
 
             .content-slider {
               position: relative;
-              flex-basis: 35%;
-              max-width: 35%;
-              margin: $line * 2;
+              flex-basis: 45%;
+              margin: 0;
               padding: 0;
               overflow: {
                 x: hidden;
                 y: hidden;
               }
 
-              img {
+              .view-3d {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                border: none;
+                outline: none;
+                padding: $line $line * 4;
+                background: {
+                  color: $green;
+                }
+                font: {
+                  weight: bold;
+                  family: Arial, sans-serif;
+                }
+                color: $light;
+                cursor: pointer;
+              }
+
+              img,
+              iframe {
                 display: block;
                 margin: 0;
                 padding: 0;
                 min-height: 100%;
                 width: 100%;
+                box-shadow: 0 $line / 10 $line / 2 0 $green;
               }
 
-              .view-3d,
               iframe {
                 display: none;
               }
@@ -251,6 +278,16 @@ body {
                   color: lighten($darkGreen, 1);
                 }
               }
+
+              td {
+                padding: $line * 2 $line;
+              }
+            }
+
+            &.anim {
+              transform:
+                      scaleY(1)
+                      translateX(0);
             }
           }
 
@@ -269,6 +306,7 @@ body {
               color: $light;
             }
             margin: auto;
+            width: 100%;
             height: 100%;
             transition: {
               duration: $time;

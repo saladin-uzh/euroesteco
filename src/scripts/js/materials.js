@@ -42,9 +42,9 @@ var materials = function () {
     windowIt.click(function () {
         var current = $(this);
 
-        current.toggleClass('current');
-        contentIt.toggle();
-        windowIt.not(current).toggle();
+        current.addClass('current');
+        contentIt.show();
+        windowIt.not(current).hide();
     });
 
     $(window).resize(setCircles);

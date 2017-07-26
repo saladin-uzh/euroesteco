@@ -13,10 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   background: {
+    color: transparentize($grey, 0.9);
     image: url("../images/bg-2.png");
     size: cover;
-    position: top;
+    position: center 100%;
     attachment: scroll;
+    blend-mode: saturation;
   }
 
   @import "templates/preloader";

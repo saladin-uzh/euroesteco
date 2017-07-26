@@ -129,6 +129,7 @@ body {
         align-content: flex-start;
 
         .window-item {
+          position: relative;
           margin: 0 $line $line;
           text-align: center;
           color: $light;
@@ -141,12 +142,26 @@ body {
           flex-direction: column;
           justify-content: space-around;
           box-shadow: 0 $line / 10 $line / 2 0 $light;
+          text: {
+            align: right;
+          }
 
           &::before {
             position: absolute;
-            display: block;
+            left: 5%;
+            display: flex;
+            align-items: center;
             content: '•';
-            height: 100%;
+            color: $light;
+            padding: $line;
+            font: {
+              family: Materials, sans-serif;
+              size: $line * 3;
+            }
+            transition: {
+              duration: $time / 2;
+              timing-function: linear;
+            }
           }
 
           .content-caption {
@@ -157,6 +172,17 @@ body {
               size: $line * 1.75;
               weight: normal;
               family: Arial, sans-serif;
+            }
+            transition: {
+              duration: $time / 2;
+              timing-function: linear;
+            }
+
+            em {
+              color: darken($light, 30);
+              font: {
+                size: $line * 1.5;
+              }
             }
           }
 
@@ -201,9 +227,10 @@ body {
 
           &:hover:not(.current) {
             cursor: pointer;
-            color: $green;
-            background: {
-              color: $light;
+
+            &::before,
+            .content-caption:not(em) {
+              text-shadow: $line / 5 $line / 5 $line / 5 $grey;
             }
           }
 
@@ -213,11 +240,31 @@ body {
               color: $light;
             }
             margin: auto;
-            width: 80%;
             height: 100%;
             transition: {
               duration: $time;
               timing-function: linear;
+            }
+
+            &::before {
+              display: none;
+            }
+
+            .content-caption {
+              font: {
+                weight: bold;
+              }
+              text: {
+                align: center;
+              }
+
+              em {
+                color: $green;
+                font: {
+                  weight: bold;
+                  style: normal;
+                }
+              }
             }
           }
         }

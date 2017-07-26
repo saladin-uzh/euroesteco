@@ -24,7 +24,6 @@ var materials = function () {
         };
 
     setCircles();
-    contentIt.hide();
     block.hide();
 
     materialsItem.mouseenter(function () {
@@ -51,7 +50,11 @@ var materials = function () {
             details = current.siblings('.content-info');
 
         currentWindow.toggleClass('current');
-        details.toggle(500);
+        if (currentWindow.is('.current')) {
+            details.addClass('anim');
+        } else {
+            details.removeClass('anim');
+        }
         item.not(currentWindow).toggle();
     });
 

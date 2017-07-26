@@ -162,7 +162,7 @@ body {
             align-self: center;
             width: 80%;
             padding: $line * 1.5 $line;
-            margin: 0 0 $line 0;
+            margin: 0;
             font: {
               size: $line * 1.75;
               weight: normal;
@@ -200,12 +200,15 @@ body {
           }
 
           .content-info {
+            position: relative;
             flex-grow: 1;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: flex-start;
             margin: 0;
+            height: 0;
+            padding: 0 0 $line 0;
             transform:
                     scaleY(0)
                     translateX(-300%);
@@ -213,10 +216,16 @@ body {
               duration: $time + 0.2s;
               timing-function: linear;
             }
+            opacity: 0;
+            overflow: {
+              x: hidden;
+              y: hidden;
+            }
 
             .content-slider {
               position: relative;
               flex-basis: 45%;
+              max-height: 60%;
               margin: 0;
               padding: 0;
               overflow: {
@@ -231,7 +240,7 @@ body {
                 display: block;
                 border: none;
                 outline: none;
-                padding: $line $line * 4;
+                padding: $line * 2 $line * 6;
                 background: {
                   color: $green;
                 }
@@ -285,6 +294,8 @@ body {
             }
 
             &.anim {
+              height: auto;
+              opacity: 1;
               transform:
                       scaleY(1)
                       translateX(0);
@@ -315,6 +326,7 @@ body {
 
             .content-caption {
               width: 100%;
+              margin: 0 0 $line 0;
               font: {
                 weight: bold;
               }

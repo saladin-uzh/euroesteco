@@ -5,6 +5,8 @@ var materials = function () {
         item = block.children('[class$="-item"]'),
         contentIt = $('.content-info'),
         contentCp = $('.content-caption'),
+        slider = $('.content-slider'),
+        view3DButton = slider.children('.view-3d'),
         setCircles = function () {
             var circles = $('.materials-item'),
                 height = circles.css('height'),
@@ -47,9 +49,28 @@ var materials = function () {
             currentWindow = current.parent(),
             details = current.siblings('.content-info');
 
-        currentWindow.toggleClass('current');
         details.toggleClass('anim');
+        currentWindow.toggleClass('current');
         item.not(currentWindow).toggle();
+    });
+
+    view3DButton.click(function () {
+        var button = $(this),
+            img = button.siblings('img'),
+            iFrame = button.siblings('iframe'),
+            width = img.css('width'),
+            height = img.css('height');
+
+        iFrame.css({
+            'width': width,
+            'height': height
+        });
+        iFrame.toggleClass('active');
+        if (iFrame.is('.active')) {
+            button.text('Close 3D');
+        } else {
+            button.text('View 3D');
+        }
     });
 
     $(window).resize(setCircles);

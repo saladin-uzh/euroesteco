@@ -39,6 +39,7 @@ body {
       justify-content: space-around;
 
       .materials-item {
+        cursor: default;
         font: {
           weight: bold;
         }
@@ -67,6 +68,9 @@ body {
             family: Materials, sans-serif;
           }
           color: $darkGreen;
+          transition: {
+            duration: $time;
+          }
         }
 
         .materials-caption {
@@ -75,6 +79,13 @@ body {
           color: $light;
           font: {
             family: Arial, sans-serif;
+          }
+        }
+
+        &.active {
+
+          .ico {
+            color: $light;
           }
         }
       }
@@ -122,13 +133,14 @@ body {
         family: Arial, sans-serif;
       }
 
-      .windows-block{
+      > [class$="-block"] {
         height: 100%;
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
+        align-items: flex-start;
 
-        .window-item {
+        > [class*="-item"] {
           position: relative;
           margin: 0 $line $line;
           text-align: center;
@@ -146,26 +158,9 @@ body {
             align: right;
           }
 
-          &::before {
-            position: absolute;
-            left: 5%;
-            display: flex;
-            align-items: center;
-            content: '•';
-            color: $light;
-            padding: $line;
-            font: {
-              family: Materials, sans-serif;
-              size: $line * 3;
-            }
-            transition: {
-              duration: $time / 2;
-              timing-function: linear;
-            }
-          }
-
           .content-caption {
             align-self: center;
+            width: 80%;
             margin: 0;
             padding: $line * 1.5 $line;
             font: {
@@ -184,6 +179,24 @@ body {
                 size: $line * 1.5;
               }
             }
+
+            &::before {
+              position: absolute;
+              left: 5%;
+              display: flex;
+              align-items: center;
+              content: '•';
+              color: $light;
+              padding: $line;
+              font: {
+                family: Materials, sans-serif;
+                size: $line * 3;
+              }
+              transition: {
+                duration: $time / 2;
+                timing-function: linear;
+              }
+            }
           }
 
           .content-info {
@@ -193,19 +206,35 @@ body {
             justify-content: space-around;
             margin: 0;
 
-            .content-slider,
-            table {
-              width: 40%;
-              height: $line * 30;
-            }
-
             .content-slider {
-              background: {
-                color: $green;
+              position: relative;
+              flex-basis: 35%;
+              max-width: 35%;
+              margin: $line * 2;
+              padding: 0;
+              overflow: {
+                x: hidden;
+                y: hidden;
+              }
+
+              img {
+                display: block;
+                margin: 0;
+                padding: 0;
+                min-height: 100%;
+                width: 100%;
+              }
+
+              .view-3d,
+              iframe {
+                display: none;
               }
             }
 
             table {
+              text: {
+                align: center;
+              }
               color: $light;
               border: {
                 collapse: collapse;
@@ -246,16 +275,19 @@ body {
               timing-function: linear;
             }
 
-            &::before {
-              display: none;
-            }
-
             .content-caption {
+              width: 100%;
               font: {
                 weight: bold;
               }
               text: {
                 align: center;
+              }
+              cursor: pointer;
+
+              &::before {
+                content: '◘';
+                color: $green;
               }
 
               em {
@@ -263,6 +295,21 @@ body {
                 font: {
                   weight: bold;
                   style: normal;
+                }
+              }
+
+              &:hover {
+                background: {
+                  color: $green;
+                }
+                color: $light;
+
+                em {
+                  color: darken($light, 30);
+                }
+
+                &:before {
+                  color: $light;
                 }
               }
             }

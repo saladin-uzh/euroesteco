@@ -1,8 +1,10 @@
 var materials = function () {
-    var materialsItem = $('.materials-item'),
-        windowBlock = $('.windows-block'),
-        windowIt = $('.window-item'),
+    var center = $('.main-center'),
+        materialsItem = $('.materials-item'),
+        block = center.children('[class$="-block"]'),
+        item = block.children('[class$="-item"]'),
         contentIt = $('.content-info'),
+        contentCp = $('.content-caption'),
         setCircles = function () {
             var circles = $('.materials-item'),
                 height = circles.css('height'),
@@ -22,29 +24,35 @@ var materials = function () {
         };
 
     setCircles();
+    contentIt.hide();
+    block.hide();
 
-    windowBlock.hide();
-
-    materialsItem.mouseenter(function (event) {
+    materialsItem.mouseenter(function () {
         var currentItem = $(this),
-            current = currentItem.children('span');
+            target = currentItem.attr('id'),
+            targetBlock = center.children('.' + target + '-block');
 
-        if (materialsItem.eq(0).is(event.target)) {
-            current.css({
-                'color': '#FFF',
-                'transition-duration': '0.3s'});
-            windowBlock.slideDown(700);
+        if (!currentItem.is('.active')) {
+            item.show();
+            currentItem.addClass('active');
+            materialsItem.not(currentItem).removeClass('active');
+            targetBlock.slideDown(500);
+            block.not(targetBlock).hide(500);
+            contentIt.hide();
+            item.removeClass('current');
         }
     });
 
-    contentIt.hide();
 
-    windowIt.click(function () {
-        var current = $(this);
 
-        current.addClass('current');
-        contentIt.show();
-        windowIt.not(current).hide();
+    contentCp.click(function () {
+        var current = $(this),
+            currentWindow = current.parent(),
+            details = current.siblings('.content-info');
+
+        currentWindow.toggleClass('current');
+        details.toggle(500);
+        item.not(currentWindow).toggle();
     });
 
     $(window).resize(setCircles);

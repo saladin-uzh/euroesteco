@@ -37,12 +37,10 @@ var materials = function () {
             materialsItem.not(currentItem).removeClass('active');
             targetBlock.slideDown(500);
             block.not(targetBlock).hide(500);
-            contentIt.hide();
+            contentIt.removeClass('anim');
             item.removeClass('current');
         }
     });
-
-
 
     contentCp.click(function () {
         var current = $(this),
@@ -50,11 +48,7 @@ var materials = function () {
             details = current.siblings('.content-info');
 
         currentWindow.toggleClass('current');
-        if (currentWindow.is('.current')) {
-            details.addClass('anim');
-        } else {
-            details.removeClass('anim');
-        }
+        details.toggleClass('anim');
         item.not(currentWindow).toggle();
     });
 

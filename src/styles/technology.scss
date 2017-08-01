@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   background: {
-    image: url("../images/bg-3.png");
     size: cover;
     position: center;
     attachment: fixed;
@@ -26,123 +25,266 @@ body {
 
   main {
     flex-grow: 1;
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
-    .sip-introduction {
-      width: 100%;
-      height: 80%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      .sip-3d,
-      .sip-flex {
-        flex-basis: 40%;
-        min-height: 60%;
+    .sip-3d {
+      position: relative;
+      align-self: stretch;
+      width: 50%;
+      background: {
+        color: transparentize($light, 0.8);
+        //image: url("https://city-house.com.ua/city_h/wp-content/uploads/2016/09/SIP-tehnologiya.jpg");
+        size: contain;
+        repeat: no-repeat;
+        position: center;
+      }
+      backface-visibility: visible;
+      margin: 0 0 $line 0;
+      text: {
+        align: center;
       }
 
-      .sip-3d {
-        background: {
-          color: black;
+      perspective: $line * 100;
+      perspective-origin: top;
+      transform-style: preserve-3d;
+
+      > * {
+        position: absolute;
+      }
+
+      .roof {
+        display: flex;
+        width: 100%;
+        height: 32%;
+        top: 0;
+        transform:
+                rotateY(35deg)
+                rotateZ(-1.5deg)
+                translateX(25%)
+                translateY(12.5%);
+
+        > .front {
+
+        }
+
+        > .back {
+
+        }
+
+        > .side {
+
+        }
+
+        > .inside-z {
+
+        }
+
+        > .inside-x {
+
         }
       }
 
-      .sip-flex {
+      .inside {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        background: {
-          color: $light;
+        width: 100%;
+        height: 35%;
+        top: 55%;
+        transform:
+                rotateY(35deg)
+                rotateZ(-1.5deg)
+                translateX(25%)
+                translateY(5%);
+
+        .between {
+          margin: 0 0 auto;
         }
 
-        .sip-caption,
-        .sip-paragraph {
-          border: {
-            bottom: $line / 5 solid $green;
+        .bottom {
+          background: {
+            image: url("../images/floor.png");
+            size: 100% 100%;
+            position: center;
+            repeat: no-repeat;
           }
-          padding: $line;
+          transform: rotateY(90deg);
+          width: 100%;
         }
+      }
 
-        .sip-caption {
-          margin: 0;
-          color: $green;
-          font: {
-            family: Arial, sans-serif;
-            size: $line * 2;
-            weight: bold;
+      .front-wall {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 19%;
+        bottom: 0;
+        transform:
+                rotateY(35deg)
+                rotateZ(-1deg)
+                translateX(25%)
+                translateY(5%);
+
+        .back {
+          background: {
+            image: url("../images/wall-two-windows.png");
+            size: 100% 100%;
+            position: center;
+            repeat: no-repeat;
           }
+          flex-basis: 60%;
         }
+      }
 
-        .sip-paragraph {
-          font: {
-            family: Arial, sans-serif;
-            size: $line * 1.8;
-            style: italic;
+      .side-wall {
+        display: flex;
+        width: 100%;
+        height: 19%;
+        bottom: 0;
+        transform:
+                rotateY(-50deg)
+                rotateZ(2deg)
+                translateX(-59%)
+                translateY(5%);
+        justify-content: center;
+
+        .wall {
+          background: {
+            image: url("../images/side-wall.png");
+            size: 100% 100%;
+            position: center;
+            repeat: no-repeat;
           }
-          color: $grey;
+          flex-basis: 60%;
         }
       }
     }
 
-    #sip-slide {
-      padding: $line;
-      background: {
-        color: $green;
-      }
-      color: $light;
-      text: {
-        align: center;
-      }
+    .sip-flex {
+      align-self: flex-start;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center;
-      transition: {
-        duration: $time / 2;
-        timing-function: linear;
-      }
-      border: none;
-      outline: none;
-      cursor: pointer;
+      flex-basis: 30%;
 
-      .btn-text {
+      .sip-caption,
+      .sip-paragraph {
+        border: {
+          bottom: $line / 5 solid $green;
+        }
+        background: {
+          color: $light;
+        }
+        padding: $line;
+      }
+
+      .sip-caption {
+        margin: 0;
+        color: $green;
         font: {
           family: Arial, sans-serif;
           size: $line * 2;
           weight: bold;
         }
-        text: {
-          transform: uppercase;
-        }
       }
 
-      &:hover {
-        background: {
-          color: lighten($green, 5);
+      .sip-paragraph {
+        font: {
+          family: Arial, sans-serif;
+          size: $line * 1.8;
+          style: italic;
         }
-      }
-    }
-
-    .sip-advantages {
-      display: none;
-      width: 100%;
-      height: 80%;
-
-      .advantages-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .advantages-photo {
-          border: 1px solid red;
-        }
+        color: $grey;
       }
     }
+
+    //#sip-slide {
+    //  padding: $line;
+    //  background: {
+    //    color: $green;
+    //  }
+    //  color: $light;
+    //  text: {
+    //    align: center;
+    //  }
+    //  display: flex;
+    //  flex-direction: column;
+    //  justify-content: space-around;
+    //  align-items: center;
+    //  transition: {
+    //    duration: $time / 2;
+    //    timing-function: linear;
+    //  }
+    //  border: none;
+    //  outline: none;
+    //  cursor: pointer;
+    //
+    //  .btn-text {
+    //    font: {
+    //      family: Arial, sans-serif;
+    //      size: $line * 2;
+    //      weight: bold;
+    //    }
+    //    text: {
+    //      transform: uppercase;
+    //    }
+    //  }
+    //
+    //  &:hover {
+    //    background: {
+    //      color: lighten($green, 5);
+    //    }
+    //  }
+    //}
+    //
+    //.sip-advantages {
+    //  display: flex;
+    //  flex-direction: column;
+    //  width: 80%;
+    //  height: 100%;
+    //
+    //  .advantages-item {
+    //    width: 100%;
+    //    height: 25%;
+    //    display: flex;
+    //    justify-content: space-between;
+    //    align-items: center;
+    //    background: {
+    //      color: $light;
+    //    }
+    //    border: {
+    //      bottom: $line / 10 solid $grey;
+    //    }
+    //
+    //    .advantages-photo {
+    //      width: 20%;
+    //      height: 100%;
+    //      margin: 0 $line * 2 0 0;
+    //      background: {
+    //        color: $green;
+    //      }
+    //    }
+    //
+    //    .advantages-paragraph {
+    //      flex-grow: 1;
+    //      max-width: 75%;
+    //      font: {
+    //        family: Arial, sans-serif;
+    //        style: italic;
+    //        size: $line * 1.5;
+    //      }
+    //    }
+    //
+    //    &:nth-of-type(even) {
+    //      flex-direction: row-reverse;
+    //
+    //      .advantages-photo {
+    //        margin: 0 0 0 $line * 2;
+    //      }
+    //    }
+    //  }
+    //}
   }
 
   @import "templates/footer";

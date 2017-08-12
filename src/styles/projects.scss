@@ -58,6 +58,7 @@ body {
         align-items: flex-start;
 
         .gallery-item {
+          position: relative;
           display: flex;
           height: $line * 15;
           max-width: 20%;
@@ -96,6 +97,78 @@ body {
             }
           }
 
+          .item-desc {
+            position: fixed;
+            display: none;
+            top: 20%;
+            left: 12%;
+            width: 75%;
+            height: 75%;
+            margin: auto;
+            background: {
+              color: $light;
+            }
+
+            &.active-desc {
+              display: flex;
+              z-index: 1000;
+            }
+
+            .item-info {
+              display: flex;
+              justify-content: space-around;
+              flex-direction: column;
+              align-items: center;
+              width: 50%;
+
+              .desc-caption {
+                font: {
+                  family: Arial, sans-serif;
+                  size: $line * 2.2;
+                  weight: bold;
+                }
+                color: $green;
+                padding: $line * 2 0 $line * 2 0;
+                margin: 0 0 0 $line * 5;
+                align-self: flex-start;
+                border: {
+                  bottom: $line / 4 solid $green;
+                }
+              }
+
+              .desc-paragraph {
+                flex-grow: 1;
+                padding: $line * 5;
+                font: {
+                  family: Arial, sans-serif;
+                  style: italic;
+                }
+                color: $grey;
+              }
+            }
+
+            .desc-images {
+              display: flex;
+              justify-content: space-around;
+              flex-direction: column;
+              align-items: center;
+              width: 50%;
+
+              .house-image,
+              .portal {
+                width: $line * 32;
+              }
+            }
+          }
+
+          .desc-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $light;
+            background-color: $green;
+          }
+
           &:hover {
 
             figcaption {
@@ -103,40 +176,6 @@ body {
             }
           }
         }
-      }
-    }
-
-    .item-desc {
-      position: absolute;
-      display: flex;
-      top: 0;
-      left: 0;
-      width: 60%;
-      height: 80%;
-      margin: auto;
-      background: {
-        color: $light;
-      }
-    }
-
-    .item-info {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-    }
-    .desc-images {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      .desc-image {
-        width: 80%;
-      }
-      .portal {
-        width: 80%;
       }
     }
   }

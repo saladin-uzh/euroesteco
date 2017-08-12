@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  @include noScroll();
   display: flex;
   flex-direction: column;
   background: {
@@ -27,14 +26,12 @@ body {
   @import "templates/up-button";
 
   main {
+    position: relative;
     flex-grow: 1;
     width: 100%;
     height: 100%;
 
-    &.gallery {
-      background: {
-        color: transparentize($green, 0.2);
-      }
+    .gallery {
       padding: 0 10%;
       text: {
         align: center;
@@ -43,7 +40,7 @@ body {
       .gallery-heading {
         display: inline-block;
         background: {
-          color: $light;
+          color: black;
         }
         font: {
           size: $line * 3.5;
@@ -61,8 +58,8 @@ body {
         align-items: flex-start;
 
         .gallery-item {
-          position: relative;
-          flex-basis: 20%;
+          display: flex;
+          height: $line * 15;
           max-width: 20%;
           margin: 0 $line * 2 $line * 2 0;
           padding: 0;
@@ -74,11 +71,10 @@ body {
           cursor: pointer;
 
           img {
-            display: block;
             margin: 0;
             padding: 0;
-            min-height: 100%;
             width: 100%;
+            height: 100%;
           }
 
           figcaption {
@@ -107,6 +103,18 @@ body {
             }
           }
         }
+      }
+    }
+
+    .item-desc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 80%;
+      margin: auto;
+      background: {
+        color: $light;
       }
     }
   }

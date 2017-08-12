@@ -30,6 +30,85 @@ body {
     flex-grow: 1;
     width: 100%;
     height: 100%;
+
+    &.gallery {
+      background: {
+        color: transparentize($green, 0.2);
+      }
+      padding: 0 10%;
+      text: {
+        align: center;
+      }
+
+      .gallery-heading {
+        display: inline-block;
+        background: {
+          color: $light;
+        }
+        font: {
+          size: $line * 3.5;
+        }
+        color: $green;
+        margin: 0 0 $line * 2;
+        padding: $line / 2 $line * 5;
+      }
+
+      .gallery-box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        .gallery-item {
+          position: relative;
+          flex-basis: 20%;
+          max-width: 20%;
+          margin: 0 $line * 2 $line * 2 0;
+          padding: 0;
+          border: $line / 2 solid $grey;
+          overflow: {
+            x: hidden;
+            y: hidden;
+          }
+          cursor: pointer;
+
+          img {
+            display: block;
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            width: 100%;
+          }
+
+          figcaption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text: {
+              align: center;
+            }
+            background: {
+              color: transparentize($grey, 0.2);
+            }
+            padding: $line / 2 0;
+            color: $light;
+            transform: translateY(100%);
+            transition: {
+              duration: $time;
+              timing-function: linear;
+            }
+          }
+
+          &:hover {
+
+            figcaption {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
   }
 
   @import "templates/footer";

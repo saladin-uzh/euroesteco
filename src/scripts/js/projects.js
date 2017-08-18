@@ -9,6 +9,7 @@ var projects = function () {
     galleryItem.click(function () {
         var current = $(this);
 
+        galleryItem.toggle();
         current.next(galleryDesc).toggleClass('active-desc');
     });
 };

@@ -31,6 +31,9 @@ body {
     flex-grow: 1;
     width: 100%;
     height: 100%;
+    overflow: {
+      y: scroll;
+    };
 
     .gallery {
       padding: 0 10%;
@@ -41,7 +44,7 @@ body {
       .gallery-heading {
         display: inline-block;
         background: {
-          color: black;
+          color: white;
         }
         font: {
           size: $line * 3.5;
@@ -60,7 +63,6 @@ body {
 
         .gallery-item {
           position: relative;
-          display: flex;
           height: $line * 15;
           width: 20%;
           margin: 0 $line * 2 $line * 2 0;
@@ -68,7 +70,7 @@ body {
           border: {
             width: $line / 2;
             style: solid;
-            color: $grey;
+            color: $light;
           }
           overflow: {
             x: hidden;

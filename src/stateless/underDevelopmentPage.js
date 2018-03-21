@@ -1,6 +1,6 @@
 import React from "react";
 
-export const UnderDevelopmentPage = () => {
+const UnderDevelopmentPage = () => {
     return (
         <div className="page">
             <nav className="green darken-4">
@@ -19,5 +19,7 @@ export const UnderDevelopmentPage = () => {
                 </div>
             </div>
         </div>
-    );
+    )
 };
+
+export default UnderDevelopmentPage;

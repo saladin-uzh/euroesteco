@@ -1,5 +1,5 @@
 import React from "react";
-import * as $ from "jquery";
+import PropTypes from "prop-types";
 
 const containerStyle = {
     height: "100%",
@@ -9,22 +9,20 @@ const containerStyle = {
     zIndex: "1"
 };
 
-export const Preloader = (props) => {
-    const preloaderProps = props,
-        preloader = $("#preloader");
+const Preloader = (props) => {
     return (
-        <div id="preloader" className="valign-wrapper" style={containerStyle}>
-            {
-                preloaderProps.visible ?
-                    preloader.show() :
-                    preloader.hide()
+        <div
+            id="preloader"
+            className={
+                "valign-wrapper scale-transition " + (
+                    props.visible ?
+                        "" :
+                        "scale-out unset"
+                )
             }
-            <div className={
-                "preloader-wrapper big active center-block scale-transition" +
-                preloaderProps.visible ?
-                    "scale-in" :
-                    "scale-out"
-            }>
+            style={containerStyle}
+        >
+            <div className="preloader-wrapper big active center-block">
                 <div className="spinner-layer spinner-green-only">
                     <div className="circle-clipper left">
                         <div className="circle"/>
@@ -40,3 +38,9 @@ export const Preloader = (props) => {
         </div>
     );
 };
+
+Preloader.propTypes = {
+    visible: PropTypes.bool.isRequired
+};
+
+export default Preloader

@@ -19,7 +19,6 @@ export const Header = () => {
                                 <li><Link to="/contact-us">ContactUs</Link></li>
                                 <li id="ru" onClick={() => i18n.changeLanguage('ru')}>Russian</li>
                                 <li id="sp" onClick={() => i18n.changeLanguage('sp')}>Spanish</li>
-                                <li>LNG test: {t("test.hello")}</li>
                             </ul>
                         </div>
                     </nav>

@@ -1,3 +1,5 @@
 {
-  "test": "Welcome to Euro EstEco"
+  "test": {
+    "hello": "Hello on Spanish"
+  }
 }

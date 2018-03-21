@@ -20,11 +20,9 @@ export class Calculator extends React.Component {
 
     }
     render() {
-        console.log(this.calculatorRender());
         return (
             <div className="calculator" style={styles}>
                 <h1>Calc</h1>
-                <span>Stage number: {this.state.stage}</span>
                 <button className="prev-stage-btn" type="button">prev stage</button>
                 <button className="next-stage-btn" type="button">next stage</button>
             </div>

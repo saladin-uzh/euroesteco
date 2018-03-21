@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
-import "materialize-css/dist/js/materialize";
-import "materialize-css/dist/css/materialize.min.css";
-import {Switch, Route} from 'react-router-dom';
-import {Preloader} from "./stateless/preloader";
-import {UnderDevelopmentPage} from "./stateless/underDevelopmentPage";
-import {Header} from "./components/header";
-import {Main} from "./components/main";
-import {AboutUs} from "./components/aboutUs";
-import {Sip} from "./components/sip";
-import {ContactUs} from "./components/contactUs";
+import React, { Component } from "react"
+import "./App.css"
+import "materialize-css/dist/js/materialize"
+import "materialize-css/dist/css/materialize.min.css"
+import {Switch, Route} from "react-router-dom"
+import {Preloader} from "./stateless/preloader"
+import {UnderDevelopmentPage} from "./stateless/underDevelopmentPage"
+import {Header} from "./components/header"
+import {Main} from "./components/main"
+import {AboutUs} from "./components/aboutUs"
+import {Sip} from "./components/sip"
+import {ContactUs} from "./components/contactUs"
 
 class App extends Component {
   render() {
@@ -25,8 +25,8 @@ class App extends Component {
               <Route path="/contact-us" component={ContactUs}/>
           </Switch>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

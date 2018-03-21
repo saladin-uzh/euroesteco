@@ -1,6 +1,6 @@
 import React from "react"
-import {Link} from 'react-router-dom'
-import {I18n} from 'react-i18next'
+import {Link} from "react-router-dom"
+import {I18n} from "react-i18next"
 
 export const Header = () => {
     return (
@@ -17,8 +17,8 @@ export const Header = () => {
                                 <li><Link to="/about-us">AboutUs</Link></li>
                                 <li><Link to="/sip-technology">SIP</Link></li>
                                 <li><Link to="/contact-us">ContactUs</Link></li>
-                                <li id="ru" onClick={() => i18n.changeLanguage('ru')}>Russian</li>
-                                <li id="sp" onClick={() => i18n.changeLanguage('sp')}>Spanish</li>
+                                <li onClick={() => i18n.changeLanguage("ru")}>Russian</li>
+                                <li onClick={() => i18n.changeLanguage("sp")}>Spanish</li>
                             </ul>
                         </div>
                     </nav>

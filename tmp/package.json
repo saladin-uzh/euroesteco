@@ -1,0 +1,31 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "serve": "serve -o build/",
+    "run": "npm-run-all serve & gulp",
+    "start": "npm run gulp && serve"
+  },
+  "author": "Jonco Lab",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-minify": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
+    "serve": "^6.4.11"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

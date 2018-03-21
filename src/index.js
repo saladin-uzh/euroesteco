@@ -14,9 +14,9 @@ i18n
     .use(LanguageDetector)
     .use(reactI18nextModule)
     .init({
-        callbackLng: "ru",
-        ns: ["translations"],
-        defaultNs: "translations",
+        callbackLng: 'ru',
+        ns: ['translations'],
+        defaultNs: 'translations',
         debug: true,
         interpolation: {
             escapeValue: false

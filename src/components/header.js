@@ -9,16 +9,16 @@ export const Header = () => {
                 (t, {i18n}) => (
                     <nav className="grey darken-4">
                         <div className="nav-wrapper">
-                            <a className="brand-logo center valign-wrapper" href="_index.html">
+                            <a className="brand-logo center valign-wrapper" href="/">
                                 <img width="125px" className="responsive-img" src="img/logo.png" alt="EuroEstEco logo"/>
                             </a>
-                            <ul>
+                            <ul className="right">
                                 <li><Link to="/">Main</Link></li>
                                 <li><Link to="/about-us">AboutUs</Link></li>
                                 <li><Link to="/sip-technology">SIP</Link></li>
                                 <li><Link to="/contact-us">ContactUs</Link></li>
-                                <li onClick={() => i18n.changeLanguage("ru")}>Russian</li>
-                                <li onClick={() => i18n.changeLanguage("sp")}>Spanish</li>
+                                <li id="ru" onClick={() => i18n.changeLanguage('ru')}>Russian</li>
+                                <li id="sp" onClick={() => i18n.changeLanguage('sp')}>Spanish</li>
                             </ul>
                         </div>
                     </nav>

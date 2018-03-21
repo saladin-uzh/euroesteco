@@ -36,7 +36,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Preloader visible={this.state.preloaderActive}/>
-                <UnderDevelopmentPage/>
+                {/*<UnderDevelopmentPage/>*/}
                 <Header/>
                 <Switch>
                     <Route exact path="/" component={Main}/>

@@ -6,7 +6,7 @@ const containerStyle = {
     width: "100%",
     position: "fixed",
     background: "white",
-    zIndex: "1"
+    zIndex: "100"
 };
 
 const Preloader = (props) => {

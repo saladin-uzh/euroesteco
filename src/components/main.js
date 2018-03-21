@@ -8,11 +8,11 @@ export class Main extends Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <div>
+                        <main className="container">
                             <h1>Hello Main page!</h1>
                             <h2>{t("test.hello")}</h2>
                             <Calculator/>
-                        </div>
+                        </main>
                     )
                 }
             </I18n>

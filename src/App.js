@@ -6,6 +6,7 @@ import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
 import UnderDevelopmentPage from "./stateless/underDevelopmentPage"
 import {Header} from "./components/header"
+import Footer from "./components/footer"
 import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
@@ -44,6 +45,7 @@ class App extends React.Component {
                     <Route path="/sip-technology" component={Sip}/>
                     <Route path="/contact-us" component={ContactUs}/>
                 </Switch>
+                <Footer/>
             </div>
         )
     }

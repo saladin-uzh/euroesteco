@@ -2,148 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a4dba13-f7f3-4002-af03-b31eaef5a448" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Saladin.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/stateless/header.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/stateless/preloader.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/stateless/underDevelopmentPage.js" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/SVG/preloader.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/admin/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/admin/styles/admin.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/feedback-button.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/preloader.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/up-button.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/materials.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/partners.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/projects.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/technology.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/es/works.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/icomoon.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/materials.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/2403854036464d9aa4829d6be3f8ea77.webp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/gallery/gallery-9.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/advantages-1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/advantages-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/advantages-3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg-3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg-4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg-5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/bgm-1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/brilliant-design.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/ecosol-60.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/euro-70.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/floor.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/footer.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/geneo-phz.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/geneo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/inside-side-wall.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/korsa-design-70.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/senego.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/side-wall.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/wall-two-windows.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/materials.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/partners.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/projects.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/materials.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/partners.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/projects.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/technology.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/ru/works.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/js/jquery-3.2.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/js/materials.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/js/projects.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/js/script.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/js/technology.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/php/feedback.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/materials.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/partners.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/projects.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/technology.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/feedback-button.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/footer.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/preloader.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/up-button.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/templates/variables.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/works.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/technology.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/works.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/14b80f08af1388fb74827085555.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/2-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/BG-example-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/BG-example-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/BG-example-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/BG-example.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/IB017-Moden-villa-in-San-Juan-Ibiza(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/IMG_9828.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/bgm-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/bgm-3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/bgm.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/brilliant-design.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/ecosol-60.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/euro-70.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/footer-1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/geneo-phz.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/geneo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/host.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0001.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0002.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0003.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0004.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0005.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0006.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0007.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0008.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/0009.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/huinia/SIP-tehnologiya.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/korsa-design-70.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/logo-jonco.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/logo.glb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/main.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/001-terrace.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/002-roof.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/003-window-5.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/004-window-1.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/005-window-4.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/006-window-3.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/007-garage.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/008-door-1.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/009-window-2.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/010-door.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/011-window.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/materials/warehouse-closed.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/senego.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/tmp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zip/build.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
+      <change beforePath="$PROJECT_DIR$/src/stateless/header.js" afterPath="$PROJECT_DIR$/src/stateless/header.js" />
+      <change beforePath="$PROJECT_DIR$/src/stateless/preloader.js" afterPath="$PROJECT_DIR$/src/stateless/preloader.js" />
+      <change beforePath="$PROJECT_DIR$/src/stateless/underDevelopmentPage.js" afterPath="$PROJECT_DIR$/src/stateless/underDevelopmentPage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -170,11 +33,61 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="345">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stateless/header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="underDevelopmentPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stateless/underDevelopmentPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preloader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stateless/preloader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,10 +115,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/stateless/preloader.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/stateless/underDevelopmentPage.js" />
         <option value="$PROJECT_DIR$/src/stateless/header.js" />
+        <option value="$PROJECT_DIR$/src/stateless/underDevelopmentPage.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/stateless/preloader.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
@@ -256,6 +171,22 @@
             <path>
               <item name="euroesteco" type="b2602c69:ProjectViewProjectNode" />
               <item name="euroesteco" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="euroesteco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="euroesteco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="euroesteco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="euroesteco" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="euroesteco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="euroesteco" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -312,7 +243,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4973000" />
+    <option name="totallyTimeSpent" value="7196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1024" extended-state="6" />
@@ -321,22 +252,35 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.50431037" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960254" sideWeight="0.49568966" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,14 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -492,6 +428,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/gulpfile.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/materialize.min.css" />
+    <entry file="file://$PROJECT_DIR$/tmp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/materialize-css/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/src/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1472">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/src/_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/preloader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/underDevelopmentPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

@@ -1,16 +1,17 @@
-import React from "react"
+import React, {Fragment} from "react"
 import "./App.css"
-import "materialize-css/dist/js/materialize"
 import "materialize-css/dist/css/materialize.min.css"
 import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
-import UnderDevelopmentPage from "./stateless/underDevelopmentPage"
+// import UnderDevelopmentPage from "./stateless/underDevelopmentPage"
 import {Header} from "./components/header"
 import Footer from "./components/footer"
 import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
 import {ContactUs} from "./components/contactUs"
+import PropTypes from "prop-types"
+import * as jQuery from "jquery"
 
 class App extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class App extends React.Component {
             preloaderActive: true
         };
 
-        this.togglePreloader = this.togglePreloader.bind(this)
+        this.togglePreloader = this.togglePreloader.bind(this);
     }
     togglePreloader() {
         this.setState({
@@ -31,11 +32,11 @@ class App extends React.Component {
         setTimeout(
             this.togglePreloader,
             1000
-        )
+        );
     }
     render() {
         return (
-            <div className="App">
+            <Fragment>
                 <Preloader visible={this.state.preloaderActive}/>
                 {/*<UnderDevelopmentPage/>*/}
                 <Header/>
@@ -46,7 +47,7 @@ class App extends React.Component {
                     <Route path="/contact-us" component={ContactUs}/>
                 </Switch>
                 <Footer/>
-            </div>
+            </Fragment>
         )
     }
 }

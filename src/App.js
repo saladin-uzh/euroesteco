@@ -4,12 +4,14 @@ import "materialize-css/dist/css/materialize.min.css"
 import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
 // import UnderDevelopmentPage from "./stateless/underDevelopmentPage"
-import {Header} from "./components/header"
+import Header from "./components/header"
 import Footer from "./components/footer"
 import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
 import {ContactUs} from "./components/contactUs"
+import * as M from "materialize-css"
+import * as $ from "jquery"
 
 class App extends React.Component {
     constructor(props) {
@@ -31,6 +33,9 @@ class App extends React.Component {
             this.togglePreloader,
             1000
         );
+    }
+    componentDidUpdate() {
+        M.Dropdown.init($(".dropdown-trigger"))
     }
     render() {
         return (

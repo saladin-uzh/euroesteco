@@ -3,63 +3,65 @@
 body {
   @extend .globalReset;
 
-  .App {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-
-    main {
-      overflow: hidden;
-      flex: 1 0 auto;
+  #root {
+    .App {
       width: 100%;
-      max-width: 100%;
-      height: 80%;
-      min-height: 60%;
-      max-height: 90%;
-      position: relative;
-      padding: $l * 6 10% 0 10%;
-      text-align: left;
-      color: white;
-      @include blackFilter(0.3);
+      height: 100%;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
 
-      .main-caption {
-        padding: $l * 2 0 $l * 3 0;
-        @extend .ptSans;
-        font-size: 5.2em;
-        letter-spacing: $l * .2;
-        line-height: 1.1;
-      }
-
-      .name {
-        margin-left: $l * 9;
-        font-size: 1.15em;
-        @extend .ubuntu;
-        font-weight: 500;
-        letter-spacing: $l * .5;
-      }
-
-      .sub-caption {
-        width: 50%;
-        @extend .openSans;
-        font-size: 1.4em;
-        letter-spacing: $l * .47;
-        line-height: 1.42;
-      }
-
-      .img-background {
-        box-sizing: border-box;
+      .container {
+        overflow: hidden;
+        flex: 1 0 auto;
         width: 100%;
-        position: absolute;
-        top: $l * -18;
-        left: 0;
-        z-index: -2;
-      }
-    }
+        max-width: 100%;
+        height: 80%;
+        min-height: 60%;
+        max-height: 90%;
+        position: relative;
+        padding: $l * 6 10% 0 10%;
+        text-align: left;
+        color: white;
+        @include blackFilter(0.3);
 
-    #preloader.unset {
-      border-radius: 50%;
+        .main-caption {
+          @extend .ptSans;
+          padding: $l * 2 0 $l * 3 0;
+          font-size: 5.2em;
+          letter-spacing: $l * .2;
+          line-height: 1.1;
+        }
+
+        .name {
+          @extend .ubuntu;
+          margin-left: $l * 9;
+          font-size: 1.15em;
+          font-weight: 500;
+          letter-spacing: $l * .5;
+        }
+
+        .sub-caption {
+          @extend .openSans;
+          width: 50%;
+          font-size: 1.4em;
+          letter-spacing: $l * .47;
+          line-height: 1.42;
+        }
+
+        .img-background {
+          box-sizing: border-box;
+          width: 100%;
+          position: absolute;
+          top: $l * -18;
+          left: 0;
+          z-index: -2;
+        }
+      }
+
+      #preloader.unset {
+        border-radius: 50%;
+      }
     }
   }
 }

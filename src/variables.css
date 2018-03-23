@@ -8,126 +8,189 @@
 
 @font-face {
   font-family: "Abril-Fatface";
-  src: url("../public/fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
+  src: url("./fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
+.abril {
+  font-family: "Abril-Fatface", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Arvo";
-  src: url("../public/fonts/Arvo/Arvo-Regular.ttf") format("truetype");
+  src: url("./fonts/Arvo/Arvo-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Arvo-Bold";
-  src: url("../public/fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+  src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
+.arvo {
+  font-family: "Arvo", "Arial", sans-serif; }
+
+.arvoBold {
+  font-family: "Arvo-Bold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Josephin";
-  src: url("../public/fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
+  src: url("./fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Josefin-Bold";
-  src: url("../public/fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype");
+  src: url("./fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
+.josefin {
+  font-family: "Josefin", "Arial", sans-serif; }
+
+.josefinBold {
+  font-family: "JosefinBold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Lato";
-  src: url("../public/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("../public/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
+.lato {
+  font-family: "Lato", "Arial", sans-serif; }
+
+.latoBold {
+  font-family: "Lato-Bold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Open-Sans";
-  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  src: url("./fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Open-Sans-Bold";
-  src: url("../public/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  src: url("./fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Open-Sans-Black";
-  src: url("../public/fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
+.openSans {
+  font-family: "Open-Sans", "Arial", sans-serif; }
+
+.openSansBold {
+  font-family: "Open-Sans-Bold", "Arial", sans-serif; }
+
+.openSansBlack {
+  font-family: "Open-Sans-Black", "Arial", sans-serif; }
+
 @font-face {
   font-family: "PT-Sans";
-  src: url("../public/fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
+  src: url("./fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "PT-Sans-Bold";
-  src: url("../public/fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
+  src: url("./fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
+.ptSans {
+  font-family: "PT-Sans", "Arial", sans-serif; }
+
+.ptSansBold {
+  font-family: "PT-Sans-Bold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Roboto";
-  src: url("../public/fonts/roboto/Roboto-Regular.woff") format("woff"), url("../public/fonts/roboto/Roboto-Regular.woff2") format("woff2");
+  src: url("./fonts/roboto/Roboto-Regular.woff") format("woff"), url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("../public/fonts/roboto/Roboto-Medium.woff") format("woff"), url("../public/fonts/roboto/Roboto-Medium.woff2") format("woff2");
+  src: url("./fonts/roboto/Roboto-Medium.woff") format("woff"), url("./fonts/roboto/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("../public/fonts/roboto/Roboto-Bold.woff") format("woff"), url("../public/fonts/roboto/Roboto-Bold.woff2") format("woff2");
+  src: url("./fonts/roboto/Roboto-Bold.woff") format("woff"), url("./fonts/roboto/Roboto-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 
+.roboto {
+  font-family: "Roboto", "Arial", sans-serif; }
+
+.robotoMedium {
+  font-family: "Roboto-Medium", "Arial", sans-serif; }
+
+.robotoBold {
+  font-family: "Roboto-Bold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Ubuntu";
-  src: url("../public/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Ubuntu-Medium";
-  src: url("../public/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  src: url("./fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "Ubuntu-Bold";
-  src: url("../public/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  src: url("./fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
+.ubuntu {
+  font-family: "Ubuntu", "Arial", sans-serif; }
+
+.ubuntuMedium {
+  font-family: "Ubuntu-Medium", "Arial", sans-serif; }
+
+.ubuntuBold {
+  font-family: "Ubuntu-Bold", "Arial", sans-serif; }
+
 @font-face {
   font-family: "Vollkorn";
-  src: url("../public/fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
+  src: url("./fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Vollkorn-Bold";
-  src: url("../public/fonts/Vollkorn/Vollkorn-Bold.ttf") format("truetype");
+  src: url("./fonts/Vollkorn/Vollkorn-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Vollkorn-Black";
-  src: url("../public/fonts/Vollkorn/Vollkorn-Black.ttf") format("truetype");
+  src: url("./fonts/Vollkorn/Vollkorn-Black.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
+
+.vollkorn {
+  font-family: "Vollkorn", "Arial", sans-serif; }
+
+.vollkornBold {
+  font-family: "Vollkorn-Bold", "Arial", sans-serif; }
+
+.vollkornBlack {
+  font-family: "Vollkorn-Black", "Arial", sans-serif; }

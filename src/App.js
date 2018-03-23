@@ -10,8 +10,6 @@ import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
 import {ContactUs} from "./components/contactUs"
-import PropTypes from "prop-types"
-import * as jQuery from "jquery"
 
 class App extends React.Component {
     constructor(props) {
@@ -36,7 +34,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <Fragment>
+            <div>
                 <Preloader visible={this.state.preloaderActive}/>
                 {/*<UnderDevelopmentPage/>*/}
                 <Header/>
@@ -47,7 +45,7 @@ class App extends React.Component {
                     <Route path="/contact-us" component={ContactUs}/>
                 </Switch>
                 <Footer/>
-            </Fragment>
+            </div>
         )
     }
 }

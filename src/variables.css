@@ -1,0 +1,133 @@
+.globalReset {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: "Abril-Fatface";
+  src: url("../public/fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Arvo";
+  src: url("../public/fonts/Arvo/Arvo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Arvo-Bold";
+  src: url("../public/fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Josephin";
+  src: url("../public/fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Josefin-Bold";
+  src: url("../public/fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../public/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../public/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../public/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("../public/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans-Black";
+  src: url("../public/fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT-Sans";
+  src: url("../public/fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT-Sans-Bold";
+  src: url("../public/fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/roboto/Roboto-Regular.woff") format("woff"), url("../public/fonts/roboto/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../public/fonts/roboto/Roboto-Medium.woff") format("woff"), url("../public/fonts/roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../public/fonts/roboto/Roboto-Bold.woff") format("woff"), url("../public/fonts/roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../public/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../public/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../public/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Vollkorn";
+  src: url("../public/fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Vollkorn-Bold";
+  src: url("../public/fonts/Vollkorn/Vollkorn-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Vollkorn-Black";
+  src: url("../public/fonts/Vollkorn/Vollkorn-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }

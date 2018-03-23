@@ -10,6 +10,7 @@
     "materialize-css": "^1.0.0-alpha.4",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
+    "react-classset": "0.0.2",
     "react-dom": "^16.2.0",
     "react-i18next": "^7.5.0",
     "react-router-dom": "^4.2.2",

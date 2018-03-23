@@ -2,29 +2,41 @@ import React from "react"
 import {Link} from "react-router-dom"
 import {I18n} from "react-i18next"
 import i18n from "i18next"
-
-const logo = "img/logo.png";
+import {Files} from "../App"
+import classSet from "react-classset"
 
 class Header extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            langBtn: false
+        };
+
         this.handleLangChange = this.handleLangChange.bind(this);
     }
-    handleLangChange() {
-        alert(i18n.language);
-        i18n.changeLanguage('ru');
+    handleLangChange(e) {
+        let newLanguage = e.target.id;
+        console.log(e.target.id);
+        i18n.changeLanguage(newLanguage)
+        this.setState({
+            langBtn: this.langBtn !== this.langBtn
+        })
     }
     render() {
+        const btnClass = classSet({
+            'center-align grey-text text-darken-3': true,
+            'disabled': this.state.langBtn
+        });
         return (
             <I18n>
                 {
-                    (t, {i18n}) => (
+                    (t) => (
                         <header className="App-header">
                             <nav className="grey darken-3">
                                 <div className="nav-wrapper container">
                                     <a className="brand-logo" href="/">
-                                        <img width="110px" className="responsive-img" src={logo} alt="EuroEstEco logo"/>
+                                        <img width="110px" className="responsive-img" src={Files.logo} alt="EuroEstEco logo"/>
                                     </a>
                                     <ul className="right">
                                         <li><Link to="/">Main</Link></li>
@@ -38,13 +50,13 @@ class Header extends React.Component {
                                                 <li
                                                     id="ru"
                                                     onClick={this.handleLangChange}>
-                                                    <span className="center-align grey-text text-darken-3">Russian</span>
+                                                    <span className={btnClass}>Russian</span>
                                                 </li>
                                                 <li className="divider" tabIndex="-1"/>
                                                 <li
                                                     id="sp"
                                                     onClick={this.handleLangChange}>
-                                                    <span className="center-align grey-text text-darken-3">Spanish</span>
+                                                    <span className={btnClass}>Spanish</span>
                                                 </li>
                                             </ul>
                                         </li>

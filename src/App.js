@@ -1,9 +1,8 @@
-import React, {Fragment} from "react"
+import React from "react"
 import "./App.css"
 import "materialize-css/dist/css/materialize.min.css"
 import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
-// import UnderDevelopmentPage from "./stateless/underDevelopmentPage"
 import Header from "./components/header"
 import Footer from "./components/footer"
 import {Main} from "./components/main"
@@ -12,6 +11,11 @@ import {Sip} from "./components/sip"
 import {ContactUs} from "./components/contactUs"
 import * as M from "materialize-css"
 import * as $ from "jquery"
+
+export const Files = {
+    logo: "img/logo.png",
+    mainBg: "../img/List_01.jpg"
+};
 
 class App extends React.Component {
     constructor(props) {
@@ -39,16 +43,19 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div id="App">
+            <div className="App">
                 <Preloader visible={this.state.preloaderActive}/>
-                {/*<UnderDevelopmentPage/>*/}
                 <Header/>
-                <Switch>
-                    <Route exact path="/" component={Main}/>
-                    <Route path="/about-us" component={AboutUs}/>
-                    <Route path="/sip-technology" component={Sip}/>
-                    <Route path="/contact-us" component={ContactUs}/>
-                </Switch>
+                <main className="App-page">
+                    <div className="container">
+                        <Switch>
+                            <Route exact path="/" component={Main}/>
+                            <Route path="/about-us" component={AboutUs}/>
+                            <Route path="/sip-technology" component={Sip}/>
+                            <Route path="/contact-us" component={ContactUs}/>
+                        </Switch>
+                    </div>
+                </main>
                 <Footer/>
             </div>
         )

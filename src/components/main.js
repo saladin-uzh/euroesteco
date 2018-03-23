@@ -1,5 +1,6 @@
-import React from "react"
+import React, {Fragment} from "react"
 import {I18n} from "react-i18next"
+import {Files} from "../App"
 
 export class Main extends React.Component {
     render() {
@@ -7,7 +8,7 @@ export class Main extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <main className="container">
+                        <Fragment>
                             <h1 className="main-caption">
                                 {t("test.font")}
                                 <br/>
@@ -19,9 +20,9 @@ export class Main extends React.Component {
                             </h3>
                             <img
                                 className="main-image img-background"
-                                src="../img/List_01.jpg"
+                                src={Files.mainBg}
                                 alt="Main background"/>
-                        </main>
+                        </Fragment>
                     )
                 }
             </I18n>

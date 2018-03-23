@@ -8,7 +8,6 @@ import Backend from "i18next-xhr-backend"
 import LanguageDetector from "i18next-browser-languagedetector"
 import App from "./App"
 import registerServiceWorker from "./registerServiceWorker"
-import * as $ from "jquery"
 
 i18n
     .use(Backend)

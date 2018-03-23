@@ -1,5 +1,4 @@
 @import "variables.scss";
-@import "~materialize-css";
 
 body {
   @extend .globalReset;
@@ -15,8 +14,7 @@ body {
       .App-header {
 
         #dropdown-lang {
-          transform-origin: bottom !important;
-          border: 10px solid red !important;
+          transform-origin: bottom;
         }
       }
 

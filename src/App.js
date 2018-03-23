@@ -39,7 +39,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div className="App">
+            <div id="App">
                 <Preloader visible={this.state.preloaderActive}/>
                 {/*<UnderDevelopmentPage/>*/}
                 <Header/>

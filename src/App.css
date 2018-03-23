@@ -87,7 +87,7 @@
   font-weight: 800;
   font-style: normal; }
 
-.openSans, body #root .App .container .sub-caption {
+.openSans, body #root #App .container .sub-caption {
   font-family: "Open-Sans", "Arial", sans-serif; }
 
 .openSansBold {
@@ -108,7 +108,7 @@
   font-weight: 700;
   font-style: normal; }
 
-.ptSans, body #root .App .container .main-caption {
+.ptSans, body #root #App .container .main-caption {
   font-family: "PT-Sans", "Arial", sans-serif; }
 
 .ptSansBold {
@@ -159,7 +159,7 @@
   font-weight: 700;
   font-style: normal; }
 
-.ubuntu, body #root .App .container .name {
+.ubuntu, body #root #App .container .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
 
 .ubuntuMedium {
@@ -195,13 +195,13 @@
 .vollkornBlack {
   font-family: "Vollkorn-Black", "Arial", sans-serif; }
 
-body #root .App {
+body #root #App {
   width: 100%;
   height: 100%;
   display: flex;
   min-height: 100vh;
   flex-direction: column; }
-  body #root .App .container {
+  body #root #App .container {
     overflow: hidden;
     flex: 1 0 auto;
     width: 100%;
@@ -214,7 +214,7 @@ body #root .App {
     text-align: left;
     color: white;
     position: relative; }
-    body #root .App .container::before {
+    body #root #App .container::before {
       content: '';
       display: inline-block;
       position: absolute;
@@ -224,27 +224,27 @@ body #root .App {
       height: 100%;
       background-color: rgba(20, 20, 20, 0.7);
       z-index: -1; }
-    body #root .App .container .main-caption {
+    body #root #App .container .main-caption {
       padding: 20px 0 30px 0;
       font-size: 5.2em;
       letter-spacing: 2px;
       line-height: 1.1; }
-    body #root .App .container .name {
+    body #root #App .container .name {
       margin-left: 90px;
       font-size: 1.15em;
       font-weight: 500;
       letter-spacing: 5px; }
-    body #root .App .container .sub-caption {
+    body #root #App .container .sub-caption {
       width: 50%;
       font-size: 1.4em;
       letter-spacing: 4.7px;
       line-height: 1.42; }
-    body #root .App .container .img-background {
+    body #root #App .container .img-background {
       box-sizing: border-box;
       width: 100%;
       position: absolute;
       top: -180px;
       left: 0;
       z-index: -2; }
-  body #root .App #preloader.unset {
+  body #root #App #preloader.unset {
     border-radius: 50%; }

@@ -1,56 +1,3 @@
-.globalReset, body {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  font-weight: normal;
-  padding: 0;
-  margin: 0; }
-
-@font-face {
-  font-family: "Abril-Fatface";
-  src: url("./fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-.abril {
-  font-family: "Abril-Fatface", "Arial", sans-serif; }
-
-@font-face {
-  font-family: "Arvo";
-  src: url("./fonts/Arvo/Arvo-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Arvo-Bold";
-  src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-.arvo {
-  font-family: "Arvo", "Arial", sans-serif; }
-
-.arvoBold {
-  font-family: "Arvo-Bold", "Arial", sans-serif; }
-
-@font-face {
-  font-family: "Josephin";
-  src: url("./fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Josefin-Bold";
-  src: url("./fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-.josefin {
-  font-family: "Josefin", "Arial", sans-serif; }
-
-.josefinBold {
-  font-family: "JosefinBold", "Arial", sans-serif; }
-
 @font-face {
   font-family: "Lato";
   src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
@@ -63,11 +10,11 @@
   font-weight: 700;
   font-style: normal; }
 
-.lato {
-  font-family: "Lato", "Arial", sans-serif; }
-
-.latoBold {
-  font-family: "Lato-Bold", "Arial", sans-serif; }
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 @font-face {
   font-family: "Open-Sans";
@@ -87,32 +34,11 @@
   font-weight: 800;
   font-style: normal; }
 
-.openSans, body #root .App .App-page .sub-caption {
-  font-family: "Open-Sans", "Arial", sans-serif; }
-
-.openSansBold {
-  font-family: "Open-Sans-Bold", "Arial", sans-serif; }
-
-.openSansBlack {
-  font-family: "Open-Sans-Black", "Arial", sans-serif; }
-
 @font-face {
-  font-family: "PT-Sans";
-  src: url("./fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Open-Sans-Light";
+  src: url("./fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal; }
-
-@font-face {
-  font-family: "PT-Sans-Bold";
-  src: url("./fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-.ptSans, body #root .App .App-page .main-caption {
-  font-family: "PT-Sans", "Arial", sans-serif; }
-
-.ptSansBold {
-  font-family: "PT-Sans-Bold", "Arial", sans-serif; }
 
 @font-face {
   font-family: "Roboto";
@@ -132,14 +58,11 @@
   font-weight: 700;
   font-style: normal; }
 
-.roboto {
-  font-family: "Roboto", "Arial", sans-serif; }
-
-.robotoMedium {
-  font-family: "Roboto-Medium", "Arial", sans-serif; }
-
-.robotoBold {
-  font-family: "Roboto-Bold", "Arial", sans-serif; }
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./fonts/roboto/Roboto-Thin.woff") format("woff"), url("./fonts/roboto/Roboto-Thin.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: "Ubuntu";
@@ -159,41 +82,45 @@
   font-weight: 700;
   font-style: normal; }
 
-.ubuntu, body #root .App .App-page .name {
+body #root .App .App-page:first-of-type .container .row.main-row .main-caption, body #root .App footer .container .row:first-of-type div:last-of-type h3 {
+  font-family: "Lato", "Arial", sans-serif; }
+
+body #root .App .App-page:first-of-type .container .row.main-row .sub-caption {
+  font-family: "Lato-Light", "Arial", sans-serif; }
+
+body #root .App footer .container .row:first-of-type div:first-of-type h3 {
+  font-family: "Open-Sans-Light", "Arial", sans-serif; }
+
+body #root .App footer .container .row:first-of-type div:first-of-type p {
+  font-family: "Roboto-Thin", "Arial", sans-serif; }
+
+body #root .App .App-page:first-of-type .container .row.main-row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
 
-.ubuntuMedium {
-  font-family: "Ubuntu-Medium", "Arial", sans-serif; }
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0; }
+  body h1, body h2, body h3 {
+    margin: 0;
+    padding: 0; }
 
-.ubuntuBold {
-  font-family: "Ubuntu-Bold", "Arial", sans-serif; }
+body #root .App .App-page:first-of-type .container .row.main-row, body #root .App footer .container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; }
 
-@font-face {
-  font-family: "Vollkorn";
-  src: url("./fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Vollkorn-Bold";
-  src: url("./fonts/Vollkorn/Vollkorn-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Vollkorn-Black";
-  src: url("./fonts/Vollkorn/Vollkorn-Black.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal; }
-
-.vollkorn {
-  font-family: "Vollkorn", "Arial", sans-serif; }
-
-.vollkornBold {
-  font-family: "Vollkorn-Bold", "Arial", sans-serif; }
-
-.vollkornBlack {
-  font-family: "Vollkorn-Black", "Arial", sans-serif; }
+body #root .App .App-page:first-of-type .container .row.main-row .main-background, body #root .App footer .container .footer-background {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -2; }
 
 body #root .App {
   width: 100%;
@@ -206,9 +133,53 @@ body #root .App {
   body #root .App .App-page {
     overflow: hidden;
     flex: 1 0 auto;
+    width: 100%; }
+    body #root .App .App-page:first-of-type {
+      min-height: 60%;
+      height: 80%;
+      position: relative;
+      background-color: transparent; }
+      body #root .App .App-page:first-of-type::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(20, 20, 20, 0.7);
+        z-index: -1; }
+      body #root .App .App-page:first-of-type .container {
+        width: inherit;
+        height: 100%; }
+        body #root .App .App-page:first-of-type .container .row.main-row {
+          width: inherit;
+          height: inherit; }
+          body #root .App .App-page:first-of-type .container .row.main-row .main-caption {
+            font-size: 4.7em;
+            letter-spacing: 1px;
+            padding: 0; }
+          body #root .App .App-page:first-of-type .container .row.main-row .name {
+            font-size: 5.8em;
+            font-weight: 500;
+            letter-spacing: 7.5px;
+            padding: 5px 0 0 0; }
+          body #root .App .App-page:first-of-type .container .row.main-row .sub-caption {
+            margin-top: 120px;
+            font-size: 1.3em;
+            letter-spacing: 3.5px;
+            line-height: 1.6; }
+          body #root .App .App-page:first-of-type .container .row.main-row .main-background {
+            top: -180px; }
+  body #root .App footer {
+    flex: 1 0 auto;
     width: 100%;
-    position: relative; }
-    body #root .App .App-page::before {
+    min-height: 60%;
+    overflow: hidden;
+    border-top: 5px solid white;
+    position: relative;
+    background-color: transparent; }
+    body #root .App footer::before {
       content: '';
       display: inline-block;
       position: absolute;
@@ -216,29 +187,43 @@ body #root .App {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(20, 20, 20, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
       z-index: -1; }
-    body #root .App .App-page .main-caption {
-      padding: 20px 0 30px 0;
-      font-size: 5.2em;
-      letter-spacing: 2px;
-      line-height: 1.1; }
-    body #root .App .App-page .name {
-      margin-left: 90px;
-      font-size: 1.15em;
-      font-weight: 500;
-      letter-spacing: 5px; }
-    body #root .App .App-page .sub-caption {
-      width: 50%;
-      font-size: 1.4em;
-      letter-spacing: 4.7px;
-      line-height: 1.42; }
-    body #root .App .App-page .img-background {
-      box-sizing: border-box;
+    body #root .App footer .container {
       width: 100%;
-      position: absolute;
-      top: -180px;
-      left: 0;
-      z-index: -2; }
+      max-width: 1280px;
+      padding-top: 40px; }
+      body #root .App footer .container #modal1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        height: 1000px;
+        background: black;
+        z-index: 2; }
+      body #root .App footer .container .row {
+        width: 100%; }
+      body #root .App footer .container .row:first-of-type div:first-of-type h3 {
+        padding-bottom: 10px;
+        font-size: 3.1em;
+        letter-spacing: 3.2px; }
+      body #root .App footer .container .row:first-of-type div:first-of-type p {
+        font-size: 1.4em;
+        letter-spacing: 2.8px;
+        line-height: 1.4; }
+      body #root .App footer .container .row:first-of-type div:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end; }
+        body #root .App footer .container .row:first-of-type div:last-of-type h3 {
+          font-size: 2.6em;
+          letter-spacing: 2.5px; }
+        body #root .App footer .container .row:first-of-type div:last-of-type ul li {
+          border: 1px solid red; }
+          body #root .App footer .container .row:first-of-type div:last-of-type ul li i {
+            font-size: 3.2em; }
+      body #root .App footer .container .footer-background {
+        top: -350px; }
   body #root .App #preloader.unset {
     border-radius: 50%; }

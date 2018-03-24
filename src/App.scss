@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 body {
-  @extend .globalReset;
+  @extend %globalReset;
 
   #root {
     .App {
@@ -12,7 +12,6 @@ body {
       flex-direction: column;
 
       .App-header {
-
         #dropdown-lang {
           transform-origin: bottom;
         }
@@ -23,36 +22,115 @@ body {
         flex: 1 0 auto;
         width: 100%;
 
-        @include blackFilter(0.3);
+        &:first-of-type {
+          min-height: 60%;
+          height: 80%;
+          @include blackFilter(0.3);
 
-        .main-caption {
-          @extend .ptSans;
-          padding: $l * 2 0 $l * 3 0;
-          font-size: 5.2em;
-          letter-spacing: $l * .2;
-          line-height: 1.1;
+          .container {
+            width: inherit;
+            height: 100%;
+            .row.main-row {
+              @extend %column-centner;
+              width: inherit;
+              height: inherit;
+
+              .main-caption {
+                @extend %lato;
+                font-size: 4.7em;
+                letter-spacing: $l * .1;
+                padding: 0;
+              }
+              .name {
+                @extend %ubuntu;
+                font-size: 5.8em;
+                font-weight: 500;
+                letter-spacing: $l * .75;
+                padding: $l * .5 0 0 0;
+              }
+              .sub-caption {
+                @extend %latoLight;
+                margin-top: $l * 12;
+                font-size: 1.3em;
+                letter-spacing: $l * .35;
+                line-height: 1.6;
+              }
+              .main-background {
+                @extend %img-background;
+                top: $l * -18;
+              }
+            }
+          }
         }
-        .name {
-          @extend .ubuntu;
-          margin-left: $l * 9;
-          font-size: 1.15em;
-          font-weight: 500;
-          letter-spacing: $l * .5;
-        }
-        .sub-caption {
-          @extend .openSans;
-          width: 50%;
-          font-size: 1.4em;
-          letter-spacing: $l * .47;
-          line-height: 1.42;
-        }
-        .img-background {
-          box-sizing: border-box;
+      }
+
+      footer {
+        flex: 1 0 auto;
+        width: 100%;
+        min-height: 60%;
+        overflow: hidden;
+        border-top: 5px solid white;
+        @include blackFilter(0.6, black);
+
+        .container {
           width: 100%;
-          position: absolute;
-          top: $l * -18;
-          left: 0;
-          z-index: -2;
+          max-width: $l * 128;
+          padding-top: $l * 4;
+          @extend %column-centner;
+
+          #modal1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: $l * 100;
+            height: $l * 100;
+            background: black;
+            z-index: 2;
+          }
+
+          .row {width: 100%;}
+          .row:first-of-type {
+            div:first-of-type {
+              h3 {
+                padding-bottom: $l;
+                @extend %openSansLight;
+                font-size: 3.1em;
+                letter-spacing: $l * .32;
+              }
+              p {
+                @extend %robotoThin;
+                font-size: 1.4em;
+                letter-spacing: $l * .28;
+                line-height: 1.4;
+              }
+            }
+            div:last-of-type {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-end;
+
+              h3 {
+                @extend %lato;
+                font-size: 2.6em;
+                letter-spacing: $l * .25;
+              }
+              ul {
+                li {
+                  border: $b;
+                  i {font-size: 3.2em;}
+                }
+              }
+            }
+          }
+          .row:last-of-type {
+            form {#tel {} #submit {}}
+            .footer-copyright {span {} a {}}
+          }
+          .footer-background {
+            @extend %img-background;
+            top: $l * -35;
+          }
         }
       }
 

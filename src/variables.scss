@@ -1,17 +1,58 @@
-// Basic
+@import "fonts.scss";
+// Basic variables
 $l: 10px;
 $t: 0.2s;
-// Mixins
-.globalReset {
+$b: 1px solid red;
+$default: "Arial", sans-serif;
+
+// Fonts placeholders
+%lato {font-family: "Lato", $default;}                        // Lato
+%latoLight {font-family: "Lato-Light", $default;}
+%latoBold {font-family: "Lato-Bold", $default;}
+%openSans {font-family: "Open-Sans", $default;}               // OpenSans
+%openSansBold {font-family: "Open-Sans-Bold", $default;}
+%openSansBlack {font-family: "Open-Sans-Black", $default;}
+%openSansLight {font-family: "Open-Sans-Light", $default;}
+%roboto {font-family: "Roboto", $default;}                    // Roboto
+%robotoMedium {font-family: "Roboto-Medium", $default;}
+%robotoBold {font-family: "Roboto-Bold", $default;}
+%robotoThin {font-family: "Roboto-Thin", $default;}
+%ubuntu {font-family: "Ubuntu", $default;}                    // Ubuntu
+%ubuntuMedium {font-family: "Ubuntu-Medium", $default;}
+%ubuntuBold {font-family: "Ubuntu-Bold", $default;}
+
+// Components placeholders
+%globalReset {                // Reset
   width: 100%;
   height: 100%;
   font-size: 16px;
   font-weight: normal;
   padding: 0;
   margin: 0;
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
 }
-@mixin blackFilter($amount) {
+%column-centner {            // Center wrapper
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+%img-background {           // Images background
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
+
+// Mixins
+@mixin blackFilter($amount, $color: #141414) {
   position: relative;
+  background-color: transparent;
   &::before {
     content: '';
     display: inline-block;
@@ -21,172 +62,8 @@ $t: 0.2s;
     width: 100%;
     height: 100%;
     background: {
-      color: transparentize(#141414, $amount);
+      color: transparentize($color, $amount);
     }
     z-index: -1;
   }
 }
-// Fonts variables
-$default: "Arial", sans-serif;
-// 1.Abril Fatface
-@font-face {
-  font-family: "Abril-Fatface";
-  src: url("./fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-.abril {font-family: "Abril-Fatface", $default;}
-// 2.Arvo
-@font-face {
-  font-family: "Arvo";
-  src: url("./fonts/Arvo/Arvo-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Arvo-Bold";
-  src: url("./fonts/Arvo/Arvo-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-.arvo {font-family: "Arvo", $default;}
-.arvoBold {font-family: "Arvo-Bold", $default;}
-// 3.Josefin
-@font-face {
-  font-family: "Josephin";
-  src: url("./fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Josefin-Bold";
-  src: url("./fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-.josefin {font-family: "Josefin", $default;}
-.josefinBold {font-family: "JosefinBold", $default;}
-// 4.Lato
-@font-face {
-  font-family: "Lato";
-  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face{
-  font-family: "Lato-Bold";
-  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-.lato {font-family: "Lato", $default;}
-.latoBold {font-family: "Lato-Bold", $default;}
-// 5.Open Sans
-@font-face {
-  font-family: "Open-Sans";
-  src: url("./fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-Sans-Bold";
-  src: url("./fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-Sans-Black";
-  src: url("./fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-.openSans {font-family: "Open-Sans", $default;}
-.openSansBold {font-family: "Open-Sans-Bold", $default;}
-.openSansBlack {font-family: "Open-Sans-Black", $default;}
-// 6.PT Sans
-@font-face {
-  font-family: "PT-Sans";
-  src: url("./fonts/PT_Sans/PT_Sans-Web-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PT-Sans-Bold";
-  src: url("./fonts/PT_Sans/PT_Sans-Web-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-.ptSans {font-family: "PT-Sans", $default;}
-.ptSansBold {font-family: "PT-Sans-Bold", $default;}
-// 7.Roboto
-@font-face {
-  font-family: "Roboto";
-  src:
-          url("./fonts/roboto/Roboto-Regular.woff") format("woff"),
-          url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto-Medium";
-  src:
-          url("./fonts/roboto/Roboto-Medium.woff") format("woff"),
-          url("./fonts/roboto/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto-Bold";
-  src:
-          url("./fonts/roboto/Roboto-Bold.woff") format("woff"),
-          url("./fonts/roboto/Roboto-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-.roboto {font-family: "Roboto", $default;}
-.robotoMedium {font-family: "Roboto-Medium", $default;}
-.robotoBold {font-family: "Roboto-Bold", $default;}
-// 8.Ubuntu
-@font-face {
-  font-family: "Ubuntu";
-  src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ubuntu-Medium";
-  src: url("./fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ubuntu-Bold";
-  src: url("./fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-.ubuntu {font-family: "Ubuntu", $default;}
-.ubuntuMedium {font-family: "Ubuntu-Medium", $default;}
-.ubuntuBold {font-family: "Ubuntu-Bold", $default;}
-// 9.Vollkorn
-@font-face {
-  font-family: "Vollkorn";
-  src: url("./fonts/Vollkorn/Vollkorn-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Vollkorn-Bold";
-  src: url("./fonts/Vollkorn/Vollkorn-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Vollkorn-Black";
-  src: url("./fonts/Vollkorn/Vollkorn-Black.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-.vollkorn {font-family: "Vollkorn", $default;}
-.vollkornBold {font-family: "Vollkorn-Bold", $default;}
-.vollkornBlack {font-family: "Vollkorn-Black", $default;}

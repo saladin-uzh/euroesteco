@@ -4,7 +4,7 @@ import "materialize-css/dist/css/materialize.min.css"
 import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
 import Header from "./components/header"
-import Footer from "./components/footer"
+import {Footer} from "./components/footer"
 import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
@@ -14,7 +14,12 @@ import * as $ from "jquery"
 
 export const Files = {
     logo: "img/logo.png",
-    mainBg: "../img/List_01.jpg"
+    mainBg: "../img/List_01.jpg",
+    footerBg: "../img/List_02.jpg",
+    googleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d519.6568110875512!2d22" +
+    ".28015005484492!3d48.612068816378326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739" +
+    "19aaac640cd9%3A0x65f95d97b0fa751e!2z0YPQuy4g0JfQsNC90YzQutC-0LLQtdGG0LrQvtC5LCAzNiwg0KPQttCz0L7RgNC" +
+    "-0LQsINCX0LDQutCw0YDQv9Cw0YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgODgwMDA!5e0!3m2!1sru!2sua!4v1521821513555"
 };
 
 class App extends React.Component {
@@ -39,7 +44,7 @@ class App extends React.Component {
         );
     }
     componentDidUpdate() {
-        M.Dropdown.init($(".dropdown-trigger"))
+        M.Dropdown.init($(".dropdown-trigger"));
     }
     render() {
         return (

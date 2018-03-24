@@ -3,7 +3,6 @@ import {Link} from "react-router-dom"
 import {I18n} from "react-i18next"
 import i18n from "i18next"
 import {Files} from "../App"
-//import classSet from "react-classSet"
 import * as $ from 'jquery'
 
 class Header extends React.Component {

@@ -82,11 +82,14 @@
   font-weight: 700;
   font-style: normal; }
 
-body #root .App .App-page:first-of-type .container .row.main-row .main-caption, body #root .App footer .container .row:first-of-type div:last-of-type h3 {
+body #root .App .App-page:first-of-type .container .row .main-caption, body #root .App footer .container .row:first-of-type div:last-of-type h3 {
   font-family: "Lato", "Arial", sans-serif; }
 
-body #root .App .App-page:first-of-type .container .row.main-row .sub-caption {
+body #root .App .App-page:first-of-type .container .row .sub-caption {
   font-family: "Lato-Light", "Arial", sans-serif; }
+
+body #root .App footer .container .row:first-of-type div:last-of-type .addr {
+  font-family: "Lato-Bold", "Arial", sans-serif; }
 
 body #root .App footer .container .row:first-of-type div:first-of-type h3 {
   font-family: "Open-Sans-Light", "Arial", sans-serif; }
@@ -94,7 +97,7 @@ body #root .App footer .container .row:first-of-type div:first-of-type h3 {
 body #root .App footer .container .row:first-of-type div:first-of-type p {
   font-family: "Roboto-Thin", "Arial", sans-serif; }
 
-body #root .App .App-page:first-of-type .container .row.main-row .name {
+body #root .App .App-page:first-of-type .container .row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
 
 body {
@@ -108,14 +111,14 @@ body {
     margin: 0;
     padding: 0; }
 
-body #root .App .App-page:first-of-type .container .row.main-row, body #root .App footer .container {
+body #root .App .App-page:first-of-type .container .row, body #root .App footer .container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
 
-body #root .App .App-page:first-of-type .container .row.main-row .main-background, body #root .App footer .container .footer-background {
+body #root .App .App-page:first-of-type .container .row .main-background, body #root .App footer .container .footer-background {
   box-sizing: border-box;
   width: 100%;
   position: absolute;
@@ -136,7 +139,7 @@ body #root .App {
     width: 100%; }
     body #root .App .App-page:first-of-type {
       min-height: 60%;
-      height: 80%;
+      height: 100%;
       position: relative;
       background-color: transparent; }
       body #root .App .App-page:first-of-type::before {
@@ -152,24 +155,26 @@ body #root .App {
       body #root .App .App-page:first-of-type .container {
         width: inherit;
         height: 100%; }
-        body #root .App .App-page:first-of-type .container .row.main-row {
+        body #root .App .App-page:first-of-type .container .row {
           width: inherit;
           height: inherit; }
-          body #root .App .App-page:first-of-type .container .row.main-row .main-caption {
-            font-size: 4.7em;
-            letter-spacing: 1px;
+          body #root .App .App-page:first-of-type .container .row .main-caption {
+            font-size: 5.4em;
+            letter-spacing: 3px;
             padding: 0; }
-          body #root .App .App-page:first-of-type .container .row.main-row .name {
-            font-size: 5.8em;
+          body #root .App .App-page:first-of-type .container .row .name {
+            font-size: 6.5em;
             font-weight: 500;
-            letter-spacing: 7.5px;
-            padding: 5px 0 0 0; }
-          body #root .App .App-page:first-of-type .container .row.main-row .sub-caption {
-            margin-top: 120px;
-            font-size: 1.3em;
+            letter-spacing: 5px;
+            padding: 10px 0;
+            margin-bottom: 60px; }
+          body #root .App .App-page:first-of-type .container .row .sub-caption {
+            margin-top: 40px;
+            font-size: 1.4em;
             letter-spacing: 3.5px;
-            line-height: 1.6; }
-          body #root .App .App-page:first-of-type .container .row.main-row .main-background {
+            line-height: 1.6;
+            border-left: 6px solid #006900; }
+          body #root .App .App-page:first-of-type .container .row .main-background {
             top: -180px; }
   body #root .App footer {
     flex: 1 0 auto;
@@ -219,10 +224,19 @@ body #root .App {
         body #root .App footer .container .row:first-of-type div:last-of-type h3 {
           font-size: 2.6em;
           letter-spacing: 2.5px; }
-        body #root .App footer .container .row:first-of-type div:last-of-type ul li {
-          border: 1px solid red; }
+        body #root .App footer .container .row:first-of-type div:last-of-type ul {
+          padding: 15px;
+          margin: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center; }
           body #root .App footer .container .row:first-of-type div:last-of-type ul li i {
-            font-size: 3.2em; }
+            font-size: 3.2em;
+            cursor: pointer; }
+        body #root .App footer .container .row:first-of-type div:last-of-type .addr {
+          font-size: 1.2em;
+          letter-spacing: 1.2px;
+          line-height: 1.2; }
       body #root .App footer .container .footer-background {
         top: -350px; }
   body #root .App #preloader.unset {

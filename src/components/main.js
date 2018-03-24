@@ -9,20 +9,19 @@ export class Main extends React.Component {
                 {
                     (t) => (
                         <Fragment>
-                            <div className="main-row row">
-                                <h1 className="main-caption white-text col l7 pull-l5 left">{t("test.font")}</h1>
-                                <h1 className="name white-text col l6 pull-l5 right-align">Euro EstEco</h1>
-                                <h3 className="sub-caption grey-text text-lighten-2 col l6 pull-l6 left">
-                                    Yellow perch banjo catfish goosefish: triplefin blenny greenling scorpionfish.
-                                    Redfish minnow, Black mackerel pompano dolphinfish.
-                                </h3>
-                                <img
-                                    className="main-background responsive-img"
-                                    src={Files.mainBg}
-                                    alt="Main background"/>
-                            </div>
-                            <div className="hello-world-row row">
-                                <h1>Hello World!</h1>
+                            <div className="container">
+                                <div className="row">
+                                    <h1 className="main-caption white-text col l8 pull-l4 left">{t("test.font")}</h1>
+                                    <h1 className="name white-text col l8 pull-l4 right-align">Euro EstEco</h1>
+                                    <p className="sub-caption grey-text text-lighten-2 col l6 pull-l6 left flow-text">
+                                        Yellow perch banjo catfish goosefish: triplefin blenny greenling scorpionfish.
+                                        Redfish minnow, Black mackerel pompano dolphinfish.
+                                    </p>
+                                    <img
+                                        className="main-background responsive-img"
+                                        src={Files.mainBg}
+                                        alt="Main background"/>
+                                </div>
                             </div>
                         </Fragment>
                     )

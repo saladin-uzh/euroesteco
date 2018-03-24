@@ -20,20 +20,20 @@ export class Footer extends React.Component {
                                             Sawtooth eel Atlantic herring Asian carps scorpionfish, koi lake trout sea toad.
                                             Yellow perch; lemon sole yellowtail sardine</p>
                                     </div>
-                                    <div className="col l5">
+                                    <div className="col l4">
                                         <h3 className="white-text left-align">Contact Us:</h3>
                                         <ul className="row col l12">
-                                            <li className="col l2 center-align"><i className="material-icons">call</i></li>
-                                            <li className="col l2 center-align"><i className="material-icons">near_me</i></li>
-                                            <li className="col l2 center-align"><i className="material-icons">email</i></li>
-                                            <li className="col l2 center-align">
+                                            <li className="col l2 left-align left"><i className="material-icons">call</i></li>
+                                            <li className="col l2 left-align left"><i className="material-icons">near_me</i></li>
+                                            <li className="col l2 left-align left"><i className="material-icons">email</i></li>
+                                            <li className="col l2 left-align left">
                                                 <i
                                                     className="material-icons modal-trigger"
                                                     data-target="modal1">
                                                     location_on</i>
                                             </li>
                                         </ul>
-                                        <address className="addr col l12 right-align">
+                                        <address className="addr col l12 white-text right-align">
                                             Varosh, Transkarpatia, Ukraine<br/>
                                             Straight outta Vatutina & New District
                                         </address>

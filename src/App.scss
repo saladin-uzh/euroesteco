@@ -24,36 +24,38 @@ body {
 
         &:first-of-type {
           min-height: 60%;
-          height: 80%;
+          height: 100%;
           @include blackFilter(0.3);
 
           .container {
             width: inherit;
             height: 100%;
-            .row.main-row {
+            .row {
               @extend %column-centner;
               width: inherit;
               height: inherit;
 
               .main-caption {
                 @extend %lato;
-                font-size: 4.7em;
-                letter-spacing: $l * .1;
+                font-size: 5.4em;
+                letter-spacing: $l * .3;
                 padding: 0;
               }
               .name {
                 @extend %ubuntu;
-                font-size: 5.8em;
+                font-size: 6.5em;
                 font-weight: 500;
-                letter-spacing: $l * .75;
-                padding: $l * .5 0 0 0;
+                letter-spacing: $l * .50;
+                padding: $l 0;
+                margin-bottom: $l * 6;
               }
               .sub-caption {
                 @extend %latoLight;
-                margin-top: $l * 12;
-                font-size: 1.3em;
+                margin-top: $l * 4;
+                font-size: 1.4em;
                 letter-spacing: $l * .35;
                 line-height: 1.6;
+                border-left: $l * .6 solid #006900;
               }
               .main-background {
                 @extend %img-background;
@@ -116,10 +118,23 @@ body {
                 letter-spacing: $l * .25;
               }
               ul {
+                padding: $l * 1.5;
+                margin: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
                 li {
-                  border: $b;
-                  i {font-size: 3.2em;}
+                  i {
+                    font-size: 3.2em;
+                    cursor: pointer;
+                  }
                 }
+              }
+              .addr {
+                @extend %latoBold;
+                font-size: 1.2em;
+                letter-spacing: $l * .12;
+                line-height: 1.2;
               }
             }
           }

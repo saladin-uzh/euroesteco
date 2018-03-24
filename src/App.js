@@ -52,14 +52,12 @@ class App extends React.Component {
                 <Preloader visible={this.state.preloaderActive}/>
                 <Header/>
                 <main className="App-page">
-                    <div className="container">
-                        <Switch>
-                            <Route exact path="/" component={Main}/>
-                            <Route path="/about-us" component={AboutUs}/>
-                            <Route path="/sip-technology" component={Sip}/>
-                            <Route path="/contact-us" component={ContactUs}/>
-                        </Switch>
-                    </div>
+                    <Switch>
+                        <Route exact path="/" component={Main}/>
+                        <Route path="/about-us" component={AboutUs}/>
+                        <Route path="/sip-technology" component={Sip}/>
+                        <Route path="/contact-us" component={ContactUs}/>
+                    </Switch>
                 </main>
                 <Footer/>
             </div>

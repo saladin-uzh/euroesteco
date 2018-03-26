@@ -2,10 +2,16 @@ import React from "react"
 import {I18n} from "react-i18next"
 import {Files} from "../App"
 // import {GoogleMap} from "../stateless/googleMap"
-// import * as M from "materialize-css";
-// import * as $ from "jquery";
+// import * as M from "materialize-css"
+// import * as $ from "jquery"
 
 export class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidUpdate() {
+        //const inst = M.Tooltip.init($(".tooltipped"));
+    }
     render() {
         return (
             <I18n>
@@ -22,15 +28,15 @@ export class Footer extends React.Component {
                                     </div>
                                     <div className="col l4">
                                         <h3 className="white-text left-align">Contact Us:</h3>
-                                        <ul className="row col l12">
-                                            <li className="col l2 left-align left"><i className="material-icons">call</i></li>
-                                            <li className="col l2 left-align left"><i className="material-icons">near_me</i></li>
-                                            <li className="col l2 left-align left"><i className="material-icons">email</i></li>
-                                            <li className="col l2 left-align left">
-                                                <i
-                                                    className="material-icons modal-trigger"
-                                                    data-target="modal1">
-                                                    location_on</i>
+                                        <ul className="row col l12 right-align">
+                                            <li className="col l1 left-align left tooltipped" data-position="top" data-delay="50" data-tooltip="Hello World"><a className="material-icons">call</a></li>
+                                            <li className="col l1 left-align left"><a className="material-icons">near_me</a></li>
+                                            <li className="col l1 left-align left"><a className="material-icons">email</a></li>
+                                            <li className="col l1 left-align left">
+                                                <a
+                                                    className="modal-trigger btn material-icons"
+                                                    href="#modal1">
+                                                    location_on</a>
                                             </li>
                                         </ul>
                                         <address className="addr col l12 white-text right-align">

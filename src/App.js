@@ -45,20 +45,19 @@ class App extends React.Component {
     }
     componentDidUpdate() {
         M.Dropdown.init($(".dropdown-trigger"));
+        M.Collapsible.init($(".collapsible"));
     }
     render() {
         return (
             <div className="App">
                 <Preloader visible={this.state.preloaderActive}/>
                 <Header/>
-                <main className="App-page">
-                    <Switch>
-                        <Route exact path="/" component={Main}/>
-                        <Route path="/about-us" component={AboutUs}/>
-                        <Route path="/sip-technology" component={Sip}/>
-                        <Route path="/contact-us" component={ContactUs}/>
-                    </Switch>
-                </main>
+                <Switch>
+                    <Route exact path="/" component={Main}/>
+                    <Route path="/about-us" component={AboutUs}/>
+                    <Route path="/sip-technology" component={Sip}/>
+                    <Route path="/contact-us" component={ContactUs}/>
+                </Switch>
                 <Footer/>
             </div>
         )

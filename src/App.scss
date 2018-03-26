@@ -66,6 +66,34 @@ body {
         }
       }
 
+      .main-about-us {
+        flex: 1 0 auto;
+        background: white;
+        width: 100%;
+
+        ul {
+          li {
+            box-shadow: none;
+            outline: none;
+
+            .collapsible-header {
+              @extend %latoBold;
+              letter-spacing: $l * .12;
+
+              .material-icons {
+                font-size: 2em;
+                color: #006900;
+                padding-right: $l;
+              }
+            }
+
+            .collapsible-body {
+              @extend %openSans;
+            }
+          }
+        }
+      }
+
       footer {
         flex: 1 0 auto;
         width: 100%;
@@ -79,16 +107,6 @@ body {
           max-width: $l * 128;
           padding-top: $l * 4;
           @extend %column-centner;
-
-          #modal1 {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: $l * 100;
-            height: $l * 100;
-            background: black;
-            z-index: 2;
-          }
 
           .row {width: 100%;}
           .row:first-of-type {

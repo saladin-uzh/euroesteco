@@ -8,8 +8,8 @@ export class AboutUs extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <main className="about-us-page">
-                            <div className="container main-about-us">
+                        <main className="about-us-page App-page">
+                            <div className="container content">
                                 <ul>
                                     <li>
                                         <div><i className="material-icons">av_timer</i>{t("main.about-us.header.first")}</div>

@@ -16,6 +16,7 @@ export const Files = {
     logo: "img/logo.png",
     mainBg: "../img/List_01.jpg",
     footerBg: "../img/List_02.jpg",
+    smartHouseBg: "../img/List_05.jpg",
     googleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d519.6568110875512!2d22" +
     ".28015005484492!3d48.612068816378326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739" +
     "19aaac640cd9%3A0x65f95d97b0fa751e!2z0YPQuy4g0JfQsNC90YzQutC-0LLQtdGG0LrQvtC5LCAzNiwg0KPQttCz0L7RgNC" +

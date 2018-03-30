@@ -21,59 +21,54 @@ body {
         overflow: hidden;
         flex: 1 0 auto;
         width: 100%;
+        @include blackFilter(0.3);
+      }
 
-        &:first-of-type {
-          min-height: 60%;
+      .main-page {
+        min-height: 60%;
+        height: 100%;
+
+        .content {
+          width: inherit;
           height: 100%;
-          @include blackFilter(0.3);
-
-          .container {
+          .row {
+            @extend %column-centner;
             width: inherit;
-            height: 100%;
-            .row {
-              @extend %column-centner;
-              width: inherit;
-              height: inherit;
+            height: inherit;
 
-              .main-caption {
-                @extend %lato;
-                font-size: 5.4em;
-                letter-spacing: $l * .3;
-                padding: 0;
-              }
-              .name {
-                @extend %ubuntu;
-                font-size: 6.5em;
-                font-weight: 500;
-                letter-spacing: $l * .50;
-                padding: $l 0;
-                margin-bottom: $l * 6;
-              }
-              .sub-caption {
-                @extend %latoLight;
-                margin-top: $l * 4;
-                font-size: 1.1em;
-                letter-spacing: $l * .24;
-                line-height: 1.6;
-                border-left: $l * .6 solid #006900;
-              }
-              .main-background {
-                @extend %img-background;
-                top: $l * -18;
-              }
+            .main-caption {
+              @extend %lato;
+              font-size: 5.4em;
+              letter-spacing: $l * .3;
+              padding: 0;
+            }
+            .name {
+              @extend %ubuntu;
+              font-size: 6.5em;
+              font-weight: 500;
+              letter-spacing: $l * .50;
+              padding: $l 0;
+              margin-bottom: $l * 6;
+            }
+            .sub-caption {
+              @extend %latoLight;
+              margin-top: $l * 4;
+              font-size: 1.1em;
+              letter-spacing: $l * .24;
+              line-height: 1.6;
+              border-left: $l * .6 solid #006900;
+            }
+            .main-background {
+              @extend %img-background;
+              top: $l * -18;
             }
           }
         }
       }
 
       .about-us-page {
-        overflow: hidden;
-        flex: 1 0 auto;
         min-height: 100%;
-        width: 100%;
-        @include blackFilter(0.5);
-
-        .main-about-us {
+        .content {
           ul {
             color: white;
 
@@ -104,25 +99,34 @@ body {
         }
       }
 
+      .smart-house-page {
+        .content {}
+        img {}
+      }
+
       footer {
         flex: 1 0 auto;
         width: 100%;
         min-width: 100%;
-        background: #242424;
+        max-height: $l * 25;
+        background: #1e1e1e;
         margin: 0;
-        color: white;
+        box-sizing: border-box;
         @extend %openSans;
-        div {
+        .contacts {
           max-width: $l  * 128;
+          box-sizing: border-box;
+          max-height: 100%;
           h3 {
             letter-spacing: $l * .3;
             @extend %lato;
-            padding: $l $l 0 $l;
           }
           ul {
             li {
-              font-size: 1.1em;
-              padding: 0 $l * 3;
+              @extend %openSans;
+              letter-spacing: $l * .14;
+              font-size: 0.8em;
+              padding: $l * .2 $l * 3;
             }
           }
         }

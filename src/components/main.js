@@ -14,8 +14,8 @@ export class Main extends React.Component {
                 {
                     (t) => (
                         <Fragment>
-                            <main className="App-page">
-                                <div className="container">
+                            <main className="main-page App-page">
+                                <div className="container content">
                                     <div className="row">
                                         <h1 className="main-caption white-text col l8 pull-l4 left">{t("test.font")}</h1>
                                         <h1 className="name white-text col l8 pull-l4 right-align">Euro EstEco</h1>

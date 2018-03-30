@@ -53,8 +53,8 @@ body {
             .sub-caption {
               @extend %latoLight;
               margin-top: $l * 4;
-              font-size: 1.1em;
-              letter-spacing: $l * .24;
+              font-size: 1.4em;
+              letter-spacing: $l * .26;
               line-height: 1.6;
               border-left: $l * .6 solid #006900;
             }
@@ -67,25 +67,47 @@ body {
       }
 
       .about-us-page {
-        min-height: 100%;
         .about-us-content {
+          width: inherit;
+          margin-top: $l;
           .collapsible {
             li {
+              border-bottom: $l solid transparent;
+              box-shadow: unset;
+
               .collapsible-header {
                 display: flex;
                 align-items: center;
-                background: transparentize(white, 0.2);
+                background: transparentize(#484848, 0.2);
+                color: #d6d6d6;
+                @extend %latoBold;
+                font-size: 1.12em;
+                letter-spacing: $l * .12;
+                border: none;
 
                 .material-icons {
-                  padding-right: $l * 3;
-                  font-size: 2.1em;
-                  color: #006900;
+                  margin: 0 $l * 3 0 0;
+                  font-size: 2em;
+                  color: #00a400;
                 }
               }
               .collapsible-body {
-                background: transparentize(white, 0.3);
+                @extend %roboto;
+                color: #d6d6d6;
+                font-size: 1em;
+                letter-spacing: $l * .15;
+                background: transparentize(#555555, 0.3);
+                border: none;
               }
             }
+          }
+
+          .text {
+            @extend %openSans;
+            font-size: 1.1em;
+            letter-spacing: $l * .24;
+            line-height: 1.5;
+            border-right: $l * .6 solid #006900;
           }
         }
 

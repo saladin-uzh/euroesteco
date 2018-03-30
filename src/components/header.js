@@ -32,7 +32,7 @@ class Header extends React.Component {
                                         <li><Link to="/">Main</Link></li>
                                         <li><Link to="/about-us">AboutUs</Link></li>
                                         <li><Link to="/sip-technology">SIP</Link></li>
-                                        <li><Link to="/contact-us">ContactUs</Link></li>
+                                        <li><Link to="/smart-house">Smart House</Link></li>
                                         <li>
                                             <a className="dropdown-trigger btn waves-light waves-effect light-green darken-3"
                                                data-target="dropdown-lang">Language</a>

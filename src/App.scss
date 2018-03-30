@@ -52,8 +52,8 @@ body {
               .sub-caption {
                 @extend %latoLight;
                 margin-top: $l * 4;
-                font-size: 1.4em;
-                letter-spacing: $l * .35;
+                font-size: 1.1em;
+                letter-spacing: $l * .24;
                 line-height: 1.6;
                 border-left: $l * .6 solid #006900;
               }
@@ -66,101 +66,69 @@ body {
         }
       }
 
-      .main-about-us {
+      .about-us-page {
+        overflow: hidden;
         flex: 1 0 auto;
-        background: white;
+        min-height: 100%;
         width: 100%;
+        @include blackFilter(0.5);
 
-        ul {
-          li {
-            box-shadow: none;
-            outline: none;
+        .main-about-us {
+          ul {
+            color: white;
 
-            .collapsible-header {
-              @extend %latoBold;
-              letter-spacing: $l * .12;
+            li {
+              div:first-of-type {
+                display: flex;
+                align-items: center;
+                font-size: 1.5em;
+                letter-spacing: $l * .12;
+                padding: $l * .5 0;
 
-              .material-icons {
-                font-size: 2em;
-                color: #006900;
-                padding-right: $l;
+                i {
+                  padding: 0 $l;
+                  font-size: 1.4em;
+                }
+              }
+              div:last-of-type {
+                font-size: 1.1em;
+                letter-spacing: $l * .1;
               }
             }
-
-            .collapsible-body {
-              @extend %openSans;
-            }
           }
+        }
+
+        .about-us-background {
+          @extend %img-background;
+          top: $l * -20;
         }
       }
 
       footer {
         flex: 1 0 auto;
         width: 100%;
-        min-height: 60%;
-        overflow: hidden;
-        border-top: 5px solid white;
-        @include blackFilter(0.6, black);
-
-        .container {
-          width: 100%;
-          max-width: $l * 128;
-          padding-top: $l * 4;
-          @extend %column-centner;
-
-          .row {width: 100%;}
-          .row:first-of-type {
-            div:first-of-type {
-              h3 {
-                padding-bottom: $l;
-                @extend %openSansLight;
-                font-size: 3.1em;
-                letter-spacing: $l * .32;
-              }
-              p {
-                @extend %robotoThin;
-                font-size: 1.4em;
-                letter-spacing: $l * .28;
-                line-height: 1.4;
-              }
-            }
-            div:last-of-type {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: flex-end;
-
-              h3 {
-                @extend %lato;
-                font-size: 2.6em;
-                letter-spacing: $l * .25;
-              }
-              ul {
-                padding: $l * 1.5;
-                margin: 0;
-                li {
-                  i {
-                    font-size: 2.6em;
-                    cursor: pointer;
-                  }
-                }
-              }
-              .addr {
-                @extend %latoBold;
-                font-size: 1.2em;
-                letter-spacing: $l * .12;
-                line-height: 1.2;
-              }
+        min-width: 100%;
+        background: #242424;
+        margin: 0;
+        color: white;
+        @extend %openSans;
+        div {
+          max-width: $l  * 128;
+          h3 {
+            letter-spacing: $l * .3;
+            @extend %lato;
+            padding: $l $l 0 $l;
+          }
+          ul {
+            li {
+              font-size: 1.1em;
+              padding: 0 $l * 3;
             }
           }
-          .row:last-of-type {
-            form {#tel {} #submit {}}
-            .footer-copyright {span {} a {}}
-          }
-          .footer-background {
-            @extend %img-background;
-            top: $l * -35;
-          }
+        }
+        .addr {
+          font-size: 1.3em;
+          padding: $l * 2;
         }
       }
 

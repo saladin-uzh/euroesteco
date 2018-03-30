@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from "react"
 
-export class ContactUs extends Component {
+export class SmartHouse extends Component {
     render() {
         return (
             <Fragment>

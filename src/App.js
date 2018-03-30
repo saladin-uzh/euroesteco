@@ -8,7 +8,7 @@ import {Footer} from "./components/footer"
 import {Main} from "./components/main"
 import {AboutUs} from "./components/aboutUs"
 import {Sip} from "./components/sip"
-import {ContactUs} from "./components/contactUs"
+import {SmartHouse} from "./components/smartHouse"
 import * as M from "materialize-css"
 import * as $ from "jquery"
 
@@ -56,7 +56,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Main}/>
                     <Route path="/about-us" component={AboutUs}/>
                     <Route path="/sip-technology" component={Sip}/>
-                    <Route path="/contact-us" component={ContactUs}/>
+                    <Route path="/smart-house" component={SmartHouse}/>
                 </Switch>
                 <Footer/>
             </div>

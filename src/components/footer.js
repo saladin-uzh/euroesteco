@@ -1,22 +1,6 @@
 import React from "react"
 import {I18n} from "react-i18next"
 
-const _oldFooter = <footer className="container row white-text">
-    <div className="contacts col l4 push-l1">
-        <h3>Contact Us:</h3>
-        <ul className="flow-text">
-            <li className=""></li>
-            <li className=""></li>
-            <li className=""></li>
-            <li className=""></li>
-        </ul>
-    </div>
-    <address className="addr col l4 pull-l1 white-text right-align right">
-        17200 Palafrugell. Girona.<br/>
-        Marcal De La Trinxeria 48a 4-3
-    </address>
-</footer>;
-
 export class Footer extends React.Component {
     render() {
         return (

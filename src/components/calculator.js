@@ -1,9 +1,11 @@
 import React from "react"
+import * as M from "materialize-css";
+import * as $ from "jquery";
 
-let styles = {
-    width: '300px',
-    height: '300px',
-    border: '3px solid black'
+const containerStyles = {
+    position: "fixed",
+    bottom: 30,
+    right: 30
 };
 
 export class Calculator extends React.Component {
@@ -19,12 +21,27 @@ export class Calculator extends React.Component {
     calculatorRender() {
 
     }
+    componentDidUpdate() {
+        M.Modal.init($(".modal"), {
+            onOpenStart: this.calculatorRender
+        });
+    }
     render() {
         return (
-            <div className="calculator" style={styles}>
-                <h1>Calc</h1>
-                <button className="prev-stage-btn" type="button">prev stage</button>
-                <button className="next-stage-btn" type="button">next stage</button>
+            <div className="calculator" style={containerStyles}>
+                <button data-target="calc" className="btn-floating btn-large pulse green darken-3 modal-trigger">
+                    <i className="material-icons">apps</i>
+                </button>
+                <div id="calc" className="modal">
+                    <div className="modal-content">
+                        <h4>Calc</h4>
+                        <div className="section">A bunch of text</div>
+                    </div>
+                    <div className="modal-footer">
+                        <button className="prev-stage-btn btn-flat" type="button">prev stage</button>
+                        <button className="next-stage-btn btn-flat" type="button">next stage</button>
+                    </div>
+                </div>
             </div>
         )
     }

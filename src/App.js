@@ -11,6 +11,7 @@ import {Sip} from "./components/sip"
 import {SmartHouse} from "./components/smartHouse"
 import * as M from "materialize-css"
 import * as $ from "jquery"
+import {Calculator} from "./components/calculator"
 
 export const Files = {
     logo: "img/logo.png",
@@ -58,6 +59,7 @@ class App extends React.Component {
                     <Route path="/sip-technology" component={Sip}/>
                     <Route path="/smart-house" component={SmartHouse}/>
                 </Switch>
+                <Calculator/>
                 <Footer/>
             </div>
         )

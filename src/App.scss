@@ -68,7 +68,7 @@ body {
 
       .about-us-page {
         min-height: 100%;
-        .content {
+        .about-us-content {
           ul {
             color: white;
 
@@ -100,8 +100,12 @@ body {
       }
 
       .smart-house-page {
+        min-height: 100%;
         .content {}
-        img {}
+        img {
+          @extend %img-background;
+          top: $l * -18;
+        }
       }
 
       footer {

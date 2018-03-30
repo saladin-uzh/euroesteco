@@ -112,7 +112,7 @@ body #root .App .main-page .content .row {
   align-items: flex-start;
   justify-content: center; }
 
-body #root .App .main-page .content .row .main-background, body #root .App .about-us-page .about-us-background {
+body #root .App .main-page .content .row .main-background, body #root .App .about-us-page .about-us-background, body #root .App .smart-house-page img {
   box-sizing: border-box;
   width: 100%;
   position: absolute;
@@ -172,22 +172,26 @@ body #root .App {
           top: -180px; }
   body #root .App .about-us-page {
     min-height: 100%; }
-    body #root .App .about-us-page .content ul {
+    body #root .App .about-us-page .about-us-content ul {
       color: white; }
-      body #root .App .about-us-page .content ul li div:first-of-type {
+      body #root .App .about-us-page .about-us-content ul li div:first-of-type {
         display: flex;
         align-items: center;
         font-size: 1.5em;
         letter-spacing: 1.2px;
         padding: 5px 0; }
-        body #root .App .about-us-page .content ul li div:first-of-type i {
+        body #root .App .about-us-page .about-us-content ul li div:first-of-type i {
           padding: 0 10px;
           font-size: 1.4em; }
-      body #root .App .about-us-page .content ul li div:last-of-type {
+      body #root .App .about-us-page .about-us-content ul li div:last-of-type {
         font-size: 1.1em;
         letter-spacing: 1px; }
     body #root .App .about-us-page .about-us-background {
       top: -200px; }
+  body #root .App .smart-house-page {
+    min-height: 100%; }
+    body #root .App .smart-house-page img {
+      top: -180px; }
   body #root .App footer {
     flex: 1 0 auto;
     width: 100%;

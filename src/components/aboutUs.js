@@ -9,7 +9,7 @@ export class AboutUs extends React.Component {
                 {
                     (t) => (
                         <main className="about-us-page App-page">
-                            <div className="container content">
+                            <div className="container about-us-content">
                                 <ul>
                                     <li>
                                         <div><i className="material-icons">av_timer</i>{t("main.about-us.header.first")}</div>

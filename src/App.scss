@@ -69,25 +69,21 @@ body {
       .about-us-page {
         min-height: 100%;
         .about-us-content {
-          ul {
-            color: white;
-
+          .collapsible {
             li {
-              div:first-of-type {
+              .collapsible-header {
                 display: flex;
                 align-items: center;
-                font-size: 1.5em;
-                letter-spacing: $l * .12;
-                padding: $l * .5 0;
+                background: transparentize(white, 0.2);
 
-                i {
-                  padding: 0 $l;
-                  font-size: 1.4em;
+                .material-icons {
+                  padding-right: $l * 3;
+                  font-size: 2.1em;
+                  color: #006900;
                 }
               }
-              div:last-of-type {
-                font-size: 1.1em;
-                letter-spacing: $l * .1;
+              .collapsible-body {
+                background: transparentize(white, 0.3);
               }
             }
           }
@@ -108,37 +104,36 @@ body {
         }
       }
 
-      footer {
-        flex: 1 0 auto;
-        width: 100%;
-        min-width: 100%;
-        max-height: $l * 25;
-        background: #1e1e1e;
-        margin: 0;
-        box-sizing: border-box;
-        @extend %openSans;
-        .contacts {
-          max-width: $l  * 128;
-          box-sizing: border-box;
-          max-height: 100%;
-          h3 {
-            letter-spacing: $l * .3;
-            @extend %lato;
-          }
-          ul {
-            li {
-              @extend %openSans;
-              letter-spacing: $l * .14;
-              font-size: 0.8em;
-              padding: $l * .2 $l * 3;
-            }
-          }
-        }
-        .addr {
-          font-size: 1.3em;
-          padding: $l * 2;
-        }
-      }
+      //footer {
+      //  flex: 1 0 auto;
+      //  width: 100%;
+      //  min-width: 100%;
+      //  background: #1e1e1e;
+      //  margin: 0;
+      //  box-sizing: border-box;
+      //  @extend %openSans;
+      //  .contacts {
+      //    max-width: $l  * 128;
+      //    box-sizing: border-box;
+      //    max-height: 100%;
+      //    h3 {
+      //      letter-spacing: $l * .3;
+      //      @extend %lato;
+      //    }
+      //    ul {
+      //      li {
+      //        @extend %openSans;
+      //        letter-spacing: $l * .14;
+      //        font-size: 0.8em;
+      //        padding: $l * .2 $l * 3;
+      //      }
+      //    }
+      //  }
+      //  .addr {
+      //    font-size: 1.3em;
+      //    padding: $l * 2;
+      //  }
+      //}
 
       #preloader.unset {
         border-radius: 50%;

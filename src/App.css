@@ -82,14 +82,11 @@
   font-weight: 700;
   font-style: normal; }
 
-body #root .App .main-page .content .row .main-caption, body #root .App footer .contacts h3 {
+body #root .App .main-page .content .row .main-caption {
   font-family: "Lato", "Arial", sans-serif; }
 
 body #root .App .main-page .content .row .sub-caption {
   font-family: "Lato-Light", "Arial", sans-serif; }
-
-body #root .App footer, body #root .App footer .contacts ul li {
-  font-family: "Open-Sans", "Arial", sans-serif; }
 
 body #root .App .main-page .content .row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
@@ -172,46 +169,21 @@ body #root .App {
           top: -180px; }
   body #root .App .about-us-page {
     min-height: 100%; }
-    body #root .App .about-us-page .about-us-content ul {
-      color: white; }
-      body #root .App .about-us-page .about-us-content ul li div:first-of-type {
-        display: flex;
-        align-items: center;
-        font-size: 1.5em;
-        letter-spacing: 1.2px;
-        padding: 5px 0; }
-        body #root .App .about-us-page .about-us-content ul li div:first-of-type i {
-          padding: 0 10px;
-          font-size: 1.4em; }
-      body #root .App .about-us-page .about-us-content ul li div:last-of-type {
-        font-size: 1.1em;
-        letter-spacing: 1px; }
+    body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.8); }
+      body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header .material-icons {
+        padding-right: 30px;
+        font-size: 2.1em;
+        color: #006900; }
+    body #root .App .about-us-page .about-us-content .collapsible li .collapsible-body {
+      background: rgba(255, 255, 255, 0.7); }
     body #root .App .about-us-page .about-us-background {
       top: -200px; }
   body #root .App .smart-house-page {
     min-height: 100%; }
     body #root .App .smart-house-page img {
       top: -180px; }
-  body #root .App footer {
-    flex: 1 0 auto;
-    width: 100%;
-    min-width: 100%;
-    max-height: 250px;
-    background: #1e1e1e;
-    margin: 0;
-    box-sizing: border-box; }
-    body #root .App footer .contacts {
-      max-width: 1280px;
-      box-sizing: border-box;
-      max-height: 100%; }
-      body #root .App footer .contacts h3 {
-        letter-spacing: 3px; }
-      body #root .App footer .contacts ul li {
-        letter-spacing: 1.4px;
-        font-size: 0.8em;
-        padding: 2px 30px; }
-    body #root .App footer .addr {
-      font-size: 1.3em;
-      padding: 20px; }
   body #root .App #preloader.unset {
     border-radius: 50%; }

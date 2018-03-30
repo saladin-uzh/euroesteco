@@ -46,7 +46,6 @@ class App extends React.Component {
     }
     componentDidUpdate() {
         M.Dropdown.init($(".dropdown-trigger"));
-        M.Collapsible.init($(".collapsible"));
     }
     render() {
         return (

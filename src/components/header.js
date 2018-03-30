@@ -10,6 +10,16 @@ const languageStyles = {
     letterSpacing: 1.25
 };
 
+const largeHeader = {
+    minHeight: "12.5vh"
+};
+
+const logoStyles = {
+    maxHeight: "100%",
+    height: "100%",
+    display: "block"
+};
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -32,10 +42,10 @@ class Header extends React.Component {
                 {
                     (t, {i18n}) => (
                         <header className="App-header">
-                            <nav className="grey darken-3">
+                            <nav className="grey darken-3" style={largeHeader}>
                                 <div className="nav-wrapper container">
-                                    <a className="brand-logo" href="/">
-                                        <img width="110px" className="responsive-img" src={Files.logo} alt="EuroEstEco logo"/>
+                                    <a style={logoStyles} className="brand-logo" href="/">
+                                        <img style={logoStyles} className="responsive-img" src={Files.logo} alt="EuroEstEco logo"/>
                                     </a>
                                     <ul className="right">
                                         <li><Link to="/">Main</Link></li>

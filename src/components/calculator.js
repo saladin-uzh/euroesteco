@@ -1,5 +1,6 @@
 import React from "react"
 import {I18n} from "react-i18next"
+import PropTypes from "prop-types"
 import * as M from "materialize-css";
 import * as $ from "jquery";
 
@@ -36,11 +37,6 @@ export class Calculator extends React.Component {
         this.setState({
             inited: true
         });
-
-        // M.Carousel.init($(".carousel"), {
-        //     fullWidth: true,
-        //     indicators: false
-        // });
     }
     prev() {
         this.setState({
@@ -80,83 +76,7 @@ export class Calculator extends React.Component {
                                                 .replace("step_max", this.maxStage.toString())
                                         }</small>
                                     </h4>
-                                    <div className="stage-1 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-1.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-1.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-1.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-2 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-2.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-2.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-2.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-3 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-3.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-3.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-3.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-4 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-4.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-4.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-4.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-5 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-5.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-5.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-5.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-6 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-6.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-6.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-6.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div className="stage-7 row section container">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-7.caption")}</p>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-7.option-1")}</figcaption>
-                                        </figure>
-                                        <figure className="col s4 offset-s1">
-                                            <img width={150} src="../img/awful-logo.png" alt="test"/>
-                                            <figcaption>{t("calc.stage-7.option-2")}</figcaption>
-                                        </figure>
-                                    </div>
+                                    <CalcStage stage={this.state.stage} t={t}/>
                                 </div>
                                 <div className="modal-footer" style={footerStyles}>
                                     <button type="button" className="prev-stage-btn btn-flat left" onClick={this.prev}>
@@ -177,3 +97,29 @@ export class Calculator extends React.Component {
         )
     }
 }
+
+const CalcStage = (props) => {
+    const s = props.stage.toString();
+    const t = props.t;
+    const cardStyles = {
+        cursor: "pointer"
+    };
+    return <div className={"row section container stage-" + s}>
+        <p className="flow-text col s12">{t("calc.stage-" + s + ".caption")}</p>
+        <label className="col s4 offset-s1 card-panel small hoverable" style={cardStyles}>
+            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>
+            <input name={"stage-" + s} type="radio" checked="checked"/>
+            <span className="grey-text text-darken-3 flow-text">{t("calc.stage-" + s + ".option-1")}</span>
+        </label>
+        <label className="col s4 offset-s1 card-panel small hoverable grey-text text-darken-3" style={cardStyles}>
+            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>
+            <input name={"stage-" + s} type="radio"/>
+            <span className="grey-text text-darken-3 flow-text">{t("calc.stage-" + s + ".option-2")}</span>
+        </label>
+    </div>
+};
+
+CalcStage.propTypes = {
+    stage: PropTypes.number.isRequired,
+    t: PropTypes.func.isRequired
+};

@@ -21,11 +21,14 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "npm run build-css && react-scripts build && gulp deploy",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "sass-module-importer": "^1.4.0"
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "sass-module-importer": "^1.4.0",
+    "vinyl-ftp": "^0.6.1"
   }
 }

@@ -67,7 +67,7 @@ class Header extends React.Component {
                                                 <li className="divider" tabIndex="-1"/>
                                                 <li>
                                                     <span
-                                                        id="sp"
+                                                        id="es"
                                                         style={languageStyles}
                                                         onClick={(e) => this.handleLangChange(e)}
                                                         className="center-align btn-flat grey-text text-darken-3"

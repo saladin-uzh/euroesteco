@@ -87,9 +87,9 @@ export class Calculator extends React.Component {
                                     <button type="button" className="prev-stage-btn btn-flat col l1" onClick={this.prev}>
                                         <i className="material-icons">arrow_back</i>
                                     </button>
-                                    <span className="btn-flat modal-action modal-close center-align col l10">
+                                    <button type="button" className="btn-floating modal-action modal-close center col l2">
                                         <i className="material-icons large">close</i>
-                                    </span>
+                                    </button>
                                     <button type="button" className="next-stage-btn btn-flat col l1" onClick={this.next}>
                                         <i className="material-icons">arrow_forward</i>
                                     </button>

@@ -157,7 +157,7 @@ body {
         }
       }
 
-      .calculator button i {
+      .calculator button .icons {
         @extend %ico;
         font-style: normal;
         font-size: 1.8em;

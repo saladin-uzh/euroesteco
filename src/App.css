@@ -112,7 +112,7 @@ body #root .App footer .footer-copyright .container {
 body #root .App .main-page .content .row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
 
-body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header .icons, body #root .App .calculator button i {
+body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header .icons, body #root .App .calculator button .icons {
   font-family: "Ico", "Arial", sans-serif; }
 
 body {
@@ -230,7 +230,7 @@ body #root .App {
       font-size: 1.1em;
       line-height: 1.3;
       letter-spacing: 0.8px; }
-  body #root .App .calculator button i {
+  body #root .App .calculator button .icons {
     font-style: normal;
     font-size: 1.8em; }
   body #root .App #preloader.unset {

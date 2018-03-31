@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "fonts.scss";
 
 body {
   @extend %globalReset;
@@ -124,10 +125,44 @@ body {
 
       .smart-house-page {
         .content {
-          .caption {}
-          .sub-caption {}
-          .text{}
-          .caption-conclusion {}
+          margin-top: $l * 5;
+          .row {
+            .caption {
+              font-size: 1.6em;
+              letter-spacing: $l * .12;
+              border-left: $l * .5 solid #006900;
+              padding: $l * .5 $l * 2;
+              margin: 0;
+              p {
+                font-size: 1.1em;
+                letter-spacing: $l * .12;
+                margin: $l 0 0 0;
+                padding: 0;
+              }
+            }
+            .text {
+              @extend %openSans;
+              font-size: 1.05em;
+              letter-spacing: $l * .12;
+              line-height: 1.5;
+              padding: $l * 2 $l * 2.5;
+              background: transparentize(#006900, 0.3);
+            }
+            .caption-conclusion {
+              @extend %roboto;
+              font-size: 1.6em;
+              letter-spacing: $l * .12;
+              border-right: $l * .5 solid #006900;
+              margin-top: $l * 6;
+              text-align: right;
+            }
+            &.text-card {
+              margin: 0;
+            }
+            &:first-of-type {
+              margin-bottom: $l * 6;
+            }
+          }
         }
       }
 

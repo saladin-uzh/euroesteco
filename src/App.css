@@ -43,7 +43,6 @@
 @font-face {
   font-family: "Roboto";
   src: url("./fonts/roboto/Roboto-Regular.woff") format("woff"), url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
   font-style: normal; }
 
 @font-face {
@@ -97,13 +96,13 @@ body #root .App .main-page .content .row .sub-caption {
 body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header {
   font-family: "Lato-Bold", "Arial", sans-serif; }
 
-body #root .App footer .container .row div h5 {
+body #root .App .smart-house-page .content .row .text, body #root .App footer .container .row div h5 {
   font-family: "Open-Sans", "Arial", sans-serif; }
 
 body #root .App footer .container .row div address, body #root .App footer .container .row div ul li, body #root .App footer .footer-copyright .container a {
   font-family: "Open-Sans-Light", "Arial", sans-serif; }
 
-body, body #root .App .App-header nav .container .right li a, body #root .App .about-us-page .about-us-content .collapsible li .collapsible-body, body #root .App .about-us-page .about-us-content .text {
+body, body #root .App .App-header nav .container .right li a, body #root .App .about-us-page .about-us-content .collapsible li .collapsible-body, body #root .App .about-us-page .about-us-content .text, body #root .App .smart-house-page .content .row .caption-conclusion {
   font-family: "Roboto", "Arial", sans-serif; }
 
 body #root .App footer .footer-copyright .container {
@@ -131,6 +130,95 @@ body #root .App .main-page .content .row {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("./fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("./fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("./fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans-Black";
+  src: url("./fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("./fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto/Roboto-Regular.woff") format("woff"), url("./fonts/roboto/Roboto-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./fonts/roboto/Roboto-Medium.woff") format("woff"), url("./fonts/roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./fonts/roboto/Roboto-Bold.woff") format("woff"), url("./fonts/roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./fonts/roboto/Roboto-Thin.woff") format("woff"), url("./fonts/roboto/Roboto-Thin.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("./fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("./fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ico";
+  src: url("./fonts/icons/icons.woff") format("woff"), url("./fonts/icons/icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 body #root .App {
   width: 100%;
@@ -207,6 +295,35 @@ body #root .App {
       letter-spacing: 1.2px;
       line-height: 1.7;
       border-right: 6px solid #006900; }
+  body #root .App .smart-house-page .content {
+    margin-top: 50px; }
+    body #root .App .smart-house-page .content .row .caption {
+      font-size: 1.6em;
+      letter-spacing: 1.2px;
+      border-left: 5px solid #006900;
+      padding: 5px 20px;
+      margin: 0; }
+      body #root .App .smart-house-page .content .row .caption p {
+        font-size: 1.1em;
+        letter-spacing: 1.2px;
+        margin: 10px 0 0 0;
+        padding: 0; }
+    body #root .App .smart-house-page .content .row .text {
+      font-size: 1.05em;
+      letter-spacing: 1.2px;
+      line-height: 1.5;
+      padding: 20px 25px;
+      background: rgba(0, 105, 0, 0.7); }
+    body #root .App .smart-house-page .content .row .caption-conclusion {
+      font-size: 1.6em;
+      letter-spacing: 1.2px;
+      border-right: 5px solid #006900;
+      margin-top: 60px;
+      text-align: right; }
+    body #root .App .smart-house-page .content .row.text-card {
+      margin: 0; }
+    body #root .App .smart-house-page .content .row:first-of-type {
+      margin-bottom: 60px; }
   body #root .App footer .container .row div h5 {
     font-size: 1.7em;
     letter-spacing: 1.4px; }

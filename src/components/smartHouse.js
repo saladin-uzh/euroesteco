@@ -11,12 +11,18 @@ export class SmartHouse extends React.Component {
                     (t) => (
                         <main className="smart-house-page App-page" style={backgroundImg(Files.smartHouseBg)}>
                             <div className="container content white-text">
-                                <p className="caption flow-text">{t("smart-house.caption")}</p>
-                                <p className="sub-caption flow-text">{t("smart-house.sub-caption")}</p>
-                                <p className="text flow-text">{t("smart-house.text-1")}</p>
-                                <p className="text flow-text">{t("smart-house.text-2")}</p>
-                                <p className="text flow-text">{t("smart-house.text-3")}</p>
-                                <p className="caption-conclusion flow-text">{t("smart-house.caption-conclusion")}</p>
+                                <div className="row">
+                                    <p className="caption col xl12">
+                                        {t("smart-house.caption")}<br/>
+                                        <p className="sub-caption col xl11 push-xl1">{t("smart-house.sub-caption")}</p>
+                                    </p>
+                                </div>
+                                <div className="row text-card"><p className="text card-panel col xl4 l4">{t("smart-house.text-1")}</p></div>
+                                <div className="row text-card"><p className="text card-panel col xl4 push-xl4 l4">{t("smart-house.text-2")}</p></div>
+                                <div className="row text-card">
+                                    <p className="text card-panel col xl4 l4">{t("smart-house.text-3")}</p>
+                                    <p className="caption-conclusion col xl6 push-xl2">{t("smart-house.caption-conclusion")}</p>
+                                </div>
                             </div>
                         </main>
                     )

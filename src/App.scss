@@ -162,10 +162,16 @@ body {
         }
       }
 
-      .calculator button .icons {
-        @extend %ico;
-        font-style: normal;
-        font-size: 1.8em;
+      .calculator {
+        #calc .modal-content .container label span:after {
+          background-color: #2E7D32;
+          border-color: #2E7D32;
+        }
+        button .icons {
+          @extend %ico;
+          font-style: normal;
+          font-size: 1.8em;
+        }
       }
 
       #preloader.unset {

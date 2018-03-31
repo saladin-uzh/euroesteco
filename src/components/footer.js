@@ -14,7 +14,7 @@ export class Footer extends React.Component {
                                         <h5 className="white-text">{t("footer.second")}</h5>
                                         <address className="grey-text text-lighten-4">
                                             17200 Palafrugell, Girona,<br/>
-                                            Marcal De La Trinxeria 48a 4-3
+                                            Marcal De La Trinxeria, 48a, 4-3
                                         </address>
                                     </div>
                                     <div className="col l4 offset-l2 s12">

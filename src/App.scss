@@ -2,6 +2,9 @@
 
 body {
   @extend %globalReset;
+  @media screen and (max-width: 1366px){
+    font-size: 14px;
+  }
 
   #root {
     .App {

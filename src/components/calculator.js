@@ -72,25 +72,25 @@ export class Calculator extends React.Component {
                                         <small className="right">{t("calc.second").replace("step_count", this.state.stage.toString())}</small>
                                     </h4>
                                     <div className="section container stage-1 row">
-                                        <p className="helper-text flow-text col s12">{t("calc.stage-1.caption")}</p>
-                                        <figure className="col s4 offset-s1">
+                                        <p className="helper-text flow-text col l12">{t("calc.stage-1.caption")}</p>
+                                        <figure className="col l4 offset-l1">
                                             <img src="/#!" alt="PISHOV NAH"/>
                                             <figcaption>{t("calc.stage-1.option-1")}</figcaption>
                                         </figure>
-                                        <figure className="col s4 offset-s1">
+                                        <figure className="col l4 offset-l1">
                                             <img src="/#!" alt="PISHOV NAH"/>
                                             <figcaption>{t("calc.stage-1.option-2")}</figcaption>
                                         </figure>
                                     </div>
                                 </div>
                                 <div className="modal-footer row valign-wrapper" style={footerStyles}>
-                                    <button type="button" className="prev-stage-btn btn-flat col s1" onClick={this.prev}>
+                                    <button type="button" className="prev-stage-btn btn-flat col l1" onClick={this.prev}>
                                         <i className="material-icons">arrow_back</i>
                                     </button>
-                                    <span className="btn-flat modal-action modal-close center-align col s10">
+                                    <span className="btn-flat modal-action modal-close center-align col l10">
                                         <i className="material-icons large">close</i>
                                     </span>
-                                    <button type="button" className="next-stage-btn btn-flat col s1" onClick={this.next}>
+                                    <button type="button" className="next-stage-btn btn-flat col l1" onClick={this.next}>
                                         <i className="material-icons">arrow_forward</i>
                                     </button>
                                 </div>

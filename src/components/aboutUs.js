@@ -4,9 +4,7 @@ import {backgroundImg} from "../App"
 import {Files} from "../App"
 import * as M from "materialize-css"
 import * as $ from "jquery"
-// wb_sunny
-// today
-// whatshot
+
 export class AboutUs extends React.Component {
     componentDidUpdate() {
         M.Collapsible.init($(".collapsible"));

@@ -29,6 +29,14 @@
       "ninth": "от 450 евро/м2"
     }
   },
+  "smart-house": {
+    "caption": "Smart House Caption",
+    "sub-caption": "SubCaption and some text and some text, we'll you got it",
+    "text-1": "First very very very long paragraph, fibaro smart house and so on and so on. I'm sorry Momma",
+    "text-2": "Second very very very long paragraph. I never meant to heart you'uuuuuuu",
+    "text-3": "I never meant to make u cry but tonight I cleanin my closet",
+    "caption-conclusion": "One more time..."
+  },
   "footer": {
     "first": "Свяжитесь с нами:",
     "second": "Где нас можно найти:"

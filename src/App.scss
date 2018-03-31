@@ -3,7 +3,7 @@
 body {
   @extend %globalReset;
   @extend %roboto;
-  @media screen and (max-width: 1366px){font-size: 14px;}
+
 
   #root {
     .App {
@@ -12,6 +12,7 @@ body {
       display: flex;
       min-height: 100vh;
       flex-direction: column;
+
 
       .App-header {
         #dropdown-lang {
@@ -29,10 +30,10 @@ body {
         overflow: hidden;
         flex: 1 0 auto;
         width: 100%;
+        min-height: 90%;
       }
 
       .main-page {
-        min-height: 60%;
         height: 100%;
 
         .content {
@@ -122,8 +123,12 @@ body {
       }
 
       .smart-house-page {
-        min-height: 100%;
-        .content {}
+        .content {
+          .caption {}
+          .sub-caption {}
+          .text{}
+          .caption-conclusion {}
+        }
       }
 
       footer {
@@ -167,5 +172,24 @@ body {
         border-radius: 50%;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 16px;
+    #root .App .App-page {
+
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 12px;
   }
 }

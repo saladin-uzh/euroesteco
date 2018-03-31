@@ -118,7 +118,6 @@ body #root .App .about-us-page .about-us-content .collapsible li .collapsible-he
 body {
   width: 100%;
   height: 100%;
-  font-size: 16px;
   font-weight: normal;
   padding: 0;
   margin: 0; }
@@ -132,10 +131,6 @@ body #root .App .main-page .content .row {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-
-@media screen and (max-width: 1366px) {
-  body {
-    font-size: 14px; } }
 
 body #root .App {
   width: 100%;
@@ -152,9 +147,9 @@ body #root .App {
   body #root .App .App-page {
     overflow: hidden;
     flex: 1 0 auto;
-    width: 100%; }
+    width: 100%;
+    min-height: 90%; }
   body #root .App .main-page {
-    min-height: 60%;
     height: 100%; }
     body #root .App .main-page .content {
       width: inherit;
@@ -212,8 +207,6 @@ body #root .App {
       letter-spacing: 1.2px;
       line-height: 1.7;
       border-right: 6px solid #006900; }
-  body #root .App .smart-house-page {
-    min-height: 100%; }
   body #root .App footer .container .row div h5 {
     font-size: 1.7em;
     letter-spacing: 1.4px; }
@@ -235,3 +228,15 @@ body #root .App {
     font-size: 1.8em; }
   body #root .App #preloader.unset {
     border-radius: 50%; }
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 16px; } }
+
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 14px; } }
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 12px; } }

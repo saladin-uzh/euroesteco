@@ -31,7 +31,7 @@ export class Footer extends React.Component {
                             <div className="footer-copyright">
                                 <div className="container">
                                     © 2014 Copyright Text
-                                    <a className="blue-text right" href="#!">Developed by<br/>Jonco Lab</a>
+                                    <a className="blue-text right" href="https://joncolab.pro">Developed by<br/>Jonco Lab</a>
                                 </div>
                             </div>
                         </footer>

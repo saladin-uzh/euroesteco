@@ -4,7 +4,9 @@ import {backgroundImg} from "../App"
 import {Files} from "../App"
 import * as M from "materialize-css"
 import * as $ from "jquery"
-
+// wb_sunny
+// today
+// whatshot
 export class AboutUs extends React.Component {
     componentDidUpdate() {
         M.Collapsible.init($(".collapsible"));
@@ -22,15 +24,15 @@ export class AboutUs extends React.Component {
                                         <div  className="collapsible-body">{t("about-us.body.first")}</div>
                                     </li>
                                     <li>
-                                        <div className="collapsible-header"><i className="material-icons"></i>{t("about-us.header.second")}</div>
+                                        <div className="collapsible-header"><i className="icons">☺</i>{t("about-us.header.second")}</div>
                                         <div  className="collapsible-body">{t("about-us.body.second")}</div>
                                     </li>
                                     <li>
-                                        <div className="collapsible-header"><i className="material-icons">i</i>{t("about-us.header.third")}</div>
+                                        <div className="collapsible-header"><i className="icons">☻</i>{t("about-us.header.third")}</div>
                                         <div  className="collapsible-body">{t("about-us.body.third")}</div>
                                     </li>
                                     <li>
-                                        <div className="collapsible-header"><i className="material-icons">local_florist</i>{t("about-us.header.fourth")}</div>
+                                        <div className="collapsible-header"><i className="icons">♥</i>{t("about-us.header.fourth")}</div>
                                         <div  className="collapsible-body">{t("about-us.body.fourth")}</div>
                                     </li>
                                     <li>
@@ -42,7 +44,7 @@ export class AboutUs extends React.Component {
                                         <div  className="collapsible-body">{t("about-us.body.sixth")}</div>
                                     </li>
                                     <li>
-                                        <div className="collapsible-header"><i className="material-icons">ac_unit</i>{t("about-us.header.seventh")}</div>
+                                        <div className="collapsible-header"><i className="icons">♦</i>{t("about-us.header.seventh")}</div>
                                         <div  className="collapsible-body">{t("about-us.body.seventh")}</div>
                                     </li>
                                     <li>

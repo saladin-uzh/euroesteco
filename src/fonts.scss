@@ -97,3 +97,13 @@
   font-weight: 700;
   font-style: normal;
 }
+
+// Icons
+@font-face {
+  font-family: "Ico";
+  src:
+          url("./fonts/icons/icons.woff") format("woff"),
+          url("./fonts/icons/icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

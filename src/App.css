@@ -91,11 +91,17 @@ body #root .App .main-page .content .row .sub-caption {
 body #root .App .about-us-page .about-us-content .collapsible li .collapsible-header {
   font-family: "Lato-Bold", "Arial", sans-serif; }
 
-body #root .App .about-us-page .about-us-content .text {
+body #root .App .App-header nav .container .right li a, body #root .App .about-us-page .about-us-content .text, body #root .App footer .container .row div h5 {
   font-family: "Open-Sans", "Arial", sans-serif; }
+
+body #root .App footer .container .row div address, body #root .App footer .container .row div ul li, body #root .App footer .footer-copyright .container a {
+  font-family: "Open-Sans-Light", "Arial", sans-serif; }
 
 body #root .App .about-us-page .about-us-content .collapsible li .collapsible-body {
   font-family: "Roboto", "Arial", sans-serif; }
+
+body #root .App footer .footer-copyright .container {
+  font-family: "Roboto-Thin", "Arial", sans-serif; }
 
 body #root .App .main-page .content .row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
@@ -118,13 +124,6 @@ body #root .App .main-page .content .row {
   align-items: flex-start;
   justify-content: center; }
 
-body #root .App .main-page .content .row .main-background, body #root .App .about-us-page .about-us-background, body #root .App .smart-house-page img {
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  z-index: -2; }
-
 body #root .App {
   width: 100%;
   height: 100%;
@@ -133,22 +132,14 @@ body #root .App {
   flex-direction: column; }
   body #root .App .App-header #dropdown-lang {
     transform-origin: bottom; }
+  body #root .App .App-header nav .container .right li a {
+    font-size: 1.15em;
+    letter-spacing: 1.4px;
+    text-transform: capitalize; }
   body #root .App .App-page {
     overflow: hidden;
     flex: 1 0 auto;
-    width: 100%;
-    position: relative;
-    background-color: transparent; }
-    body #root .App .App-page::before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(20, 20, 20, 0.7);
-      z-index: -1; }
+    width: 100%; }
   body #root .App .main-page {
     min-height: 60%;
     height: 100%; }
@@ -174,8 +165,6 @@ body #root .App {
           letter-spacing: 2.6px;
           line-height: 1.6;
           border-left: 6px solid #006900; }
-        body #root .App .main-page .content .row .main-background {
-          top: -180px; }
   body #root .App .about-us-page .about-us-content {
     width: inherit;
     margin-top: 10px; }
@@ -205,11 +194,24 @@ body #root .App {
       letter-spacing: 2.4px;
       line-height: 1.5;
       border-right: 6px solid #006900; }
-  body #root .App .about-us-page .about-us-background {
-    top: -200px; }
   body #root .App .smart-house-page {
     min-height: 100%; }
-    body #root .App .smart-house-page img {
-      top: -180px; }
+  body #root .App footer .container .row div h5 {
+    font-size: 1.7em;
+    letter-spacing: 1.4px; }
+  body #root .App footer .container .row div address {
+    font-size: 1.3em;
+    letter-spacing: 1.6px; }
+  body #root .App footer .container .row div ul li {
+    font-size: 1.1em;
+    font-style: italic;
+    letter-spacing: 1.4px; }
+  body #root .App footer .footer-copyright .container {
+    font-size: 1.1em;
+    letter-spacing: 0.4px; }
+    body #root .App footer .footer-copyright .container a {
+      font-size: 1.1em;
+      line-height: 1.3;
+      letter-spacing: 0.8px; }
   body #root .App #preloader.unset {
     border-radius: 50%; }

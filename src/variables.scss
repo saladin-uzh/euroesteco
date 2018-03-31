@@ -41,29 +41,27 @@ $default: "Arial", sans-serif;
   align-items: flex-start;
   justify-content: center;
 }
-%img-background {           // Images background
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  z-index: -2;
-}
-
+//%img-background {
+//  box-sizing: border-box;
+//  width: 100%;
+//  position: absolute;
+//  left: 0;
+//  z-index: -2;
+//}
 // Mixins
-@mixin blackFilter($amount, $color: #141414) {
-  position: relative;
-  background-color: transparent;
-  &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: {
-      color: transparentize($color, $amount);
-    }
-    z-index: -1;
-  }
-}
+//@mixin blackFilter($amount, $color: #141414) {
+//  position: relative;
+//  background-color: transparent;
+//  &::before {
+//    content: '';
+//    display: inline-block;
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background: {
+//      color: transparentize($color, $amount);
+//    }
+//  }
+//}

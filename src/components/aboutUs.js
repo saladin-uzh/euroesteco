@@ -1,5 +1,6 @@
 import React from "react"
 import {I18n} from "react-i18next"
+import {backgroundImg} from "../App"
 import {Files} from "../App"
 import * as M from "materialize-css"
 import * as $ from "jquery"
@@ -13,7 +14,7 @@ export class AboutUs extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <main className="about-us-page App-page">
+                        <main className="about-us-page App-page" style={backgroundImg(Files.aboutUsBg)}>
                             <div className="container about-us-content row">
                                 <ul className="collapsible popout col l6">
                                     <li>
@@ -55,10 +56,6 @@ export class AboutUs extends React.Component {
                                 </ul>
                                 <p className="text white-text left-align">{t("about-us.caption")}</p>
                             </div>
-                            <img
-                                className="about-us-background responsive-img"
-                                src={Files.footerBg}
-                                alt="Modern house"/>
                         </main>
                     )
                 }

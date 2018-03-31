@@ -15,13 +15,18 @@ body {
         #dropdown-lang {
           transform-origin: bottom;
         }
+        nav .container .right li a {
+          @extend %openSans;
+          font-size: 1.15em;
+          letter-spacing: $l * .14;
+          text-transform: capitalize;
+        }
       }
 
       .App-page {
         overflow: hidden;
         flex: 1 0 auto;
         width: 100%;
-        @include blackFilter(0.3);
       }
 
       .main-page {
@@ -58,10 +63,10 @@ body {
               line-height: 1.6;
               border-left: $l * .6 solid #006900;
             }
-            .main-background {
-              @extend %img-background;
-              top: $l * -18;
-            }
+            //.main-background {
+            //  @extend %img-background;
+            //  top: $l * -18;
+            //}
           }
         }
       }
@@ -110,52 +115,44 @@ body {
             border-right: $l * .6 solid #006900;
           }
         }
-
-        .about-us-background {
-          @extend %img-background;
-          top: $l * -20;
-        }
       }
 
       .smart-house-page {
         min-height: 100%;
         .content {}
-        img {
-          @extend %img-background;
-          top: $l * -18;
-        }
       }
 
-      //footer {
-      //  flex: 1 0 auto;
-      //  width: 100%;
-      //  min-width: 100%;
-      //  background: #1e1e1e;
-      //  margin: 0;
-      //  box-sizing: border-box;
-      //  @extend %openSans;
-      //  .contacts {
-      //    max-width: $l  * 128;
-      //    box-sizing: border-box;
-      //    max-height: 100%;
-      //    h3 {
-      //      letter-spacing: $l * .3;
-      //      @extend %lato;
-      //    }
-      //    ul {
-      //      li {
-      //        @extend %openSans;
-      //        letter-spacing: $l * .14;
-      //        font-size: 0.8em;
-      //        padding: $l * .2 $l * 3;
-      //      }
-      //    }
-      //  }
-      //  .addr {
-      //    font-size: 1.3em;
-      //    padding: $l * 2;
-      //  }
-      //}
+      footer {
+        .container .row div {
+          h5 {
+            @extend %openSans;
+            font-size: 1.7em;
+            letter-spacing: $l * .14;
+          }
+          address {
+            @extend %openSansLight;
+            font-size: 1.3em;
+            letter-spacing: $l * .16;
+          }
+          ul li {
+            @extend %openSansLight;
+            font-size: 1.1em;
+            font-style: italic;
+            letter-spacing: $l * .14;
+          }
+        }
+        .footer-copyright .container {
+          @extend %robotoThin;
+          font-size: 1.1em;
+          letter-spacing: $l * .04;
+          a {
+            @extend %openSansLight;
+            font-size: 1.1em;
+            line-height: 1.3;
+            letter-spacing: $l * .08;
+          }
+        }
+      }
 
       #preloader.unset {
         border-radius: 50%;

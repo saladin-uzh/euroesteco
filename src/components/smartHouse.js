@@ -1,5 +1,6 @@
 import React from "react"
 import {I18n} from "react-i18next"
+import {backgroundImg} from "../App"
 import {Files} from "../App"
 
 export class SmartHouse extends React.Component {
@@ -8,14 +9,10 @@ export class SmartHouse extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <main className="smart-house-page App-page">
+                        <main className="smart-house-page App-page" style={backgroundImg(Files.smartHouseBg)}>
                             <div className="container content">
 
                             </div>
-                            <img
-                                className="smart-house-bg responsive-img"
-                                src={Files.smartHouseBg}
-                                alt="Smart House example"/>
                         </main>
                     )
                 }

@@ -6,6 +6,9 @@ import * as M from "materialize-css"
 import * as $ from "jquery"
 
 export class AboutUs extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     componentDidUpdate() {
         M.Collapsible.init($(".collapsible"));
     }
@@ -54,7 +57,7 @@ export class AboutUs extends React.Component {
                                         <div  className="collapsible-body">{t("about-us.body.ninth")}</div>
                                     </li>
                                 </ul>
-                                <p className="text white-text left-align">{t("about-us.caption")}</p>
+                                <p className="text white-text col xl5 push-xl1 left-align">{t("about-us.caption")}</p>
                             </div>
                         </main>
                     )

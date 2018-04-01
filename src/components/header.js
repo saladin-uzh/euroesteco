@@ -49,7 +49,7 @@ class Header extends React.Component {
                                     </a>
                                     <ul className="right">
                                         <li><Link to="/">Main</Link></li>
-                                        <li><Link to="/about-us">AboutUs</Link></li>
+                                        <li><Link to="/about-us">About Us</Link></li>
                                         <li><Link to="/sip-technology">SIP</Link></li>
                                         <li><Link to="/smart-house">Smart House</Link></li>
                                         <li>

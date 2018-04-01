@@ -36,7 +36,6 @@ body {
 
       .main-page {
         height: 100%;
-
         .content {
           width: inherit;
           height: 100%;
@@ -78,7 +77,7 @@ body {
       .about-us-page {
         .about-us-content {
           width: inherit;
-          margin-top: $l;
+          margin-top: $l * 5;
           .collapsible {
             li {
               border-bottom: $l solid transparent;
@@ -130,7 +129,7 @@ body {
             .caption {
               font-size: 1.6em;
               letter-spacing: $l * .12;
-              border-left: $l * .5 solid #006900;
+              border-left: $l * .6 solid #006900;
               padding: $l * .5 $l * 2;
               margin: 0;
               p {
@@ -152,7 +151,7 @@ body {
               @extend %roboto;
               font-size: 1.6em;
               letter-spacing: $l * .12;
-              border-right: $l * .5 solid #006900;
+              border-right: $l * .6 solid #006900;
               margin-top: $l * 6;
               text-align: right;
             }

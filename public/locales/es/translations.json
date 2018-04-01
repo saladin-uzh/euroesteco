@@ -43,7 +43,7 @@
   },
   "calc": {
     "first": "Калькулятор",
-    "second": "Шаг step_count из 5",
+    "second": "Шаг step_count из step_max",
     "stage-1": {
       "caption": "Выберете тип фундамента",
       "option-1": "Ленточный",

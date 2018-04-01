@@ -18,6 +18,12 @@ const footerStyles = {
     marginBottom: 0
 };
 
+const modalStyles = {
+    maxHeight: "90%",
+    transitionDuration: ".2s",
+    transitionTimingFunction: "linear"
+};
+
 export class Calculator extends React.Component {
     constructor(props) {
         super(props);
@@ -54,7 +60,9 @@ export class Calculator extends React.Component {
     }
     componentDidUpdate() {
         M.Modal.init($(".to-modal"), {
-            onOpenStart: this.calculatorRender
+            onOpenStart: this.calculatorRender,
+            startingTop: "7.5%",
+            endingTop: "15%"
         });
     }
     render() {
@@ -66,7 +74,7 @@ export class Calculator extends React.Component {
                             <button data-target="calc" className="btn-floating btn-large pulse green darken-3 modal-trigger">
                                 <i className="icons">♣</i>
                             </button>
-                            <div id="calc" className={this.state.inited ? "modal" : "to-modal modal"}>
+                            <div id="calc" className={this.state.inited ? "modal" : "to-modal modal"} style={modalStyles}>
                                 <div className="modal-content">
                                     <h4 style={captionStyles} className="green darken-3 white-text text-darken-3">
                                         {t("calc.first")}
@@ -98,26 +106,59 @@ export class Calculator extends React.Component {
     }
 }
 
-const CalcStage = (props) => {
-    const s = props.stage.toString();
-    const t = props.t;
-    const cardStyles = {
-        cursor: "pointer"
-    };
-    return <div className={"row section container stage-" + s}>
-        <p className="flow-text col s12">{t("calc.stage-" + s + ".caption")}</p>
-        <label className="col s4 offset-s1 card-panel small hoverable" style={cardStyles}>
-            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>
-            <input name={"stage-" + s} type="radio" checked="checked"/>
-            <span className="grey-text text-darken-3 flow-text">{t("calc.stage-" + s + ".option-1")}</span>
-        </label>
-        <label className="col s4 offset-s1 card-panel small hoverable grey-text text-darken-3" style={cardStyles}>
-            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>
-            <input name={"stage-" + s} type="radio"/>
-            <span className="grey-text text-darken-3 flow-text">{t("calc.stage-" + s + ".option-2")}</span>
-        </label>
-    </div>
+const cardStyles = {
+    cursor: "pointer",
+    margin: "0 0 0 20px"
 };
+
+class CalcStage extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.t = props.t;
+
+        this.renderLastStages = this.renderLastStages.bind(this);
+        this.renderOption = this.renderOption.bind(this)
+    }
+    renderOption(n) {
+        return <label key={this.props.stage + "00" + n} className={"col s" + (this.props.stage > 2 ? "3 push-s1" : "5") + " card-panel hoverable"} style={cardStyles}>
+            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>{
+                n === 1 ?
+                    <input name={"stage-" + this.props.stage.toString()} type="radio" defaultChecked={true}/> :
+                    <input name={"stage-" + this.props.stage.toString()} type="radio"/>
+            }<span className="flow-text">
+                <strong className="grey-text text-darken-3">{
+                    this.t("calc.stage-" + this.props.stage.toString() + ".option-" + n.toString())
+                }</strong>
+            </span>
+        </label>
+    }
+    renderLastStages() {
+        return this.props.stage === 6 ?
+            <br/> :
+            <br/>
+    }
+    render() {
+        return <div className={"row section" + (this.props.stage < 3 ? " container " : " ") + "stage-" + this.props.stage.toString()}>
+            <p className="flow-text col s12">{this.t("calc.stage-" + this.props.stage.toString() + ".caption")}</p>
+            {
+                this.props.stage <= 5 ?
+                    this.props.stage <= 4 ?
+                        this.props.stage <= 2 ?
+                            [1, 2].map((i) => (
+                                this.renderOption(i)
+                            )) :
+                            [1, 2, 3].map((i) => (
+                                this.renderOption(i)
+                            )) :
+                        [1, 2, 3, 4].map((i) => {
+                            this.renderOption(i)
+                        }) :
+                    this.renderLastStages()
+            }
+        </div>
+    }
+}
 
 CalcStage.propTypes = {
     stage: PropTypes.number.isRequired,

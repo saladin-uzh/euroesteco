@@ -1,17 +1,17 @@
 import React from "react"
 import {I18n} from "react-i18next"
-import {backgroundImg} from "../App"
-import {Files} from "../App"
+import {backgroundImg} from "../../App"
+import {Files} from "../../App"
 import * as M from "materialize-css"
 import * as $ from "jquery"
 
 export class AboutUs extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    componentDidUpdate() {
-        M.Collapsible.init($(".collapsible"));
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
+    // componentDidUpdate() {
+    //     M.Collapsible.init($(".collapsible"));
+    // }
     render() {
         return (
             <I18n ns="translations">

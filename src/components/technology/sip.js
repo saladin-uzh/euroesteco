@@ -1,7 +1,7 @@
 import React from "react"
 import {I18n} from "react-i18next"
-import {backgroundImg} from "../App"
-import {Files} from "../App"
+import {backgroundImg} from "../../App"
+import {Files} from "../../App"
 
 export class Sip extends React.Component {
     render() {

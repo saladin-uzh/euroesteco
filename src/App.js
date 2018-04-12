@@ -5,10 +5,10 @@ import {Switch, Route} from "react-router-dom"
 import Preloader from "./stateless/preloader"
 import Header from "./components/header"
 import {Footer} from "./components/footer"
-import {Main} from "./components/main"
-import {AboutUs} from "./components/aboutUs"
-import {Sip} from "./components/sip"
-import {SmartHouse} from "./components/smartHouse"
+import {Main} from "./components/main/main"
+import {AboutUs} from "./components/main/aboutUs"
+import {Sip} from "./components/technology/sip"
+import {SmartHouse} from "./components/technology/smartHouse"
 import * as M from "materialize-css"
 import * as $ from "jquery"
 import {Calculator} from "./components/calculator"
@@ -59,6 +59,7 @@ class App extends React.Component {
     }
     componentDidUpdate() {
         M.Dropdown.init($(".dropdown-trigger"));
+        M.Collapsible.init($(".collapsible"));
     }
     render() {
         return (
@@ -67,9 +68,11 @@ class App extends React.Component {
                 <Header/>
                 <Switch>
                     <Route exact path="/" component={Main}/>
-                    <Route path="/about-us" component={AboutUs}/>
-                    <Route path="/sip-technology" component={Sip}/>
-                    <Route path="/smart-house" component={SmartHouse}/>
+                    <Route path="/technology" component={AboutUs}/>
+                    <Route path="/projects" component={Sip}/>
+                    <Route path="/gallery" component={SmartHouse}/>
+                    <Route path="/price" component={SmartHouse}/>
+                    <Route path="/contact-us" component={SmartHouse}/>
                 </Switch>
                 <Calculator/>
                 <Footer/>

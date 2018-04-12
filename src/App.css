@@ -233,10 +233,10 @@ body #root .App {
     body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) {
       height: inherit; }
       body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) > li {
-        height: inherit;
-        outline: none; }
+        height: inherit; }
         body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) > li > a:not(.btn) {
-          height: inherit; }
+          height: inherit;
+          outline: none; }
     body #root .App .App-header .nav-wrapper .dropdown-trigger.btn {
       margin-left: 50px; }
   body #root .App .App-header nav .container .right li a {

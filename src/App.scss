@@ -21,8 +21,20 @@ body {
         .nav-wrapper {
           height: inherit;
 
-          ul {
+          > ul:not(#dropdown-lang) {
             height: inherit;
+
+            > li {
+              height: inherit;
+
+              > a:not(.dropdown-trigger) {
+                height: inherit;
+              }
+            }
+          }
+
+          .dropdown-trigger {
+            margin-left: $l * 5;
           }
         }
 

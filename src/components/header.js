@@ -49,13 +49,13 @@ class Header extends React.Component {
                                         <img style={logoStyles} className="responsive-img" src={Files.logo} alt="EuroEstEco logo"/>
                                     </a>
                                     <ul className="right">
-                                        <li><Link to="/">{t("header.nav-1.name")}</Link></li>
-                                        <li><Link to="/">{t("header.nav-2.name")}</Link></li>
-                                        <li><Link to="/">{t("header.nav-3")}</Link></li>
-                                        <li><Link to="/">{t("header.nav-4")}</Link></li>
-                                        <li><Link to="/">{t("header.nav-5")}</Link></li>
-                                        <li><Link to="/">{t("header.nav-6")}</Link></li>
-                                        <li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-1.name")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-2.name")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-3")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-4")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-5")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-6")}</Link></li>
+                                        <li className={"valign-wrapper"}>
                                             <a className="dropdown-trigger btn waves-light waves-effect light-green darken-3"
                                                data-target="dropdown-lang">Language</a>
                                             <ul id="dropdown-lang" className="dropdown-content">

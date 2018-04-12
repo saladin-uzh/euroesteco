@@ -67,11 +67,11 @@ class Header extends React.Component {
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav2"}>
                                                 <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
-                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
                                                 <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
-                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
                                                 <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
-                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
                                                 <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
                                             </ul>
                                         </li>

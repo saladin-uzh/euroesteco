@@ -13,15 +13,15 @@ export class SmartHouse extends React.Component {
                             <div className="container content white-text">
                                 <div className="row">
                                     <p className="caption col xl12">
-                                        {t("smart-house.caption")}<br/>
-                                        <p className="sub-caption col xl11 push-xl1">{t("smart-house.sub-caption")}</p>
+                                        {t("technology.smart-house.caption")}<br/>
+                                        <p className="sub-caption col xl11 push-xl1">{t("technology.smart-house.sub-caption")}</p>
                                     </p>
                                 </div>
-                                <div className="row text-card"><p className="text card-panel col xl4 l4">{t("smart-house.text-1")}</p></div>
-                                <div className="row text-card"><p className="text card-panel col xl4 push-xl4 l4">{t("smart-house.text-2")}</p></div>
+                                <div className="row text-card"><p className="text card-panel col xl4 l4">{t("technology.smart-house.text-1")}</p></div>
+                                <div className="row text-card"><p className="text card-panel col xl4 push-xl4 l4">{t("technology.smart-house.text-2")}</p></div>
                                 <div className="row text-card">
-                                    <p className="text card-panel col xl4 l4">{t("smart-house.text-3")}</p>
-                                    <p className="caption-conclusion col xl6 push-xl2">{t("smart-house.caption-conclusion")}</p>
+                                    <p className="text card-panel col xl4 l4">{t("technology.smart-house.text-3")}</p>
+                                    <p className="caption-conclusion col xl6 push-xl2">{t("technology.smart-house.caption-conclusion")}</p>
                                 </div>
                             </div>
                         </main>

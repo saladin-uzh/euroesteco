@@ -46,14 +46,6 @@
       "ninth": "от 450 евро/м2"
     }
   },
-  "smart-house": {
-    "caption": "Smart House Caption",
-    "sub-caption": "SubCaption and some text and some text, we'll you got it",
-    "text-1": "First very very very long paragraph, fibaro smart house and so on and so on. I'm sorry Momma",
-    "text-2": "Second very very very long paragraph. I never meant to heart you'uuuuuuu",
-    "text-3": "I never meant to make u cry but tonight I cleanin my closet",
-    "caption-conclusion": "One more time..."
-  },
   "footer": {
     "first": "Свяжитесь с нами:",
     "second": "Где нас можно найти:"
@@ -98,6 +90,38 @@
       "caption": "Расчёт почти готов! Чтобы получить точную стоимость, введите номер телефона. Мы перезвоним для уточнения нескольких деталей.",
       "placeholder": "Номер телефона",
       "button": "Получить расчёт"
+    }
+  },
+  "technology": {
+    "sip": {
+      "title": "SIP Technology",
+      "caption": "SIP sub-caption asdf qwerer asdfk oi",
+      "text-1": "",
+      "text-2": "",
+      "img": "",
+      "img-text-1": "",
+      "img-text-2": ""
+    },
+    "mi-tek": {
+      "title": "MiTek",
+      "caption-1": "",
+      "text-1": "",
+      "text-2": "",
+      "caption-2": "",
+      "text-3": "",
+      "text-4": ""
+    },
+    "myth-busters": {
+      "title": "MythBusters"
+    },
+    "smart-house": {
+      "title": "Smart House",
+      "caption": "Мы используем \"Умный дом\" от FIBARO",
+      "sub-caption": "Умный дом FIBARO - современное решение бытовых проблем.",
+      "text-1": "Под Умным домом сегодня понимают высокотехнологичное строение, в которое предварительно производится интеграция большого количества электронных новинок.",
+      "text-2": "Ежедневно он должен обрабатвывать большое количество сигналов, которые поступают в центр с потолка, пола, стен, мебели или бытовой техники.",
+      "text-3": "FIBARO Умный дом - это отличное изобретение, которое позволит изменить понимание дома, комфорта и удобства.",
+      "caption-conclusion": "Home FIBARO - новое слово техники."
     }
   }
 }

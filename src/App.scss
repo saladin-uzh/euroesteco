@@ -5,7 +5,6 @@ body {
   @extend %globalReset;
   @extend %roboto;
 
-
   #root {
     .App {
       width: 100%;
@@ -19,6 +18,14 @@ body {
         #dropdown-lang {
           transform-origin: bottom;
         }
+        .nav-wrapper {
+          height: inherit;
+
+          ul {
+            height: inherit;
+          }
+        }
+
         nav .container .right li a {
           @extend %roboto;
           font-size: 1.1em;

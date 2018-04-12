@@ -228,6 +228,10 @@ body #root .App {
   flex-direction: column; }
   body #root .App .App-header #dropdown-lang {
     transform-origin: bottom; }
+  body #root .App .App-header .nav-wrapper {
+    height: inherit; }
+    body #root .App .App-header .nav-wrapper ul {
+      height: inherit; }
   body #root .App .App-header nav .container .right li a {
     font-size: 1.1em;
     letter-spacing: 1.4px;

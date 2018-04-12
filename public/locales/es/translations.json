@@ -1,4 +1,21 @@
 {
+  "header": {
+    "nav-1": {
+      "name": "Главная",
+      "dropdown-1": "О компании",
+      "dropdown-2": "Новости"
+    },
+    "nav-2": {
+      "name": "Технология",
+      "dropdown-1": "Технология SIP",
+      "dropdown-2": "Система MiTEK",
+      "dropdown-3": "Мифы и факты"
+    },
+    "nav-3": "Проекты домов",
+    "nav-4": "Фотогалерея",
+    "nav-5": "Цена",
+    "nav-6": "Контакты"
+  },
   "main": {
     "introduction": "Приветствуем на",
     "slogan": "Here must be some slogan. Awesome slogan. It is probably the best slogan you have ever seen. Yeah."

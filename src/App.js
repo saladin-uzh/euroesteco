@@ -60,11 +60,11 @@ class App extends React.Component {
         );
     }
     componentDidUpdate() {
-        M.Dropdown.init($(".dropdown-trigger:not(.btn)"));
-        M.Dropdown.init($(".dropdown-trigger.btn"), {
+        M.Dropdown.init($(".dropdown-trigger:not(.btn)"), {
             coverTrigger: false,
             hover: true
         });
+        M.Dropdown.init($(".dropdown-trigger.btn"));
         M.Collapsible.init($(".collapsible"));
     }
     render() {

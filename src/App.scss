@@ -27,13 +27,13 @@ body {
             > li {
               height: inherit;
 
-              > a:not(.dropdown-trigger) {
+              > a {
                 height: inherit;
               }
             }
           }
 
-          .dropdown-trigger {
+          .dropdown-trigger.btn {
             margin-left: $l * 5;
           }
         }

@@ -49,8 +49,32 @@ class Header extends React.Component {
                                         <img style={logoStyles} className="responsive-img" src={Files.logo} alt="EuroEstEco logo"/>
                                     </a>
                                     <ul className="right">
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-1.name")}</Link></li>
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-2.name")}</Link></li>
+                                        <li>
+                                            <Link data-target={"dropdown-nav1"} class={"valign-wrapper dropdown-trigger"} to="/">
+                                                {t("header.nav-1.name")}
+                                                <i class="material-icons right">arrow_drop_down</i>
+                                            </Link>
+                                            <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav1"}>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <Link data-target={"dropdown-nav2"} class={"valign-wrapper dropdown-trigger"} to="/">
+                                                {t("header.nav-2.name")}
+                                                <i class="material-icons right">arrow_drop_down</i>
+                                            </Link>
+                                            <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav2"}>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li className="divider gray darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                            </ul>
+                                        </li>
                                         <li><Link class={"valign-wrapper"} to="/">{t("header.nav-3")}</Link></li>
                                         <li><Link class={"valign-wrapper"} to="/">{t("header.nav-4")}</Link></li>
                                         <li><Link class={"valign-wrapper"} to="/">{t("header.nav-5")}</Link></li>

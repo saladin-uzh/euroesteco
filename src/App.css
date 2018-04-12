@@ -234,7 +234,7 @@ body #root .App {
       height: inherit; }
       body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) > li {
         height: inherit; }
-        body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) > li > a {
+        body #root .App .App-header .nav-wrapper > ul:not(#dropdown-lang) > li > a:not(.btn) {
           height: inherit; }
     body #root .App .App-header .nav-wrapper .dropdown-trigger.btn {
       margin-left: 50px; }

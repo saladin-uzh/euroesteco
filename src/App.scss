@@ -27,7 +27,7 @@ body {
             > li {
               height: inherit;
 
-              > a {
+              > a:not(.btn) {
                 height: inherit;
               }
             }

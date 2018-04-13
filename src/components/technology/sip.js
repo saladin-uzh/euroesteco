@@ -7,7 +7,7 @@ export class Sip extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <div className="sip-page App-page section">
+                        <div className="sip-page App-page tech-block section">
                             <div className="container">
 
                                 <div className="row center">

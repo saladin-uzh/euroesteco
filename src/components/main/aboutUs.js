@@ -17,7 +17,7 @@ export class AboutUs extends React.Component {
             <I18n ns="translations">
                 {
                     (t) => (
-                        <main className="about-us-page App-page" style={backgroundImg(Files.aboutUsBg)}>
+                        <main className="about-us-screen App-page" style={backgroundImg(Files.aboutUsBg)}>
                             <div className="container about-us-content row">
                                 <ul className="collapsible popout col l6">
                                     <li>

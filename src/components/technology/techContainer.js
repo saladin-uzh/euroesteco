@@ -5,7 +5,7 @@ import {MythBusters} from "./mythBusters"
 import {SmartHouse} from "./smartHouse"
 
 export const TechContainer = () => (
-    <main className="technology-page">
+    <main className="technology-page App-page">
         <Sip/>
         <MiTek/>
         <MythBusters/>

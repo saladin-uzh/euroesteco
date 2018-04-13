@@ -21,7 +21,8 @@ const footerStyles = {
 const modalStyles = {
     maxHeight: "90%",
     transitionDuration: ".2s",
-    transitionTimingFunction: "linear"
+    transitionTimingFunction: "linear",
+    outline: "none"
 };
 
 export class Calculator extends React.Component {
@@ -75,7 +76,9 @@ export class Calculator extends React.Component {
                                 <i className="icons">♣</i>
                             </button>
                             <div id="calc" className={this.state.inited ? "modal" : "to-modal modal"} style={modalStyles}>
-                                <div className="modal-content">
+                                <div className="modal-content" style={{
+                                    padding: 0
+                                }}>
                                     <h4 style={captionStyles} className="green darken-3 white-text text-darken-3">
                                         {t("calc.first")}
                                         <small className="right">{
@@ -106,11 +109,6 @@ export class Calculator extends React.Component {
     }
 }
 
-const cardStyles = {
-    cursor: "pointer",
-    margin: "0 0 0 20px"
-};
-
 class CalcStage extends React.Component {
     constructor(props) {
         super(props);
@@ -122,15 +120,22 @@ class CalcStage extends React.Component {
     }
     renderOption(n) {
         return <label key={this.props.stage + "00" + n} className={"col s" + (this.props.stage > 2 ? "3 push-s1" : "5") + " card-panel hoverable"} style={cardStyles}>
-            <img className="responsive-img" src="../img/awful-logo.png" alt="test"/>{
-                n === 1 ?
-                    <input name={"stage-" + this.props.stage.toString()} type="radio" defaultChecked={true}/> :
-                    <input name={"stage-" + this.props.stage.toString()} type="radio"/>
-            }<span className="flow-text">
-                <strong className="grey-text text-darken-3">{
-                    this.t("calc.stage-" + this.props.stage.toString() + ".option-" + n.toString())
-                }</strong>
-            </span>
+            <img className="responsive-img" src={"../img/c" + this.props.stage.toString() + n.toString() + ".jpg"} alt="Thumbnail" style={{
+
+            }}/>{
+            n === 1 ?
+                <input name={"stage-" + this.props.stage.toString()} type="radio" defaultChecked={true}/> :
+                <input name={"stage-" + this.props.stage.toString()} type="radio"/>
+        }<span style={{
+            display: "inline-block",
+            padding: 0,
+            paddingLeft: 30,
+            margin: 10
+        }}>
+            <strong className="grey-text text-darken-3">{
+                this.t("calc.stage-" + this.props.stage.toString() + ".option-" + n.toString())
+            }</strong>
+        </span>
         </label>
     }
     renderLastStages() {
@@ -141,24 +146,35 @@ class CalcStage extends React.Component {
     render() {
         return <div className={"row section" + (this.props.stage < 3 ? " container " : " ") + "stage-" + this.props.stage.toString()}>
             <p className="flow-text col s12">{this.t("calc.stage-" + this.props.stage.toString() + ".caption")}</p>
-            {
-                this.props.stage <= 5 ?
-                    this.props.stage <= 4 ?
-                        this.props.stage <= 2 ?
-                            [1, 2].map((i) => (
+            <div className="valign-wrapper col s12 options" style={{
+                display: "flex",
+                alignItems: "stretch"
+            }}>
+                {
+                    this.props.stage <= 5 ?
+                        this.props.stage <= 4 ?
+                            this.props.stage <= 2 ?
+                                [1, 2].map((i) => (
+                                    this.renderOption(i)
+                                )) :
+                                [1, 2, 3].map((i) => (
+                                    this.renderOption(i)
+                                )) :
+                            [1, 2, 3, 4].map((i) => {
                                 this.renderOption(i)
-                            )) :
-                            [1, 2, 3].map((i) => (
-                                this.renderOption(i)
-                            )) :
-                        [1, 2, 3, 4].map((i) => {
-                            this.renderOption(i)
-                        }) :
-                    this.renderLastStages()
-            }
+                            }) :
+                        this.renderLastStages()
+                }
+            </div>
         </div>
     }
 }
+
+const cardStyles = {
+    cursor: "pointer",
+    margin: "0 0 0 20px",
+    padding: 0
+};
 
 CalcStage.propTypes = {
     stage: PropTypes.number.isRequired,

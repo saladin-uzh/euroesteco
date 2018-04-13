@@ -11,7 +11,6 @@ const languageStyles = {
 };
 
 const largeHeader = {
-    minHeight: "12.5vh",
     height: "12.5vh"
 };
 
@@ -55,30 +54,34 @@ class Header extends React.Component {
                                                 <i class="material-icons right">arrow_drop_down</i>
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav1"}>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/#"}>{t("header.nav-1.dropdown-1")}</Link></li>
                                                 <li className="divider grey darken-2" tabIndex="-1"/>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/#"}>{t("header.nav-1.dropdown-2")}</Link></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <Link data-target={"dropdown-nav2"} class={"valign-wrapper dropdown-trigger"} to="/">
+                                            <Link data-target={"dropdown-nav2"} class={"valign-wrapper dropdown-trigger"} to="/technology">
                                                 {t("header.nav-2.name")}
                                                 <i class="material-icons right">arrow_drop_down</i>
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav2"}>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-1")}</Link></li>
                                                 <li className="divider grey darken-2" tabIndex="-1"/>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-2")}</Link></li>
                                                 <li className="divider grey darken-2" tabIndex="-1"/>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-3")}</Link></li>
                                                 <li className="divider grey darken-2" tabIndex="-1"/>
-                                                <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.name")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-4")}</Link></li>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-5")}</Link></li>
+                                                <li className="divider grey darken-2" tabIndex="-1"/>
+                                                <li><Link class={"white-text"} to={"/technology/#"}>{t("header.nav-2.dropdown-6")}</Link></li>
                                             </ul>
                                         </li>
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-3")}</Link></li>
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-4")}</Link></li>
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-5")}</Link></li>
-                                        <li><Link class={"valign-wrapper"} to="/">{t("header.nav-6")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/projects">{t("header.nav-3")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/gallery">{t("header.nav-4")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/price">{t("header.nav-5")}</Link></li>
+                                        <li><Link class={"valign-wrapper"} to="/contact-us">{t("header.nav-6")}</Link></li>
                                         <li className={"valign-wrapper"}>
                                             <a className="dropdown-trigger btn waves-light waves-effect light-green darken-3"
                                                data-target="dropdown-lang">Language</a>

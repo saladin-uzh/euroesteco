@@ -4,6 +4,7 @@ import {I18n} from "react-i18next"
 import i18n from "i18next"
 import {Files} from "../App"
 import * as $ from "jquery"
+import * as M from "materialize-css";
 
 const languageStyles = {
     textTransform: "capitalize",
@@ -54,7 +55,7 @@ class Header extends React.Component {
                                                 <i class="material-icons right">arrow_drop_down</i>
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav1"}>
-                                                <li><Link class={"white-text"} to={"/#"}>{t("header.nav-1.dropdown-1")}</Link></li>
+                                                <li><Link class={"white-text"} to={"/#loh"}>{t("header.nav-1.dropdown-1")}</Link></li>
                                                 <li className="divider grey darken-2" tabIndex="-1"/>
                                                 <li><Link class={"white-text"} to={"/#"}>{t("header.nav-1.dropdown-2")}</Link></li>
                                             </ul>

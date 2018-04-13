@@ -28,12 +28,12 @@ export class Sip extends React.Component {
                                             <p className="flow-text">{t("technology.sip.img-text-2")}</p>
                                         </div>
                                     </div>
-                                    <h5 className="col m8 push-m1">{t("technology.sip.caption")}</h5>
-                                    <h6 className="col m8 push-m1">{t("technology.sip.text-1")}</h6>
+                                    <h4 className="flow-text col m8 push-m1 grey-text text-darken-3">{t("technology.sip.caption")}</h4>
+                                    <p className="flow-text col m8 push-m1 grey-text text-darken-3">{t("technology.sip.text-1")}</p>
                                 </div>
 
                                 <div className="row">
-                                    <h5>{t("technology.sip.text-2")}</h5>
+                                    <h5 className="flow-text col s12 grey-text text-darken-3">{t("technology.sip.text-2")}</h5>
                                 </div>
                             </div>
                         </div>

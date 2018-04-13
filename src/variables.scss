@@ -55,18 +55,19 @@ $default: "Arial", sans-serif;
     content: "";
     display: block;
     position: absolute;
-    height: $height;
     background: #006900;
   }
   &::before {
     top: $l * 5;
     left: 24%;
     width: 52%;
+    height: 3px;
   }
   &::after {
-    top: $l * 6.5;
+    top: $l * 6;
     left: 38%;
     width: 24%;
+    height: 3px;
   }
 }
 //@mixin blackFilter($amount, $color: #141414) {

@@ -382,9 +382,9 @@ body #root .App {
   body #root .App .technology-page .sip-page .container .row .card .card-image {
     padding: 30px 15px 0 15px; }
   body #root .App .technology-page .sip-page .container .row .card .card-reveal span {
-    font-size: 1.2em; }
+    font-size: 1.3em; }
   body #root .App .technology-page .sip-page .container .row .card .card-reveal p {
-    font-size: 0.7em; }
+    font-size: 0.9em; }
   body #root .App .technology-page .sip-page .container .row .card .card-reveal::-webkit-scrollbar {
     display: none; }
   body #root .App footer .container .row div h5 {

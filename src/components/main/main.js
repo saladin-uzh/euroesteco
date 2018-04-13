@@ -11,7 +11,7 @@ export class Main extends React.Component {
                 {
                     (t) => (
                         <Fragment>
-                            <main className="main-page App-page" style={backgroundImg(Files.mainBg)}>
+                            <main className="main-screen App-page" style={backgroundImg(Files.mainBg)}>
                                 <div className="container content">
                                     <div className="row">
                                         <h1 className="main-caption white-text col l8 pull-l4 left">{t("main.introduction")}</h1>

@@ -62,7 +62,8 @@ class App extends React.Component {
     componentDidUpdate() {
         M.Dropdown.init($(".dropdown-trigger:not(.btn)"), {
             coverTrigger: false,
-            hover: true
+            hover: true,
+            closeOnClick: false
         });
         M.Dropdown.init($(".dropdown-trigger.btn"));
         M.Collapsible.init($(".collapsible"));

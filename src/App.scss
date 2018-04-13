@@ -4,6 +4,10 @@
 body {
   @extend %globalReset;
   @extend %roboto;
+  *::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
 
   #root {
     .App {
@@ -20,6 +24,15 @@ body {
         }
         .nav-wrapper {
           height: inherit;
+
+          #dropdown-nav1,
+          #dropdown-nav2 {
+            a {
+              &:hover {
+                color: #424242 !important;
+              }
+            }
+          }
 
           > ul:not(#dropdown-lang) {
             height: inherit;
@@ -180,6 +193,25 @@ body {
             }
             &:first-of-type {
               margin-bottom: $l * 6;
+            }
+          }
+        }
+      }
+
+      .technology-page {
+        .sip-page {
+          .container .row {
+            .caption {
+              @include caption();
+              @extend %lato;
+              font-size: 2.4em;
+            }
+            .card-image {
+              padding: $l * 3 $l * 1.5 0 $l * 1.5;
+            }
+            .card-reveal::-webkit-scrollbar {
+              display: none;
+              p {}
             }
           }
         }

@@ -49,6 +49,26 @@ $default: "Arial", sans-serif;
 //  z-index: -2;
 //}
 // Mixins
+@mixin caption($height: 3px) {
+  position: relative;
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: $height;
+    background: #006900;
+  }
+  &::before {
+    top: $l * 5;
+    left: 24%;
+    width: 52%;
+  }
+  &::after {
+    top: $l * 6.5;
+    left: 38%;
+    width: 24%;
+  }
+}
 //@mixin blackFilter($amount, $color: #141414) {
 //  position: relative;
 //  background-color: transparent;

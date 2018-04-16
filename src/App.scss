@@ -115,38 +115,6 @@ body {
         .about-us-content {
           width: inherit;
           margin-top: $l * 5;
-          .collapsible {
-            li {
-              border-bottom: $l solid transparent;
-              box-shadow: unset;
-
-              .collapsible-header {
-                display: flex;
-                align-items: center;
-                background: transparentize(#484848, 0.2);
-                color: #d6d6d6;
-                @extend %latoBold;
-                font-size: 1.12em;
-                letter-spacing: $l * .12;
-                border: none;
-
-                i {color: #00a400; font-style: normal;}
-                .icons {@extend %ico; font-size: 1.7em;}
-                .material-icons {
-                  margin: 0 $l * 3 0 0;
-                  font-size: 2em;
-                }
-              }
-              .collapsible-body {
-                @extend %roboto;
-                color: #d6d6d6;
-                font-size: 1em;
-                letter-spacing: $l * .15;
-                background: transparentize(#555555, 0.3);
-                border: none;
-              }
-            }
-          }
 
           .text {
             padding-right: $l * 4;
@@ -235,6 +203,35 @@ body {
               padding: 0 0 0 $l*3;
               letter-spacing: $l*.13;
               line-height: 1.5;
+            }
+            .collapsible {
+              li {
+                border-bottom: $l solid transparent;
+                box-shadow: unset;
+
+                .collapsible-header {
+                  display: flex;
+                  align-items: center;
+                  background: #f5f5f5;
+                  @extend %latoBold;
+                  font-size: 1.12em;
+                  letter-spacing: $l * .12;
+                  border: none;
+
+                  i {color: #00a400; font-style: normal;}
+                  .icons {@extend %ico; font-size: 1.7em;}
+                  .material-icons {
+                    margin: 0 $l * 3 0 0;
+                    font-size: 2em;
+                  }
+                }
+                .collapsible-body {
+                  @extend %roboto;
+                  font-size: 1em;
+                  letter-spacing: $l * .15;
+                  border: none;
+                }
+              }
             }
 
             .card .card-image {

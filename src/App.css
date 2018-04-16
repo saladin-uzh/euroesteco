@@ -93,7 +93,7 @@ body #root .App .main-screen .content .row .main-caption, body #root .App .techn
 body #root .App .main-screen .content .row .sub-caption {
   font-family: "Lato-Light", "Arial", sans-serif; }
 
-body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header {
+body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header {
   font-family: "Lato-Bold", "Arial", sans-serif; }
 
 body #root .App .smart-house-page .content .row .text, body #root .App .technology-page .sip-page .container .row p, body #root .App .technology-page .sip-page .container .row h5, body #root .App .technology-page .mitek-screen .container .row .text-block, body #root .App .technology-page .mitek-screen .container .row .card .card-image span, body #root .App .technology-page .mitek-screen .container .row .card .card-content span, body #root .App footer .container .row div h5 {
@@ -102,7 +102,7 @@ body #root .App .smart-house-page .content .row .text, body #root .App .technolo
 body #root .App footer .container .row div address, body #root .App footer .container .row div ul li, body #root .App footer .footer-copyright .container a {
   font-family: "Open-Sans-Light", "Arial", sans-serif; }
 
-body, body #root .App .App-header nav .container .right li a, body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-body, body #root .App .about-us-screen .about-us-content .text, body #root .App .smart-house-page .content .row .caption-conclusion, body #root .App .technology-page .sip-page .container .row h4 {
+body, body #root .App .App-header nav .container .right li a, body #root .App .about-us-screen .about-us-content .text, body #root .App .smart-house-page .content .row .caption-conclusion, body #root .App .technology-page .sip-page .container .row h4, body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-body {
   font-family: "Roboto", "Arial", sans-serif; }
 
 body #root .App footer .footer-copyright .container {
@@ -111,7 +111,7 @@ body #root .App footer .footer-copyright .container {
 body #root .App .main-screen .content .row .name {
   font-family: "Ubuntu", "Arial", sans-serif; }
 
-body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header .icons, body #root .App .calculator button .icons {
+body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header .icons, body #root .App .calculator button .icons {
   font-family: "Ico", "Arial", sans-serif; }
 
 body {
@@ -285,31 +285,6 @@ body #root .App {
   body #root .App .about-us-screen .about-us-content {
     width: inherit;
     margin-top: 50px; }
-    body #root .App .about-us-screen .about-us-content .collapsible li {
-      border-bottom: 10px solid transparent;
-      box-shadow: unset; }
-      body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header {
-        display: flex;
-        align-items: center;
-        background: rgba(72, 72, 72, 0.8);
-        color: #d6d6d6;
-        font-size: 1.12em;
-        letter-spacing: 1.2px;
-        border: none; }
-        body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header i {
-          color: #00a400;
-          font-style: normal; }
-        body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header .icons {
-          font-size: 1.7em; }
-        body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-header .material-icons {
-          margin: 0 30px 0 0;
-          font-size: 2em; }
-      body #root .App .about-us-screen .about-us-content .collapsible li .collapsible-body {
-        color: #d6d6d6;
-        font-size: 1em;
-        letter-spacing: 1.5px;
-        background: rgba(85, 85, 85, 0.7);
-        border: none; }
     body #root .App .about-us-screen .about-us-content .text {
       padding-right: 40px;
       font-size: 1em;
@@ -382,6 +357,28 @@ body #root .App {
     padding: 0 0 0 30px;
     letter-spacing: 1.3px;
     line-height: 1.5; }
+  body #root .App .technology-page .sip-page .container .row .collapsible li {
+    border-bottom: 10px solid transparent;
+    box-shadow: unset; }
+    body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header {
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      font-size: 1.12em;
+      letter-spacing: 1.2px;
+      border: none; }
+      body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header i {
+        color: #00a400;
+        font-style: normal; }
+      body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header .icons {
+        font-size: 1.7em; }
+      body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-header .material-icons {
+        margin: 0 30px 0 0;
+        font-size: 2em; }
+    body #root .App .technology-page .sip-page .container .row .collapsible li .collapsible-body {
+      font-size: 1em;
+      letter-spacing: 1.5px;
+      border: none; }
   body #root .App .technology-page .sip-page .container .row .card .card-image {
     padding: 30px 15px 0 15px; }
   body #root .App .technology-page .sip-page .container .row .card .card-reveal span {

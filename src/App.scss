@@ -71,6 +71,16 @@ body {
         min-height: 87.5vh;
       }
 
+      .gallery-page {
+        .carousel {
+          overflow: hidden !important;
+
+          .indicators {
+            background: rgba(0,0,0,.5) !important;
+          }
+        }
+      }
+
       .main-screen {
         height: 87.5vh ;
         .content {

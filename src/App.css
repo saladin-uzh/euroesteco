@@ -258,6 +258,12 @@ body #root .App {
     flex: 1 0 auto;
     width: 100%;
     min-height: 87.5vh; }
+  body #root .App .gallery-page .carousel {
+    overflow: hidden !important; }
+    body #root .App .gallery-page .carousel #materialbox-overlay {
+      background: black !important; }
+    body #root .App .gallery-page .carousel .indicators {
+      background: rgba(0, 0, 0, 0.5) !important; }
   body #root .App .main-screen {
     height: 87.5vh; }
     body #root .App .main-screen .content {

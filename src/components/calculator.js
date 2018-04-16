@@ -7,7 +7,8 @@ import * as $ from "jquery";
 const containerStyles = {
     position: "fixed",
     bottom: 30,
-    right: 30
+    right: 30,
+    zIndex: 1
 };
 
 const captionStyles = {

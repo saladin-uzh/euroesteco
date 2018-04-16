@@ -308,6 +308,15 @@ body {
             }
           }
         }
+
+        .mythbuster-screen {
+          .container .row ul li .collapsible-header {
+            font-size: 1.2em;
+          }
+          .container .row ul li .collapsible-body p {
+            font-size: 1em;
+          }
+        }
       }
 
       footer {

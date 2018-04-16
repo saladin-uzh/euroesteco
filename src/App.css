@@ -430,6 +430,10 @@ body #root .App {
       body #root .App .technology-page .mitek-screen .container .row .card .card-content span {
         font-size: 1em;
         letter-spacing: 0.5px; }
+  body #root .App .technology-page .mythbuster-screen .container .row ul li .collapsible-header {
+    font-size: 1.2em; }
+  body #root .App .technology-page .mythbuster-screen .container .row ul li .collapsible-body p {
+    font-size: 1em; }
   body #root .App footer .container .row div h5 {
     font-size: 1.7em;
     letter-spacing: 1.4px; }

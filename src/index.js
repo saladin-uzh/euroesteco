@@ -26,7 +26,7 @@ i18n
         }
     });
 
-if (i18n.language !== "es") i18n.changeLanguage("es");
+if (i18n.language !== "ru") i18n.changeLanguage("ru");
 
 ReactDOM.render(
     <BrowserRouter>

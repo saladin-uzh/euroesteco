@@ -27,7 +27,7 @@ export class MythBusters extends React.Component {
                                     </div>
 
                                     <div className="row">
-                                        <ul className="collapsible col m8 s12">
+                                        <ul className="collapsible col m12 s12">
                                             <li>
                                                 <div className="collapsible-header valign-wrapper">
                                                     <i className="material-icons">+</i>

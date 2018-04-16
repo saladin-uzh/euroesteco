@@ -224,6 +224,9 @@ body *::-webkit-scrollbar {
   display: none;
   width: 0; }
 
+body * {
+  outline: none !important; }
+
 body #root .App {
   width: 100%;
   height: 100%;
@@ -449,6 +452,8 @@ body #root .App {
   body #root .App .calculator button .icons {
     font-style: normal;
     font-size: 1.8em; }
+  body #root .App .calculator #calc {
+    max-height: 90%; }
   body #root .App #preloader.unset {
     border-radius: 50%; }
 

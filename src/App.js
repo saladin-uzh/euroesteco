@@ -14,9 +14,14 @@ import {TechContainer} from "./components/technology/techContainer"
 import * as M from "materialize-css"
 import * as $ from "jquery"
 import {Calculator} from "./components/calculator"
+import {AboutUs} from "./components/main/aboutUs";
+import {Sip} from "./components/technology/sip";
+import {MiTek} from "./components/technology/miTek";
+import {MythBusters} from "./components/technology/mythBusters";
+import {SmartHouse} from "./components/technology/smartHouse";
 
 export const Files = {
-    logo: "img/logo.png",
+    logo: "/img/logo.png",
     mainBg: "../img/List_01.jpg",
     aboutUsBg: "../img/List_02.jpg",
     sipPg: "../img/List_04.jpg",
@@ -72,8 +77,12 @@ class App extends React.Component {
                 <Preloader visible={this.state.preloaderActive}/>
                 <Header/>
                 <Switch>
-                    <Route exact path="/" component={Main}/>
-                    <Route path="/technology" component={TechContainer}/>
+                    <Route exact path="/" component={AboutUs}/>
+                    <Route exact path="/news" component={Main}/>
+                    <Route exact path="/technology/sip" component={Sip}/>
+                    <Route exact path="/technology/mitek" component={MiTek}/>
+                    <Route exact path="/technology/myths" component={MythBusters}/>
+                    <Route exact path="/technology/smarthouse" component={SmartHouse}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/gallery" component={Gallery}/>
                     <Route path="/price" component={Price}/>

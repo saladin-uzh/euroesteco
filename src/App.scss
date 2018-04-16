@@ -9,6 +9,10 @@ body {
     width: 0;
   }
 
+  * {
+    outline: none !important;
+  }
+
   #root {
     .App {
       width: 100%;
@@ -346,6 +350,10 @@ body {
           @extend %ico;
           font-style: normal;
           font-size: 1.8em;
+        }
+
+        #calc {
+          max-height: 90%;
         }
       }
 

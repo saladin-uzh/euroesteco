@@ -3,12 +3,4 @@ import {Sip} from "./sip"
 import {MiTek} from "./miTek"
 import {MythBusters} from "./mythBusters"
 import {SmartHouse} from "./smartHouse"
-
-export const TechContainer = () => (
-    <main className="technology-page App-page">
-        <Sip/>
-        <MiTek/>
-        <MythBusters/>
-        <SmartHouse/>
-    </main>
-);
+import {Route, Switch} from "react-router-dom";

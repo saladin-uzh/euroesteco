@@ -70,6 +70,7 @@ class App extends React.Component {
         });
         M.Dropdown.init($(".dropdown-trigger.btn"));
         M.Collapsible.init($(".collapsible"));
+        M.Tabs.init($(".tabs"));
     }
     render() {
         return (

@@ -5,15 +5,6 @@ import * as $ from "jquery"
 import {Files} from "../App"
 
 export class Gallery extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    componentDidUpdate() {
-        M.Carousel.init($(".carousel"), {
-            indicators: true,
-            fullWidth: true
-        });
-    }
     render() {
         return (
             <I18n ns="translations">

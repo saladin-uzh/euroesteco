@@ -29,7 +29,7 @@ export class MythBusters extends React.Component {
                                     <div className="row">
                                         <ul className="collapsible col m12 s12">
                                             <li>
-                                                <div className="collapsible-header valign-wrapper z-depth-3">
+                                                <div className="collapsible-header valign-wrapper">
                                                     <i className="material-icons">+</i>
                                                     <span>{t("technology.myth-busters.header-1")}</span>
                                                 </div>
@@ -114,15 +114,9 @@ export class MythBusters extends React.Component {
                                                     <p className="flow-text">{t("technology.myth-busters.body-6a")}</p>
                                                     <p className="flow-text">{t("technology.myth-busters.body-6b")}</p>
                                                     <p className="row">
-                                                        <a className="col s12 m4" href="https://servus.ua/wp-content/uploads/2012/11/mythThumb6.jpg">
-                                                            <img className="responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb6.jpg" width="210" height="165"/>
-                                                        </a>
-                                                        <a className="col s12 m4" href="https://servus.ua/wp-content/uploads/2012/11/mythThumb5.jpg">
-                                                            <img className="responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb5.jpg" width="210" height="165"/>
-                                                        </a>
-                                                        <a className="col s12 m4" href="https://servus.ua/wp-content/uploads/2012/11/mythThumb4.jpg">
-                                                            <img className="responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb4.jpg" width="210" height="165"/>
-                                                        </a>
+                                                        <img className="col s12 m4 responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb6.jpg" width="210" height="165"/>
+                                                        <img className="col s12 m4 responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb5.jpg" width="210" height="165"/>
+                                                        <img className="col s12 m4 responsive-img" src="https://servus.ua/wp-content/uploads/2012/11/mythThumb4.jpg" width="210" height="165"/>
                                                     </p>
                                                 </div>
                                             </li>

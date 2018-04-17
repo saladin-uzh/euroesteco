@@ -52,7 +52,7 @@ class Header extends React.Component {
                                         <li>
                                             <Link data-target={"dropdown-nav1"} class={"valign-wrapper dropdown-trigger"} to="/">
                                                 {t("header.nav-1.name")}
-                                                <i class="material-icons right">arrow_drop_down</i>
+                                                <i className="material-icons right">arrow_drop_down</i>
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav1"}>
                                                 <li><Link class={"white-text"} to={"/"}>{t("header.nav-1.dropdown-1")}</Link></li>
@@ -63,7 +63,7 @@ class Header extends React.Component {
                                         <li>
                                             <Link data-target={"dropdown-nav2"} class={"valign-wrapper dropdown-trigger"} to="/technology">
                                                 {t("header.nav-2.name")}
-                                                <i class="material-icons right">arrow_drop_down</i>
+                                                <i className="material-icons right">arrow_drop_down</i>
                                             </Link>
                                             <ul className={"dropdown-content grey darken-3"} id={"dropdown-nav2"}>
                                                 <li><Link class={"white-text"} to={"/technology/sip"}>{t("header.nav-2.dropdown-1")}</Link></li>
@@ -79,7 +79,7 @@ class Header extends React.Component {
                                                 <li><Link class={"white-text"} to={"/technology/smarthouse"}>{t("header.nav-2.dropdown-6")}</Link></li>
                                             </ul>
                                         </li>
-                                        <li><Link class={"valign-wrapper"} to="/projects">{t("header.nav-3")}</Link></li>
+                                        <li><Link class="valign-wrapper" to="/projects">{t("header.nav-3")}</Link></li>
                                         <li><Link class={"valign-wrapper"} to="/gallery">{t("header.nav-4")}</Link></li>
                                         <li><Link class={"valign-wrapper"} to="/price">{t("header.nav-5")}</Link></li>
                                         <li><Link class={"valign-wrapper"} to="/contact-us">{t("header.nav-6")}</Link></li>

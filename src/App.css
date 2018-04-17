@@ -260,8 +260,6 @@ body #root .App {
     min-height: 87.5vh; }
   body #root .App .gallery-page .carousel {
     overflow: hidden !important; }
-    body #root .App .gallery-page .carousel #materialbox-overlay {
-      background: black !important; }
     body #root .App .gallery-page .carousel .indicators {
       background: rgba(0, 0, 0, 0.5) !important; }
   body #root .App .main-screen {
@@ -459,6 +457,9 @@ body #root .App {
   body #root .App .calculator button .icons {
     font-style: normal;
     font-size: 1.8em; }
+  body #root .App .calculator #address:focus, body #root .App .calculator #tel:focus {
+    border-bottom-color: #2E7D32;
+    box-shadow: 0 1px 0 0 #2E7D32; }
   body #root .App .calculator #calc {
     max-height: 90%; }
   body #root .App #preloader.unset {

@@ -435,6 +435,16 @@ body #root .App {
     font-size: 1.2em; }
   body #root .App .technology-page .mythbuster-screen .container .row ul li .collapsible-body p {
     font-size: 1em; }
+  body #root .App .price-page .container .row ul {
+    padding: 0; }
+    body #root .App .price-page .container .row ul .indicator {
+      height: 3px;
+      background: #006900; }
+    body #root .App .price-page .container .row ul li a.active {
+      background: rgba(0, 105, 0, 0.1); }
+  body #root .App .price-page .container .row div ul li {
+    padding: 5px 20px;
+    font-size: 1.1em; }
   body #root .App footer .container .row div h5 {
     font-size: 1.7em;
     letter-spacing: 1.4px; }

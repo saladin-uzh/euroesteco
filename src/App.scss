@@ -326,6 +326,25 @@ body {
         }
       }
 
+      .price-page {
+        .container .row {
+          ul {
+            padding: 0;
+            .indicator {
+              height: 3px;
+              background: #006900;
+            }
+            li a.active {
+              background: transparentize(#006900, 0.9);
+            }
+          }
+          div ul li {
+            padding: 5px 20px;
+            font-size: 1.1em;
+          }
+        }
+      }
+
       footer {
         .container .row div {
           h5 {

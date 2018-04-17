@@ -10,13 +10,13 @@ export class Price extends React.Component {
                         <div className="price-page App-page">
                             <div className="container section">
                                 <div className="row">
-                                    <ul id="tabs-swipe-demo" className="tabs col s12 m9 grey lighten-4">
+                                    <ul id="tabs-swipe-demo" className="tabs col s12 grey lighten-4">
                                         <li className="tab col s3"><a className="active grey-text text-darken-2" href="#test-swipe-1"><b>{t("price.products.econom.title")}</b></a></li>
                                         <li className="tab col s3"><a className="grey-text text-darken-2" href="#test-swipe-2"><b>{t("price.products.standard.title")}</b></a></li>
                                         <li className="tab col s3"><a className="grey-text text-darken-2" href="#test-swipe-3"><b>{t("price.products.standard-servus.title")}</b></a></li>
                                         <li className="tab col s3"><a className="grey-text text-darken-2" href="#test-swipe-4"><b>{t("price.products.euro-servus.title")}</b></a></li>
                                     </ul>
-                                    <div id="test-swipe-1" className="col s12 m9 grey lighten-3">
+                                    <div id="test-swipe-1" className="col s12 grey lighten-3">
                                         <ul>
                                             <li>{t("price.products.econom.li-1")}</li>
                                             <li>{t("price.products.econom.li-2")}</li>
@@ -27,7 +27,7 @@ export class Price extends React.Component {
                                             <li>{t("price.products.econom.li-7")}</li>
                                         </ul>
                                     </div>
-                                    <div id="test-swipe-2" className="col s12 m9 grey lighten-3">
+                                    <div id="test-swipe-2" className="col s12 grey lighten-3">
                                         <ul>
                                             <li>{t("price.products.standard.li-1")}</li>
                                             <li>{t("price.products.standard.li-2")}</li>
@@ -38,7 +38,7 @@ export class Price extends React.Component {
                                             <li>{t("price.products.standard.li-7")}</li>
                                         </ul>
                                     </div>
-                                    <div id="test-swipe-3" className="col s12 m9 grey lighten-3">
+                                    <div id="test-swipe-3" className="col s12 grey lighten-3">
                                         <ul>
                                             <li>{t("price.products.standard-servus.li-1")}</li>
                                             <li>{t("price.products.standard-servus.li-2")}</li>
@@ -49,7 +49,7 @@ export class Price extends React.Component {
                                             <li>{t("price.products.standard-servus.li-7")}</li>
                                         </ul>
                                     </div>
-                                    <div id="test-swipe-4" className="col s12 m9 grey lighten-3">
+                                    <div id="test-swipe-4" className="col s12 grey lighten-3">
                                         <ul>
                                             <li>{t("price.products.euro-servus.li-1")}</li>
                                             <li>{t("price.products.euro-servus.li-2")}</li>
